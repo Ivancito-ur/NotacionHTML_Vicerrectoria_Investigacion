@@ -10,7 +10,8 @@ body {
   color: aliceblue;
 }
 
-.link-color{
+/* Color del link del articulo */
+.link-color:link{
   color: aliceblue;
 }
 
