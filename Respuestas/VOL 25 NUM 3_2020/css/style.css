@@ -14,6 +14,9 @@ body {
 .link-color:link{
   color: aliceblue;
 }
+.link-color{
+  color: aliceblue;
+}
 
 ul.navbar {
   list-style-type: none;
