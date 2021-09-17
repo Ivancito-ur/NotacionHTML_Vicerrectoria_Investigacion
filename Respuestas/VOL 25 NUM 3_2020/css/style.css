@@ -27,6 +27,7 @@ ul.navbar {
 h1, h3, h4, h5 {
   font-family: Times New Roman;
   text-align: center;
+  font-weight: bold;
 }
 
 ul.navbar li {
@@ -47,10 +48,16 @@ p {
 
 p.titulo{
   font-size: 20px;
+  font-weight: bold;
 }
 
 p.subtitulo{
   font-size: 20px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+p.subtitulo-segundo{
   font-style: italic;
 }
 
