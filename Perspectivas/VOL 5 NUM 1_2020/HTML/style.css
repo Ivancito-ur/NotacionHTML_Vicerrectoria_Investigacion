@@ -1,0 +1,96 @@
+.image{
+    text-align: center;
+    image-rendering: optimizeQuality;
+}
+
+.cabeza{
+    width: 70%;
+}
+
+.articulo-original{
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  /* Color del link del articulo */
+  .link-color:link{
+    color: aliceblue;
+  }
+  .link-color{
+    color: aliceblue;
+  }
+
+  #enlace {
+    color: blue;
+    text-decoration: none;
+}
+
+p {
+    line-height: normal;
+    text-align: justify;
+}
+
+#referencia {
+    text-decoration: none;
+    color: black;
+}
+
+
+#popup:target {
+    visibility: visible;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    z-index: 999;
+    transition: all 1s;
+
+}
+
+.popup-contenedor {
+    position: relative;
+    margin: 7% auto;
+    padding: 30px 50px;
+    background-color: white;
+    color: #333;
+    border-radius: 3px;
+    width: 50%;
+
+}
+
+a.popup-cerrar {
+
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    background-color: #333;
+    padding: 7px 10px;
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 1;
+    color: #fff;
+}
+
+.fraction {
+display: inline-block;
+vertical-align: middle; 
+margin: 0 0.2em 0.4ex;
+text-align: center;
+}
+.fraction > span {
+display: block;
+padding-top: 0.15em;
+}
+.fraction span.fdn {border-top: thin solid black;}
+.fraction span.bar {display: none;}
+
+.contenedor {
+width: 80%;
+max-width: 1000px;
+margin:0 auto;
+overflow: hidden;   
+}
