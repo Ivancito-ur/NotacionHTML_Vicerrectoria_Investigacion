@@ -6,3 +6,16 @@
 .cabeza{
     width: 70%;
 }
+
+.articulo-original{
+    background-color: black;
+    color: aliceblue;
+  }
+  
+  /* Color del link del articulo */
+  .link-color:link{
+    color: aliceblue;
+  }
+  .link-color{
+    color: aliceblue;
+  }
