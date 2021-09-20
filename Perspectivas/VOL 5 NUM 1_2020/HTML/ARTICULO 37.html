@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+
+<style type="text/css">
+    #enlace {
+        color: blue;
+        text-decoration: none;
+    }
+
+    p {
+        line-height: normal;
+        text-align: justify;
+    }
+
+    #referencia {
+        text-decoration: none;
+        color: black;
+    }
+
+
+    #popup:target {
+        visibility: visible;
+        opacity: 1;
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        z-index: 999;
+        transition: all 1s;
+
+    }
+
+    .popup-contenedor {
+        position: relative;
+        margin: 7% auto;
+        padding: 30px 50px;
+        background-color: white;
+        color: #333;
+        border-radius: 3px;
+        width: 50%;
+
+    }
+
+    a.popup-cerrar {
+
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        background-color: #333;
+        padding: 7px 10px;
+        font-size: 20px;
+        text-decoration: none;
+        line-height: 1;
+        color: #fff;
+    }
+
+    .fraction {
+    display: inline-block;
+    vertical-align: middle; 
+    margin: 0 0.2em 0.4ex;
+    text-align: center;
+    }
+    .fraction > span {
+    display: block;
+    padding-top: 0.15em;
+    }
+    .fraction span.fdn {border-top: thin solid black;}
+    .fraction span.bar {display: none;}
+
+    .contenedor {
+    width: 80%;
+    max-width: 1000px;
+    margin:0 auto;
+    overflow: hidden;   
+    }
+    
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V5-N1-37</title>
+    <link rel="stylesheet" href="cabezas/style.css">
+</head>
+
+<div class="image">
+    <img class="cabeza" src="cabezas/cabeza_37.JPG">
+</div>
+<!--Titulos Español - Ingles -->
+<div class="contenedor">
+    <font face="time-new-roman" size="2">
+
+    </font>
+    <font size="4">
+        <h2 align="center"> <b>La interacción social como proceso de encuentro o desencuentro en el aprendizaje académico de los adolescentes</b> </h2>
+
+    </font>
+    <font size="4">
+        <h3 align="center">Social interaction as a process of encounter or misencounter in the academic learning of adolescents</h3>
+
+    </font>
+     
+
+  <!--Autores-->
+    <font size="3">
+        <h4 align="center"> 
+            <b>Maryori Liliana Vera-Angarita<sup><a style="text-decoration: none;" href="#sup1" id="enlace">1</a> </sup>,
+               Jhorman Yarokssi Ortega-Ortega<sup><a style="text-decoration: none;" href="#sup2" id="enlace">2</a> </sup>,
+               Carolina Ramirez-Martinez<sup><a style="text-decoration: none;" href="#sup3" id="enlace">3</a> </sup>,
+               Elkin Gelvez-Almeida<sup><a style="text-decoration: none;" href="#sup4" id="enlace">4</a> </sup>,
+               Andrea Lisbeth Hernández-Niño<sup><a style="text-decoration: none;" href="#sup5" id="enlace">5</a> </sup>
+                           	                                                
+            
+                
+            </b> </h4>
+
+    </font>
+
+    <!--Autores-->
+
+     <!--Forma de citar-->
+            <hr>
+            <!--Datos autores-->
+               
+            
+                    <p id="sup1"><img src="img/sobre.png" width="10" height="10"><sup>1</sup>Universidad Simón Bolívar, Facultad de Ciencias Jurídicas y Sociales, Programa de Trabajo Social, Cúcuta,Colombia,E-mail:<a target="_blank" id="enlace" href="mvera@unisimonbolivar.edu.co" id="enlace">mvera@unisimonbolivar.edu.co </a>
+                    </p>
+
+                  
+                    <p id="sup2"><img src="img/sobre.png" width="10" height="10"><sup>2</sup>Universidad Simón Bolívar, Facultad de Ciencias Jurídicas y Sociales, Programa de Trabajo Social, Cúcuta, Colombia,E-mail:<a target="_blank" id="enlace" href="j.ortega@unisimonbolivar.edu.co" id="enlace"> j.ortega@unisimonbolivar.edu.co </a> 
+                    </p>
+
+                    <p id="sup3"><img src="img/sobre.png" width="10" height="10"><sup>3</sup>Universidad Simón Bolívar, Facultad de Ciencias Jurídicas y Sociales, Programa de Trabajo Social, Cúcuta, Colombia,E-mail:</a>  <a target="_blank" id="enlace" href="c.ramirezm@unisimonbolivar.edu.co" id="enlace"> c.ramirezm@unisimonbolivar.edu.co </a> 
+                    </p>
+
+                    <p id="sup4"><img src="img/sobre.png" width="10" height="10"><sup>4</sup>Universidad Simón Bolívar, Facultad de Ciencias Básicas y Biomédicas, Programa de Matemáticas y Ciencias de la Computación, Cúcuta,Colombia.<a target="_blank" id="enlace" href="e.gelvez@unisimonbolivar.edu.co" id="enlace"> e.gelvez@unisimonbolivar.edu.co </a> 
+                    </p>
+
+                    <p id="sup5"><img src="img/sobre.png" width="10" height="10"><sup>5</sup>Universidad Simón Bolívar, Departamento de Ciencias Sociales y Humanas, Cúcuta, Colombia.<a target="_blank" id="enlace" href="a.hernandez@unisimonbolivar.edu.co" id="enlace"> a.hernandez@unisimonbolivar.edu.co </a> 
+                    </p>
+
+
+
+                    
+
+
+
+                    
+                    <!--Datos autores-->
+
+            <p> <b>Cómo citar:</b><br> M.L Vera-Angarita, J.Y Ortega-Ortega, C. Ramirez-Martinez, E. Gelvez-Almeida, A.L Hernández-Niño “La interacción social como proceso de encuentro o desencuentro en el aprendizaje académico de los adolescentes”. Perspectivas, vol. 5, no. 1, pp. 122-128, 2020.</p>
+            <hr>
+             
+
+    
+    <!--Recibido y aprobado-->
+    <p align="left">Recibido: Junio 30, 2019; Aprobado: Octubre 11, 2019.</p>
+
+
+    <p>&copy; Peer review is the responsibility of the Universidad Francisco de Paula Santander. This is an article under the license <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND 4.0</a> </p>
+		<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+
+    <hr>
+
+    <!--Resumen 1-->
+    <font align="center" size="3"> <b>ABSTRACT</b> </font>
+  
+    <p>This results article addresses academic learning in adolescent age as a fundamental process to determine the aspects that minimize performance from the interaction with parents, teachers and  classmates. The communication breaks with parents, the academic disinterest of the group and the mediation of learning by the homework advisors stand out. For this, a research focused on the theoretical analyzes of social learning was carried out with Vygotsky, Bandura and ecological theories, which allow exploring the interest of the group to optimize individual learning. Methodologically, we worked under a qualitative approach, with a phenomenological approach and a descriptive scope. The sample consisted of 30 students, their parents and five eighth grade teachers from the Sagrado Corazon School in Cúcuta. The techniques and instruments of data collection implemented were the interview by means of a semi-structured script and the direct observation of the participant type monitored through the field diary, while the information analysis was carried out by triangulation by participants involved. This phenomenological study allowed understanding social learning as a fundamental element to improve academic performance.</p>
+
+    <p><b>Keywords:</b> Meaningful learning, educational context, social interaction
+ <hr>
+
+    <font align="center" size="3"> <b>RESUMEN</b> </font>
+ 
+    <p>El presente artículo de resultados aborda el aprendizaje académico en la edad adolescente como un proceso fundamental para determinar los aspectos que minimizan el rendimiento desde la interacción con padres, profesores y compañeros de curso. Se destacan las rupturas comunicativas con los padres, el desinterés académico del grupo y la mediación de los aprendizajes por los asesores de tareas. Para ello se realizó una investigación centrada en los análisis teóricos del aprendizaje social con Vygotsky, Bandura y las teorías ecológicas, las cuales permiten explorar el interés del colectivo para optimizar los aprendizajes individuales. Metodológicamente se trabajó bajo un enfoque cualitativo, con un enfoque fenomenológico y un alcance de tipo descriptivo. La muestra estuvo constituida por 30 estudiantes, sus padres y 5 docentes de octavo grado del Colegio Sagrado Corazón de Jesús de Cúcuta. Las técnicas e instrumentos de recolección de datos implementados fueron la entrevista por medio de un guion semi-estructurado y la observación directa de tipo participante monitoreada a través del diario de campo, mientras que el análisis de información se realizó mediante la triangulación por actores. Este estudio fenomenológico permitió comprender el aprendizaje social como elemento fundamental para mejorar el rendimiento académico.</p>
+
+        <p><b>Keywords:</b> Aprendizaje significativo, contexto educativo, interacción social 
+        </p>
+
+   
+
+    
+    <hr>
+
+    
+
+        <!--Introducción-->
+        <font align="center" size="3"> <b>Introducción</b></font>
+        
+      
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Las Instituciones Educativas son Consideradas por la Federación Internacional de Trabajadores Sociales (F.I.T.S.) como uno de los pilares de prevención, teniendo en cuenta que por medio del entorno escolar se pueden detectar a tiempo problemas familiares y sociales en los estudiantes, de esta forma se pueden implementar estrategias de intervención que ayuden a mitigar la situación que este influyendo negativamente en los estudiantes. Esto permite dilucidar el contexto educativo como área de intervención de suma importancia, debiendo realizar un análisis en contexto desde el adolescente y sus procesos de aprendizaje.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>En este sentido, se debe tener en cuenta que el desarrollo psicosocial se acelera durante la adolescencia como lo manifiesta Gaete (2015), cuando resalta que:<br><br> 
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Las características del desarrollo psicosocial normal en la adolescencia son el resultado de la interacción entre el desarrollo alcanzado en las etapas previas del ciclo vital, factores biológicos inherentes a esta etapa (el desarrollo puberal y el desarrollo cerebral propio de este período, fenómeno a la vez relacionado en parte con los cambios hormonales de la pubertad) y la influencia de múltiples determinantes sociales y culturales (p. 433)<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Además de los cambios importantes en las capacidades cognitivas (Gaete, 2015), por lo que es evidente su relación directa con el proceso de aprendizaje de los adolescentes. Por su parte, considerando que el aprendizaje humano tiene una importante relación con la educación formal (Aguilar-Barreto, 2018; Chaparro, Jaimes, y Prada, 2018), esta debe estar orientada correctamente, y es favorable cuando el individuo está motivado (López y López, 2013).<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Hoy en día se puede evidenciar que gran parte de los adolescentes en nuestra sociedad se ven enfrentados a los constantes cambios, pasando por dificultades de todo tipo (económica, familiar, territorial, social, académico), donde su aprendizaje se torna muy complejo. Esto permite que la motivación, la interacción social y el ambiente que lo rodea tomen fuerza al momento de construir conocimientos. En este sentido, estos factores pueden aportar de forma positiva o negativa el proceso de aprendizaje de los adolescentes.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Teniendo en cuenta que el entorno de los estudiantes está compuesto por la escuela, el grupo-clase y la familia (Roselló, 1998), la falta de acompañamiento que realice la familia y la influencia social que ejerce un grupo, puede influir negativamente el animo del inviduo, afectando la motivación que éste posea por querer aprender en un contexto educativo (Mendez y Jaimes, 2018), por su parte, el ambiente social en el que este desarrolle su proceso de aprendizaje puede influir positivamente. En la actualidad, estos factores estan causando de una u otra forma que se generen dificultades de aprendizaje, y por ende, complejos que pueden desencadenar una posible desercion.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>El papel que desempeñan estos grupos poblacionales en la sociedad toma gran importancia, por cuanto sus decisiones y actos estarán beneficiando o afectando su entorno y el de los demás.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Lo anterior llevó a que el grupo de investigación le diera una mirada a esta problemática. En este sentido, se buscó identificar los aspectos psicosociales que influyen en el aprendizaje de los adolescentes de octavo grado del Colegio Sagrado Corazón de Jesús, ubicado en la ciudad de Cúcuta, con el fin de relacionarlos y lograr identificar el trabajo que se debe realizar para mejorar el proceso de aprendizaje y la construcción de conocimiento, teniendo en cuenta el papel representativo que desempeñan los profesionales del Trabajo Social dentro del equipo interdisciplinario al interior de las instituciones educativas (Roselló, 1998).<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Los aportes realizados por otros investigadores han reflejado la importancia que desempeña la familia como núcleo de la sociedad dentro del proceso de aprendizaje de los adolescentes (Marimón, Pérez, Suárez, Hernández y Orraca, 2011; Reyes et al., 2013; Adrián y Rangel, 2012; Mendez y Jaimes, 2018), así mismo, encuentran que la motivación es un factor asociado al entorno social que inside en el proceso de aprendizaje de los adolescentes. Por ello el contexto educativo hace parte de los diversos campos de acción del trabajo social, puesto que en él se puede evidenciar diversas problemáticas que se entrelazan con otros campos que hacen parte de la intervención de esta disciplina.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Por lo descrito anteriormente, se hizo necesario sustentarse desde las bases teóricas de Vygotsky quien concibe el aprendizaje social haciendo énfasis en su aporte al desarrollo (Vielma y Salas, 2000). Un aporte por destacar de esta etapa de la vida y su interacción estará medida por la interacción con el medio el cual debe darse a través de una comunicación asertiva, curiosa y activa que le permita al niño y/o adolescente entender el lenguaje del adulto, con el que el niño-adolescente integre la forma de pensar y de comportarse socialmente.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Por otro lado, la teoría del aprendizaje social (Bandura, 1977) considera que la perspectiva cognitiva social del aprendizaje hace parte de un modelo de determinación recíproca entre el ambiente, es decir, la conducta y los factores personales (cognitivos, emocionales, etc). El individuo se comporta de acuerdo al ambiente en el que se encuentra.<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Por su parte, la teoría de Weiner asocia el pensamiento, la emoción y la acción, y considera que “las atribuciones causales efectuadas por un individuo condicionan sus expectativas futuras y sus sentimientos, y ambos, expectativas y emociones, condicionan la acción” (Vasquez y Manassero, 1989, p. 230).<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Lo expuesto en las teorías de Vygotsky, Bandura y Weiner reafirma el planteamiento de la teoría ecosistémica (Bronfenbrenner, 1987), la cual considera que la formación de un sistema depende de las relaciones sociales entre ese sistema y otros. En el modelo ecológico propuesto todos dependen unos de otros, por lo tanto, se requiere de una comunicación entre los actores que permita una participación conjunta de los diferentes contextos (Frías-Armenta, López-Escobar, y Díaz-Méndez, 2003).<br><br>
+        </p>
+
+        <p>  
+        <pre style='display:inline'>&#09;</pre>Bajo estos aportes teóricos, se plantea el ecosistema educativo como el conjunto de personas y organizaciones constituyentes (Choque-Larrauri, 2009), donde el núcleo es la escuela que se encuentra conformada por estudiantes, profesores y padres de familia como actores principales, que deben fijar sus respaldo al aprendizaje social que requiere el niño adolescente para un desarrollo cognitivo, emocional y de aprendizajes múltiples que sustente su sano crecimiento y desarrollo en todas las esferas de la vida.<br><br><br>
+        </p>
+
+                      
+               
+        <font align="center" size="3"> <b>Materiales y métodos</b></font>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Con el propósito de realizar una investigación rigurosa, se siguió un proceso metodológico científico. En este caso se desarrolló la investigación mediante un enfoque cualitativo, teniendo en cuenta que se busca comprender el fenómeno desde la perspectiva de los participantes, en un ambiente natural y en relación con su contexto (Hernández, Fernández, y Baptista, 2014, p. 358).<br><br> 
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Por su parte, el diseño fue fenomenológico, ya que permitió ver el proceso de aprendizaje de forma holística y entender cómo los factores psicosociales influyen sobre este, partiendo de las experiencias individuales subjetivas de los participantes (Osorio, 1998). El alcance de la investigación fue de tipo descriptivo, toda vez que buscó visibilizar en primera medida los factores psicosociales que influyen en los procesos de aprendizaje de los estudiantes de octavo grado, y a su vez describirlos para realizar futuras investigaciones que permitan profundizar en cada uno de estos (Navarro, 2009).<br><br> 
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Con relación a la población, estuvo conformada por 90 estudiantes que cursan octavo grado en el Colegio Sagrado Corazón de Jesús de la ciudad de Cúcuta,  también se tuvo en cuenta la percepción de los acudientes y de profesores que orientan los procesos de formación en sus cursos. La forma de seleccionar la muestra fue por conveniencia, eligiendo 30 estudiantes con diversas características de comportamiento, sus acudientes y cinco profesores de diferentes cursos; lo anterior sustentado en que este tipo de muestra es utilizada cuando el propósito de la investigación, es describir distintas perspectivas y representar la complejidad del fenómeno estudiado, o bien documentar la diversidad para localizar diferencias y coincidencias, patrones y particularidades (Hernández, Fernández, y Baptista, 2014, p. 387).<br><br> 
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ahora bien, con relación a las técnicas e instrumentos de recolección de información, se trabajó con entrevistas orientadas por medio de un guion semi-estructurado, y como segundo instrumento se realizó una observación directa participante sistematizada por medio de un diario de campo (Navarro, 2009). Por su parte, el análisis de la información se realizó por medio de la triangulación de fuentes de datos, entendiendolo como la “utilización de diferentes estrategias y fuentes de información” (Aguilar y Barroso, 2015).<br><br><br>  
+        </p>
+
+
+        <font align="center" size="3"> <b>Resultados y discusión</b></font>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>En esta sesión se presenta la descripción de los aportes dados por algunos de los actores dentro del proceso, información recolectada y analizada con los instrumentos ya descritos anteriormente. Con relación a la pregunta que aborda sobre el interés de los padres con la educación de sus hijos, los estudiantes manifiestan cosas como:<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.2(2): “solo los veo en la noche y solo hablan de las deudas que hay que pagar… pues mi mamá es la que me pregunta de vez en cuando por ahí pero no  mucho”; Ap.3(2):”cada quien se ocupa de sus cosas y solo me preguntan cuándo hay entrega de boletines… en las noches cuando llegan de trabajar me preguntan que como me fue, pues algunas veces”; Ap.4(2): “siempre mi mamá, sobre todo. Mis papás no se preocupan por eso, solo cuando yo les digo que los citaron en el colegio, me regañan y me castigan”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Esto ha permitido ver una ruptura en la relación de aprendizajes de los padres y los adolescentes, centrada inicialmente por el desvanecimiento de la comunicación, transversalizada por imaginarios colectivos de mundos diferenciados por las edades, querer dar espacios y responsabilidades a los hijos, reestructuración y acomodo familiar para afrontar los cambios de los hijos en adolescencia, lo cual sede espacios al distanciamiento social y perdida de aprendizajes, por ello la mayoría de los estudiantes refieren que no sienten acompañamiento pleno por parte de su familia.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Para abordar otro grupo de cercanía de los adolescentes, se entrevistó a los profesores que interactúan a diario con sus estudiantes y las familias, allí se encontraron percepciones que ratifican la ruptura de comunicación de los hijos y los padres:<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.5(2): “se desentienden, no todos, pero sí de la mayoría de los procesos que se llevan con los muchachos, es más muchas veces no vienen ni cuando los cito”; Ap.6(2): “solo aparecen cuando ven que están perdiendo, por ahí los ve uno cuando ven que el hijo perdió y vienen a pelearle a uno”; Ap.7(2): “vienen cuando se les cita pero muchas veces lo hace de afán por que tienen que pedir permiso en los trabajos, no es que estén súper pendientes del rendimiento de los hijos”; Ap.8(2): “muy poco, es decir, algunos padres de familia están muy activos y se comunican mucho por la plataforma para mirar cómo va el hijo y me escriben para preguntarme, pero la mayoría no lo buscan a uno ni cuando hay entrega de boletines”; Ap.9(2): “la verdad, en la mayoría de los casos los papás preguntan por el rendimiento de sus hijos pero muy esporádicamente, pues me buscan cuando hay entrega de boletines”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Lo expuesto por los profesores permite ver que en el ámbito educativo la familia no ejerce plenamente un rol adecuado, lo que genera un desequilibrio en el funcionamiento de los contextos que interactúan en el ecosistema (Choque-Larrauri, 2009), repercutiendo significativamente en bajo rendimiento académico.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Por otra parte, la participación de la familia frente a este proceso se puede observar en las siguientes respuestas:<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.10(2): “cuando uno llega de trabajar, les pregunta cómo les fue y que hicieron y pues ellos saben que tienen que hacer las tareas, aunque cuando no son capaces y le dicen que le ayude, uno lo hace”; Ap.11(2): “a veces uno le pregunta cómo le está yendo, pero en la mayoría de los casos, no solo cuando nos citan o hay entrega de boletines”; Ap.12(2): “habla con la mamá que trabaja desde la casa y está más pendiente, pero a veces se me acerca él mismo y me comenta como le fue”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Las respuestas de los padres de familia corroboran lo expuesto por los adolescentes y los docentes, lo cual permite ver que el trabajo consume gran parte del tiempo en las familias, impidiendo que se geste una mejor interacción social entre el adolescente y su núcleo familiar, imposibilitando en cierta medida que la familia asuma su postura como actor activo entre los procesos de aprendizaje.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Por otro lado, el grupo de estudio se torna como pieza clave dentro de los procesos de aprendizaje, puesto que los adolescentes además de compartir gran parte del tiempo con su familia comparten de igual forma con sus compañeros de clase, llevando a que se genere interacción social (Meza, 2016). Esto es fundamental puesto que hace referencia a que existe una interacción social constante entre un grupo de personas que conviven y comparten ciertas experiencias, lo cual se acentúa en el adolescente y sus compañeros de estudio, por lo que  toma gran relevancia en el paso para identificar cómo la interacción social influye en los procesos de aprendizaje.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Para ello se tuvo en cuenta la mirada desde distintos actores. En primera medida se acudió a los estudiantes, los cuales otorgaron cierta información valiosa para la presente investigación.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.2(3): “es chévere cuando los demás pelados lo conocen a uno porque uno tiene más amigos con quien molestar; no me importa mucho. Es bueno que la palabra de uno sea tenida en cuenta, además que los amigos siempre van a hacer falta”; Ap.3(3): “es bueno tener amigos y que lo lleven en la buena cuando alguno falta a clase, los otros le prestamos los cuadernos, cuando están bravos con uno lo abren y uno queda sin saber que hacer”; Ap.4(3): “no, eso no es importante igual eso no sirve para nada… algunas veces porque uno no anda solo, algunas veces cuando no voy a clase, algunas veces cuando no le entendemos al profesor, otro compañero vuelve y nos explica”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Los aportes han permitido evidenciar que, dentro del grupo de estudio, se gesta cierta dependencia del uno por el otro, debido a la interacción que se genera al interior de este, conllevando a que los adolescentes adopten condiciones y comportamientos positivos o negativos dependiendo de la dinámica del grupo. Por ende, la percepción de los docentes es crucial para poder entender la importancia del grupo de estudio dentro de la interacción social, en este sentido, algunos aportes de los profesores son los siguientes:<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.5(3): “hay días en que llegan con la mejor disposición de querer estudiar, pero en otras ocasiones solo les importa tomar del pelo con los compañeros y pare de contar”; Ap.6(3): “ellos saben que en la medida que me trabajen van a tener más tiempo para poder dedicarse a otras cosas, entonces eso hace que se concentren y se pueda trabajar de buena forma”; Ap.7(3): “en muchas ocasiones el comportamiento es difícil, entonces toca estar cambiándolos de puesto para que trabajen y pues se haga amena la clase”; Ap.8(3): “los hombres son los que por ahí un poco mal se portan, y pues eso distrae al resto y las niñas que si son más prestas para la clase”; Ap.9(3): “en la clase existen como dos tipos de estudiantes, unos son los que se portan bien y están prestos a la clase, y hay otros que les gusta mucho la indisciplina y eso les perjudica”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Según lo que se aprecia en la opinión de los profesores, los estudiantes se les dificultad un poco más aprender cuando están rodeados de sus compañeros de estudio, con los cuales han fortalecido una cohesión; esto da a entender que al interior del grupo de estudio la interacción social se desarrolla de manera constante y en su medida influye directamente sobre los procesos de aprendizaje.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>La familia a su vez permite ver el grupo de estudio desde otra perspectiva. Algunos de los aportes se presentan a continuación.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Ap.10(3): “cuando les está yendo mal el deber ser es regañarlo, y pues se le castiga quitando algunas cosas; sí, las juntas siempre influyen, y pues a uno le queda siempre complicado”; Ap.11(3): “pues se contrata una profesora para que le refuerce en la casa cuando se necesita, pero de castigar no, por eso lleva a que menos quiera estudiar… sí, los muchachos siempre van a aprender de las personas con las que comparten, entre ellos o se ayuden en el estudio, o por el contrario, formen indisciplina y no les interese estudiar”; Ap.12(3): “cuando empieza a torcer el caminado, pues toca jalarle las orejas, pues tratamos de que mejore, y se trata de hablar con los profesores para que nos colaboren… sí, porque al final son con ellos con los que estudia, a veces se perjudican entre ellos porque prefieren tomar del pelo en vez de apoyarse para estudiar”.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>La percepción que tienen los padres de familia sobre el grupo de estudio va encaminada hacia la visión que tienen los profesores, pues el grupo de estudio ejerce cierta influencia sobre el adolescente debido a la interacción constante entre ellos. Esto puede incentivar el deseo por querer aprender, pero en muchos casos impide que los procesos de aprendizaje se desarrollen plenamente.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>Tanto la familia como el grupo de estudio son contextos en los cuales la interacción social se desarrolla, y aún más dentro de la adolescencia. La interacción social está directamente relacionada con los procesos de aprendizaje, influyendo, como quedo evidenciado, de manera negativa cuando la familia no desempeña su rol como actor activo, y el grupo de estudio ejerce cierto tipo de influencia, llevando a los adolescentes a tomar posturas que perjudican sus procesos de aprendizaje, y por ende su rendimiento académico.<br><br>
+        </p>
+
+        <p>
+        <pre style='display:inline'>&#09;</pre>El análisis de estos resultados reafirma el planteamiento de Vygotsky sobre la interacción social como eje fundamental en el proceso de aprendizaje, puesto  que la persona aprende en la medida en que se relaciona con otros, y el producto de esas interacciones marcan ciertas conductas en la persona de cara a otros contextos. Al mismo tiempo se aprecia cómo la interacción entre los sistemas, que se relacionan en el microsistema en cuanto al contexto educativo, influye directamente sobre los procesos de aprendizaje (Choque-Larrauri, 2009).<br><br><br>
+        </p>
+
+             
+
+        <font align="center" size="3"> <b>Conclusiones</b></font>
+
+        <p> 
+        <pre style='display:inline'>&#09;</pre>En las dinámicas de vida diaria, es observable la interacción social como eje fundamental en todos los procesos que motivan el hacer del ser humano, y es así como una problemática asociada al bajo rendimiento académico de los estudiantes adolescentes no escapa a esta realidad, por ello, la importancia de la influencia en los procesos grupales va a incidir en aprendizajes positivos para la vida de quienes están en este proceso de crecimiento.<br><br>
+        </p>
+
+
+        <p> 
+        <pre style='display:inline'>&#09;</pre>Varios aspectos como la ruptura comunicativa con las familias, los afianzamientos de amistad en función de otras actividades y descubrirse, reemplazan el aprendizaje académico, lo que deja claro que el aprendizaje social es vital para incidir en la vida y desarrollo adolescente, solo que el escenario académico aún no se ha preparado para  incorporar a las clases los saberes de exploración propios de la edad. Así mismo, si no se despierta el interés grupal, no habrá posibilidades de un rendimiento entre pares. Finalmente, las familias deben ajustar sus relaciones con los adolescentes, nunca romperlas o asumirlos como adultos, ya que están dejando vacíos en ellos que pasan a ser reemplazados por amigos y medios de comunicación, los cuales no forman con un contexto claro.
+        </p>
+
+
+        
+                          
+            
+            <hr>     
+
+            <font align="center" size="3"> <b>Referencias</b></font>
+
+            <p>
+                <a name="ref1" id="ref1">[1]</a> Adrián, J. E., y Rangel, E. (2012). La transición adolescente y la educación. La Rioja: Universidad de la rioja.
+            </p>
+
+            <p>  
+                <a name="ref2" id="ref2">[2]</a> Aguilar, S., y Barroso, J. (2015). La triangulación de datos como estrategia en investigación educativa. Revista de Medios y Educación(47), 73-88.  
+            </p>
+
+            <p>
+                <a name="ref3" id="ref3">[3]</a> Aguilar-Barreto, A. J. (2018). Servicio educativo: una revisión legislativa de su estructuración frente a las obligaciones del estado. Perspectivas, 3(2), 110-120. doi: <a target="_blank" id="enlace" href="https://doi.org/10.22463/25909215.1594" id="enlace"> https://doi.org/10.22463/25909215.1594  </a>
+            </p>
+
+            <p>
+                <a name="ref4" id="ref4">[4]</a> Bandura, A. (1977). Social learning theory. Englewood Cliffs. NJ: Prentice-Hall. 
+            </p>
+
+            <p>
+                <a name="ref5" id="ref5">[5]</a> Bronfenbrenner, U. (1987). La ecología del desarrollo humano. Barcelona: Paidós.
+            </p>
+
+            <p>  
+                <a name="ref6" id="ref6">[6]</a> Chaparro, J. C., Jaimes, M. C., y Prada, R. (2018). MODERNIDAD Y EDUCACIÓN: Una reflexión a propósito de sus legados y desafíos. Perspectivas, 3(2), 121-132. doi: <a target="_blank" id="enlace" href="https://doi.org/10.22463/25909215.1672" id="enlace"> https://doi.org/10.22463/25909215.1672 </a>
+            </p>
+
+            <p>
+                <a name="ref7" id="ref7">[7]</a> Choque-Larrauri, R. (2009). Ecosistema educativo y fracaso escolar. Revista Iberoamericana de Educación, 49(4), 1-9.
+            </p>
+                
+            <p>
+                <a name="ref8" id="ref8">[8]</a> Frías-Armenta, M., López-Escobar, A. E., y Díaz-Méndez, S. G. (2003). Predictores de la conducta antisocial juvenil: un modelo ecológico. Estudos de Psicologia, 15-24. 
+            </p>
+
+            <p>
+                <a name="ref9" id="ref9">[9]</a> Gaete, V. (2015). Desarrollo psicosocial del adolescente. Revista chilena de pediatría, 86(6), 436-443. <a target="_blank" id="enlace" href="https://scielo.conicyt.cl/scielo.php?script=sci_abstract&pid=S0370-41062015000600010&lng=es&nrm=iso" id="enlace"> doi:10.1016/j.rchipe.2015.07.005 </a>
+            </p>
+
+            <p>
+                <a name="ref10" id="ref10">[10]</a> Hernández, S. R., Fernández, C. C., y Baptista, L. P. (2014). Metodología de la investigación. (6a ed.). Bogotá: McGraw-Hill.
+            </p>
+
+            <p>
+                <a name="ref11" id="ref11">[11]</a> López, M., y López, A. I. (2013). Los enfoques de aprendizaje. Revisión conceptual y de investigación. Revista Colombiana de Educación(64), 131-153. 
+            </p>
+
+            <p>
+                <a name="ref12" id="ref12">[12]</a> Marimón, E. R., Pérez, N. S., Suárez, L., Hernández, P. L., y Orraca, O. (2011). Factores de riesgo psicosociales en escolares de la enseñanza media, Pinar del Río. Revista de Ciencias Médicas de Pinar del Río, 15(4), 201-217.
+            </p>
+
+            <p>
+                <a name="ref13" id="ref13">[13]</a> Mendez, J., y Jaimes, L. (2018). Clima social familiar e impacto en el rendimiento académico de los estudiantes. Perspectivas, 3(1), 24-43. doi: <a target="_blank" id="enlace" href="https://doi.org/10.22463/25909215.1422" id="enlace"> https://doi.org/10.22463/25909215.1422 </a>
+            </p>
+
+            <p>
+                <a name="ref14" id="ref14">[14]</a> Meza, J. L. (2016). Paradojas del desarrollo humano para la escuela y la familia. En J. L. Meza Rueda, y R. M. Páez Martínez, Familia, escuela y desarrollo humano (págs. 97-111). Bogotá: Universidad de la Salle.
+            </p>
+
+            <p>
+                <a name="ref15" id="ref15">[15]</a> Navarro, C. L. (2009). Desarrollo, ejecución y presentación del proyecto de investigación. Caracas: Melvin.                                                       
+            </p>
+
+            <p>
+                <a name="ref16" id="ref16">[16]</a> Osorio, F. (1998). El Método Fenomenológico. Cinta de Moebio(3). 
+            </p>
+
+            <p>
+                <a name="ref17" id="ref17">[17]</a> Raven, y Rubin. (1983). Social Psychology. New York: John Wiley & Sons.
+
+            <p>
+                <a name="ref18" id="ref18">[18]</a> Reyes, J. A., Lozada, D. A., Cruz, E. J., Saavedra, O. A., Canizales, J. M., y Posse, M. E. (2013). Factores psicosociales asociados al bajo rendimiento académico de estudiantes del grado 7º de la Institución Educativa Técnica Ciudad Ibagué. Ibagué: Universidad Nacional Abierta y a Distancia.
+            </p>
+
+            <p> 
+                <a name="ref19" id="ref19">[19]</a> Roselló, E. (1998). Reflexiones sobre la intervención del trabajador social en el contexto educativo. Alternativas. Cuadernos de Trabajo Social(6), 233-258. <a target="_blank" id="enlace" href="http://rua.ua.es/dspace/handle/10045/5805" id="enlace"> doi:10.14198/ALTERN1998.6.11 </a>
+            </p>
+
+            <p>
+                <a name="ref20" id="ref20">[20]</a> Vasquez, A., y Manassero, M. A. (1989). La teoría de la atribución y el rendimiento escolar. Educació i Cultira(7), 225-241.
+            </p>
+
+            <p>
+                <a name="ref21" id="ref21">[21]</a> Vielma, E., y Salas, M. L. (2000). Aportes de las teorías de Vygotsky, Piaget, Bandura y Bruner. Paralelismo en sus posiciones en relación con el desarrollo. Educere, 3(9), 30-37. 
+            </p>
+
+                   
+           
+                                                      
+          
+           
+          
+
+            <!--Forma de citar-->
+            
+                    <a style=" text-align: center;" rel="license"
+                        href="https://creativecommons.org/licenses/by/4.0/"><img align="center"
+                            alt="Licencia de Creative Commons" style="border-width:0;"
+                            src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png"></a>
+                    <br>
+                    <a id="referencia" rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">licencia
+                        de
+                        Creative
+                        Commons Reconocimiento-NoComercial 4.0 Internacional</a>
+</div>
