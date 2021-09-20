@@ -8,6 +8,12 @@ body {
 .articulo-original{
   background-color: black;
   color: aliceblue;
+  width: 100%;
+  size: 15%;
+}
+
+#articulo-derecha{
+  float: left;
 }
 
 /* Color del link del articulo */
