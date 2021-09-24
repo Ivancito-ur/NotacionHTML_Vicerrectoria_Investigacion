@@ -24,6 +24,24 @@ body {
   color: aliceblue;
 }
 
+/* Posiciones de los resumenes */
+.abstract-container{
+  display: flex; 
+  width: 100%;
+}
+
+.keywords-container{
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+
+.text-container{
+  float: right;width: 100%;
+  padding-left: 20px;
+}
+
+
 ul.navbar {
   list-style-type: none;
   padding: 0;
