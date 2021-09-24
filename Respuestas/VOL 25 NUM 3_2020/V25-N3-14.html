@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V25-N3-14</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="image">
+        <img src="img/V25-N3-14/cabeza.jpg" width="100%">
+    </div>
+
+    <div>
+        <div class="articulo-original">
+            <p>
+            <div id="articulo-derecha"><b> <u> Articulo Original</u> </b> </div>
+            <div style='text-align:right'><b> <u><img class="image" width="15px" src="img/globales/doi.png"><a
+                            class="link-color"
+                            href="https://doi.org/10.22463/0122820X.2806">https://doi.org/10.22463/0122820X.2806</a></u>
+                </b></div>
+            </p>
+        </div>
+
+
+
+        <!--Titulos-->
+        <h3>Hybrid Recommender System of university programs for high school students using Deep Learning </h3>
+
+        <h4>Sistema de recomendación de programas universitarios para estudiantes de educación media basado en Deep
+            Learning </h4>
+
+        <!--Autores-->
+        <h5>
+            Johanna Alexandra Orozco Cacique<sup><a href="#sup1">1*</a> </sup> <br>
+            Andrés Moreno<sup><a href="#sup2">2*</a> </sup> <br>
+
+        </h5>
+
+        <hr>
+
+        <p id="sup1"><sup>1*</sup><img class="logos" src="img/globales/sobre.png"> Magister en Ingeniería de
+            Información,
+            <a href="ja.orozco@uniandes.edu.co">ja.orozco@uniandes.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-9944-3300">ORCID:
+                0000-0001-9944-3300</a>.
+            Universidad de los Andes, Bogotá, Colombia.
+        </p>
+
+        <p id="sup1"><sup>2*</sup><img class="logos" src="img/globales/sobre.png"> Ph.D., Doctorat en Informatique, 
+            <a href="dar-more@uniandes.edu.co">dar-more@uniandes.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-9266-731X">ORCID:
+                0000-0001-9266-731X</a>.
+            Universidad de los Andes, Bogotá, Colombia.
+        </p>
+
+
+        <hr>
+
+        <!-- Como realizar la cita -->
+
+        <p><b>How to cite: </b>J. A. Orozco-Cacique, A. Moreno, “Hybrid Recommender System of university programs for
+            high school students using Deep Learning”. Respuestas, vol. 25, no. 3, pp. 176-188, 2020.</p>
+
+        <!--Licencia-->
+        <p>&copy; Peer review is the responsibility of the Universidad Francisco de Paula Santander.
+            This is an article under the license
+            <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0.</a>
+        </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/"><img alt="Licencia Creative Commons"
+                style="border-width:0" src="https://i.creativecommons.org/l/by-nc/4.0/88x31.png" /></a>
+
+        <hr>
+
+        <!--Recibido y aprobado-->
+        <p><b>Received: </b> March 8, 2020 <br> <b>Approved: </b> July 24, 2020. </p>
+
+
+        <!--Resumen Inglés-->
+        <hr>
+
+        <div class="abstract-container">
+            <div class="keywords-container">
+                <p><b>Keywords</b> <br></p>
+                <p>Recommender Systems; Deep Learning; decision-making; university program; university.</p>
+            </div>
+            <hr>
+            <div class="text-container">
+                <p class="titulo"> Abstract</p>
+                <p>
+                    Los estudiantes que van a culminar la educación media y se enfrentan a la selección de programas
+                    académicos, usualmente usan buscadores web, información de programas y asesorías o pruebas
+                    vocacionales. Sin embargo, estas alternativas tienen limitaciones, porque no tienen en cuenta las
+                    características sociodemográficas del estudiante ni su desempeño académico o no pueden guiar
+                    adecuadamente a todos los estudiantes. Esta propuesta apoya la toma de decisiones de este grupo
+                    poblacional con un Sistema de Recomendación que produce recomendaciones basadas en variables
+                    sociodemográficas y datos académicos históricos de estudiantes de pregrado. Además, se compara el
+                    desempeño de un modelo de Filtrado Colaborativo clásico y Deep Learning.
+                </p>
+            </div>
+        </div>
+
+        <!-- Resumen Español -->
+        <hr>
+
+        <div class="abstract-container">
+            <div class="keywords-container">
+                <p><b>Palabras claves</b> <br></p>
+                <p>Sistemas de Recomendación; Deep Learning; toma de decisiones;
+                    programas académicos; universidad.</p>
+            </div>
+            <hr>
+            <div class="text-container">
+                <p class="titulo"> Resumen</p>
+
+                <p>
+                    High school students who are faced with the selection of academic programs decide based on program
+                    information available in search engines, websites, vocational counselling by advisors, or tests.
+                    However, these alternatives have limitations because they do not take into important historical and
+                    sociodemographic information, or in case of the advisors, they cannot guide all students. This work
+                    supports the decision-making of students through a Recommendation System that presents
+                    recommendations based on sociodemographic variables and historical academic data. Also, we propose
+                    and compare two methods: a classic Collaborative Filtering model and a Deep Learning model.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Cuerpo del documento -->
+    <div>
+        <hr>
+        <!--Introducción-->
+        <p class="titulo"> Introduction</p>
+
+
+        <p>Education, as a process that seeks to direct and guide [1] children and young people, is a matter of general
+            interest throughout the world, since the growth and economic development of a country are directly related
+            to the fact that its inhabitants have access to education and that it is of quality [2]. From this arises
+            the need for many countries, whether developed or not, to focus their efforts to reach more people at
+            different levels of their educational trajectory and in accordance with international standards.</p>
+
+        <p>In Colombia, of the nearly 504 thousand grade 11 students reported for 2013, about 174,600 entered higher
+            education in the first and second semester of 2014, suggesting an immediate absorption rate or immediate
+            transit to Higher Education in Colombia of 34.6% [3]. Likewise, 58% of the 2013 high school graduates who
+            entered higher education in 2014 selected programs at the university level, 38% at the technological level
+            and 4% at the professional technical level. In addition, analyses conducted by the Ministry of Education
+            show that a significant number of our high school graduates enter higher education two, three, four and even
+            five years after completing high school.</p>
+
+
+        <p>In addition, different studies at the national level have shown that the dropout of higher education students
+            is closely linked to the vocational and professional orientation processes [4]. At this point, it is
+            important to talk about the initiative designed by the Center for Studies on Economic Development - CEDE, of
+            the Universidad de los Andes and articulated by the Ministry of National Education called SPADIES (System
+            for the prevention and analysis of dropout in Higher Education Institutions) [5], which monitors and tracks
+            the problem of dropout in higher education, calculates the risk of dropout, supports the evaluation of
+            strategies for each of the situations that influence dropout, such as the situation of the student, the
+            academic program and the institution; Finally, it promotes the consultation, consolidation, interpretation
+            and use of this information. Demonstrating the importance that has taken for the universities of the
+            country, the identification of dropout rates in higher education [6].</p>
+
+        <p>With this problem in mind, solutions proposed by other authors are sought to help students in the world to
+            make one of their first decisions: which career or which undergraduate academic program will they study?
+            Some proposals are focused on vocational orientation through psychological methods and student
+            self-discovery. These have their beginnings with the creation of the first vocational and moral guidance
+            program and the first centralized guidance service for all schools, in Michigan, by B. Davis, who was
+            principal of Grand Rapids High School [7]. Others seek to guide decision making through the use of available
+            tools. For example, in Colombia, websites such as Guía Académica [8] of the publishing house El Tiempo,
+            which provides personalized, non-automatic advice and helps students to enroll in the university and program
+            of their choice; or the portal of universities in Colombia [9], created to support students in the eleventh
+            grade of secondary education in the country, is a container of information on universities, academic
+            programs, scholarships, news of interest, vocational tests, among others. Also presenting more complete
+            technological solutions, such as the portal created by the Ministry of National Education [10], which is a
+            system that through online questionnaires captures the preferences of students and then displays results by
+            breaking them down into knowledge cores, main topics of those cores and finally academic programs that
+            contain those topics.</p>
+
+        <p>Building systems that support users in their decision making is the main goal of Recommender Systems (RS). In
+            particular, recommender systems seek to provide high quality and easily accessible recommendations for a
+            large community of users [11]. Since the problem of this work is associated with student decision making, it
+            is appropriate to orient the solution to this type of systems, balancing the needs and purposes of students
+            with the implementation of methods, algorithms, equations and technical aspects developed to present an
+            adequate solution [12].</p>
+
+        <p>A search is made for academic research papers that support student decision making, mainly in the selection
+            of subjects, programs or universities, and that focus on recommender systems, data mining or machine
+            learning systems or machine learning.</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img1.jpg" height="400px" width="auto">
+        </div>
+
+        <p>In the reviewed works, the algorithmic tasks are focused on recommender system paradigms: Collaborative
+            Filtering (CF) based, its main idea is to exploit information about the past behavior or opinions of an
+            existing user community to predict which items the current user of the system will like or be interested in;
+            to apply it it is not necessary to know about the characteristics of the items, but the ratings that users
+            have made. Content-based, based on the description of an item's characteristics and a user profile that
+            somehow describes the user's (past) interests in terms of the preferred item's characteristics, determines
+            the items that best match the user's preferences. Knowledge-based, they operate from requirements set by the
+            user or from an explicit recommendation rule base, no rating data is needed for the calculation of
+            recommendations. Hybrid systems are technical approaches that combine several implementations of
+            recommendation algorithms or components taking the strengths of different paradigms to overcome some of the
+            shortcomings and problems they present [11].</p>
+
+        <p>This paper seeks to show a solution that implements a three-component hybrid Recommender System (RS),
+            comparing the performance of a classical Collaborative Filtering model with one based on Deep Learning for
+            the selection of student demographic variables.</p>
+
+        <p>Deep Learning offers a set of techniques and algorithms that help parameterize deep neural network
+            structures, i.e., artificial neural networks with many hidden layers and parameters. One of the key ideas
+            behind Deep Learning is to extract high-level features from a given data set. Therefore, it aims to overcome
+            the challenge of the often tedious feature engineering task and helps to parameterize traditional neural
+            networks with many layers [47]. The main advantage of neural networks is that the multi-layered architecture
+            provides the ability to compute complex nonlinear functions that are not easily computable with other
+            classification methods [48]. Hence, the application of these to the model proposed in this paper arises.</p>
+
+        <p>The article continues in section 2 with the methods used in the research. Section 3 shows the results
+            obtained and
+            finally, Section 4 concludes this work.</p>
+
+        <!-- Metodología y materiales -->
+        <hr>
+
+        <p class="titulo">Materials and methods
+        </p>
+
+        <p class="subtitulo"> Data </p>
+
+        <p>The data sources obtained for this work are classified into 6 groups: the first is associated with the
+            student and has relevant sociodemographic information obtained in the enrollment process and the Academic
+            Program(s) he/she selected and in which he/she is enrolled in a Colombian University. The second one, the
+            information of state tests that the student has presented as a requirement for secondary education degree,
+            this data set has information of 3 types of exams due to the changes made by the ICFES (Colombian Institute
+            for the Promotion of Higher Education) over the years; for this reason, a standardization is made to define
+            within the same valuation scale the scores obtained by the students in these tests, and thus minimize the
+            inconsistencies and errors that could be presented by this at the time of generating the recommendation
+            models. In addition, the ICFES defines that the comparability of the students' results with the scale used
+            in the second semester of 2014, the moment from which the current test scoring methodology began to be
+            applied and for which the average global score of the students evaluated in each of the five tests is 50
+            points with a standard deviation of 10 points [49], must be ensured. The third contains information on the
+            student's academic history within the academic program(s). The fourth is the detail of the characteristics
+            of each school where the students studied their high school education, obtained through the Unique Directory
+            of Establishments (DUE) that has the characterization of the country's educational institutions. The fifth
+            corresponds to the information on the academic programs that contains a descriptive text of each one,
+            obtained from various public sources, including the description of the program, the field of action, other
+            names by which it is known, among others. The sixth refers to an open text to be written by the student
+            about his or her interests and tastes, which will be analyzed to refine the results.</p>
+
+
+        <p class="subtitulo">Recommendation System</p>
+
+        <p>RSs are information filtering systems that actively collect various types of data to elaborate their
+            recommendations [50]. Recommender systems have their roots in various research areas, such as information
+            retrieval, information filtering, and text classification, and apply methods from different fields, such as
+            machine learning, data mining, and knowledge-based systems [11].</p>
+
+        <p>There are two types of information used by RSs to predict the relevance of an item to a user: explicit
+            feedback consisting of direct user feedback on an item. Ratings are a common representation of the user's
+            opinion of an item, e.g., a numerical rating (1 to 5), a rating on a likert scale (Strongly Disagree,
+            Disagree, Neither Agree nor Disagree, Agree, Strongly Agree) or Binary ratings (Like, Dislike). Implicit
+            feedback, on the other hand, is the collection of actions that users exert on items, these actions
+            indirectly reflect the user's opinion about the item, e.g., a user may view, click, or purchase an item
+            [51].</p>
+
+        <p>The input data are obtained through a web page, in which the user enters his/her sociodemographic and state
+            test information, from it the models included in the RS are run to obtain recommendations for undergraduate
+            academic programs.</p>
+
+
+
+        <p class="subtitulo">Collaborative Filtering</p>
+
+        <p>Collaborative Filtering is considered the most popular and highly implemented technique [50]. In this work,
+            its objective is to generate recommendations from information obtained from undergraduate students who have
+            performed well in the academic programs in which they are enrolled. Variables such as personal,
+            socioeconomic and family data, schooling, state exams, academic history and information on the schools or
+            educational institutions where the students included studied high school, classification (between A and D),
+            sector (official or unofficial), area (rural, rural-urban, urban, urban-rural), gender (female, male,
+            mixed), character (academic, technical, technical- academic) and calendar (A or B) are analyzed.</p>
+
+        <p>The students are in the set U that contains the information of the system users, and is represented by a
+            vector of C positions thus: X<sub>u</sub> ϵ ℝ<sup>C</sup> where C corresponds to the number of
+            characteristics or independent
+            variables of each user; after applying normalization techniques to the data C=70.</p>
+
+        <p>Then, the probability that user u has an associated item or class (cat) is calculated [52]:</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img2.jpg" height="100px" width="auto">
+        </div>
+
+        <p>where N(u) is the neighborhood of the active user u, k is an element within this neighborhood, d(k,u) is the
+            distance in space between the neighborhood element and the active user. The total weight is calculated as
+            follows:</p>
+
+
+        <div class="image">
+            <img src="img/V25-N3-14/img3.jpg" height="100px" width="auto">
+        </div>
+
+        <p>To determine the neighborhood of a user, the Manhattan distance between points is measured. The Manhattan
+            distance, rectilinear distance or L1 distance says that the distance between two points is the sum of the
+            (absolute) differences of their coordinates. That is, the distance d, between two vectors u and v, in an
+            n-dimensional real vector space with a fixed Cartesian coordinate system, is the sum of the lengths of the
+            projections of the line segment projections between the points on the coordinate axis system:</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img4.jpg" height="80px" width="auto">
+        </div>
+
+
+        <p>Where u = (u1, u2, ..., un) y v = (v1, v2, ..., vn) are vectors.</p>
+
+
+        <p class="subtitulo">Deep Learning</p>
+
+        <p>An Artificial Neural Network (ANN) is a network inspired by biological neural networks that are used to
+            estimate or approximate features that may depend on a large number of inputs that are generally unknown. An
+            ANN is constructed from nodes (neurons) stacked in layers between the feature vector and the target vector.
+            A node in a neural network is constructed from the function Weights and activation. An early version of ANN
+            built from a node was called Perceptron. Perceptron is an algorithm for supervised learning of binary
+            classifiers, functions that can decide whether an input (represented by a vector of numbers) belongs to one
+            class or another. A perceptron network can be designed to have multiple layers, if it has more than one
+            hidden layer it is called (<i>deep artificial neural network</i>). [47].</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img5.jpg" height="400px" width="auto">
+        </div>
+
+        <p>The stochastic gradient is used as a method for weight optimization. The activation function chosen for the
+            hidden layers is the sigmoid, which allows capturing small changes in the weights w and the bias b The
+            sigmoid function σ(Z) obtains a probability estimate thus:</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img6.jpg" height="100px" width="auto">
+        </div>
+
+        <!-- Resultado y discusion -->
+        <hr>
+
+        <p class="titulo">Results and Discussion</p>
+
+        <p>The problem of predicting the student's career is posed as a multiclass classification model, where the
+            objective
+            variable is the program in which the student will perform well.</p>
+
+        <p>The sociodemographic characteristics of the students are in different domains, that is, we have 24
+            categorical and 8 numerical variables. Therefore, before running the models, some strategies are applied to
+            standardize numerical variables by eliminating the mean and scaling to units, as well as coding categorical
+            variables so that they can be used by the algorithms and generate better predictions.</p>
+
+        <p>Standardization of a data set is a common requirement for many machine learning estimators: they can
+            misbehave if individual features do not more or less resemble the normally distributed standard data. The
+            standard score of a sample x is calculated as: z =((x – u))/s where u is the mean of the training samples or
+            zero if with_mean = False, and s is the standard deviation of the training samples or one if with_std =
+            False.</p>
+
+        <p>In addition, the historical dataset was divided into 3 subsets, one for training which contains known
+            results, the model learns on this data to then predict on the other subsets, it represents 56% of the total
+            data; the second, is the testing to test the prediction of our model and that in this project corresponds to
+            25% of the data; and finally the validation, which has 19% of the data that the model has not known and on
+            which all the validations of the metrics are made.</p>
+
+        <p>The distribution of the data sets for training, testing and validation was as follows:</p>
+        <div class="image">
+            <img src="img/V25-N3-14/img7.jpg" height="300px" width="auto">
+        </div>
+
+        p>The metric chosen for model optimization is the Accuracy or prediction accuracy of the given labels and test
+        data. In multiclass classification, it returns the accuracy of the subset. If the entire set of labels predicted
+        for a sample strictly matches the actual set of labels, then the subset accuracy is 1.0; otherwise, it is 0.0.
+        </p>
+
+        <p>If y ̂i is the predicted value of the i-th sample and yi is the corresponding true value, then the fraction
+            of correct predictions over nsamples is defined as</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img8.jpg" height="100px" width="auto">
+        </div>
+
+        <p class="subtitulo">Modelo KNN</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img9.jpg" height="400px" width="auto">
+        </div>
+
+        <p>Initially a run was made to determine the number of significant neighbors for the data. With this n_neighbors
+            = 180 the iterations of parameter variation were executed, however, once the best parameters were defined,
+            the model was varied over all possible n_neighbors to improve the accuracy of the model. The accuracy
+            obtained with this model is 13%.</p>
+
+        <p>Parameters such as the distance metric were varied between Euclidean, Manhattan and Minkowski, which are
+            those that determine the distance between the points of an active user against the records that are part of
+            the training; the weight is varied between uniform or distance values, where uniform indicates that all the
+            points of the neighborhood have equal weights and distance indicates that a greater weight is given to those
+            points that have less distance to the active user, i.e., that contribute more to the adjustment. (See Table
+            3).</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img10.jpg" height="400px" width="auto">
+        </div>
+
+        <p>In this case the best parameters are algorithm = Auto, metric = Mahattan, n_neighbors = 180 and weights =
+            Distance.</p>
+
+
+        <p class="subtitulo">Neural network model</p>
+
+        <p>Parameter exploration is performed for the implemented MLPClassifier model in order to obtain the best ones
+            for the final execution of the neural network. Parameters such as the number of hidden layers and neurons,
+            the activation function for each hidden layer between Relu and Sigmoid (for the implementation called
+            Logistic) were varied; the weight is not varied and is maintained with the stochastic gradient optimizer
+            (adam) and the learning rate is also kept constant (adaptive). (See Table 4).</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img11.jpg" height="800px" width="auto">
+        </div>
+
+        <p>The best results are obtained with the sigmoid activation function and an accuracy of 56%.</p>
+
+        <p class="subtitulo">Discussion and binary classification model</p>
+
+        <p>By applying the multilayer neural network to the data, an accuracy of 56% is obtained, which significantly
+            improves the results obtained in the CF with an accuracy of 13% for 180 nearest neighbors surpassing the
+            baseline of the classical CF model.</p>
+
+        <div class="image">
+            <img src="img/V25-N3-14/img12.jpg" height="700px" width="auto">
+        </div>
+
+        <p>Likewise, a simple neural network is executed independently for each of the programs found in the output set
+            (see Figure 4). Although this alternative is a little far from the research question, because it analyzes
+            independently each of the outputs, suggesting the user to study or not each program independently, it is
+            important to see the performance obtained.</p>
+
+        <p>The accuracy improves significantly if analyzed from this perspective. The program that generates a lower
+            performance is the one mostly represented in the data, i.e., Industrial Engineering. It is important to see
+            this proposal with the data balanced, so that we can analyze how it impacts the results.</p>
+
+
+
+
+        <!-- Conclusiones -->
+        <hr>
+
+        <p class="titulo"> Conclusions</p>
+        <p>Academic recommender systems are a tool for students to make better decisions and set them on the path to a
+            successful professional life. This work results in the feasibility of using data that institutions of higher
+            education have to improve their counseling processes and decrease the burden on advisors. One of the main
+            limitations of this work is that the data set used corresponds to student data from only one private
+            university in the country. This causes the system to have a sampling bias that impacts the results obtained
+            against the general objective.</p>
+
+        <p>The Deep Learning approach improves the recommendations generated in the first component due to the
+            optimization process of the error metric and the complexity of the neural network. However, extra work is
+            required to adapt explanation mechanisms for this type of models, since in this context it is important to
+            explain the results of the models to the student.</p>
+
+        <p>There are still pending issues associated with having a larger data set of students, including information
+            from students from other regions of the country to eliminate bias in the data. In addition, broadening the
+            profile of academic programs through semantic enrichment systems.</p>
+        <p>Further work should be done on neural network and Deep Learning strategies, as they are shown to
+            significantly
+            improve the performance of feature-based models.</p>
+
+        <p>It is important to include a validation method that allows obtaining feedback from real users of the system,
+            in order to analyze their level of satisfaction with the recommendations generated. Since a recommender
+            system is only as good as its users think it is [24].</p>
+
+
+        <!-- Referencias -->
+
+        <hr>
+
+        <p class="titulo"> References </p>
+
+        <p>[1] Real Academia Española, “Real Academia Española.”, Online, Accessed. 2018.</p>
+        <p>[2] E. Vegas Vicentini, “Marco sectorial de educación y desarrollo infantil temprano,” 2016.</p>
+        <p>[3] Ministerio de Educacion, “¿Qué porcentaje de nuestros bachilleres ingresa de manera inmediata a la
+            educación superior?,” pp. 2, 2015.</p>
+        <p>[4] Ministerio De Educación Nacional, “Estrategias para reducir la deserción,” vol. 2, no. 2, pp. 88–88,
+            2012.</p>
+        <p>[5] Ministerio de Educación Nacional, “Spadies - Sistema de Prevención y Análisis a la Deserción en las
+            Instituciones de Educación Superior,” 2019.</p>
+        <p>[6] B. Pérez, C. Castellanos, and D. Correal, “Predicting Student Drop-Out Rates Using Data Mining
+            Techniques: A Case Study,” in IEEE 1st Colombian Conference on Applications in Computational
+            Intelligence (ColCACI), vol. 833, A. D. Orjuela-Cañón, J. C. Figueroa-García, and J. D. Arias-Londoño,
+            Eds. Cham: Springer International Publishing, 2018, pp. 111–125.</p>
+        <p>[7] M. L. Sanchiz Ruiz, “Modelos de orientación e intervención psicopedagógica,” pp. 246, 2009.</p>
+        <p>[8] Casa Editorial El Tiempo, “Guía Académica.” Online, Accessed. Oct, 2018.</p>
+        <p>[9] Grupo Santander, “Universia Colombia.”, Online, Accessed. Oct, 2018.</p>
+        <p>[10] Ministerio De Educación Nacional, “Buscando Carrera.”, Online, Accessed. Oct, 2018.</p>
+        <p>[11] D. Jannach, M. Zanker, A. Felfernig, and G. Friedrich, “Recommender systems: an introduction”, vol.
+            40, 2011.</p>
+        <p>[12] D. Jannach and G. Adomavicius, “Recommendations with a Purpose,” in Proceedings of the 10th ACM
+            Conference on Recommender Systems – RecSys, vol. 16, pp. 7–10, 2016.</p>
+        <p>[13] C. Vialardi et al., “A data mining approach to guide students through the enrollment process based on
+            academic performance,” User Modeling and User-Adapted Interaction, vol. 21, no. 1–2, pp. 217–248,
+            2011.</p>
+        <p>[14] H. L. Thanh-Nhan, H. H. Nguyen, and N. Thai-Nghe, “Methods for building course recommendation
+            systems,” in Proceedings - 2016 8th International Conference on Knowledge and Systems Engineering, KSE 2016,
+            2016.</p>
+        <p>[15] Y. Park, “Recommending personalized tips on new courses for guiding course selection,” in Proceedings
+            of the SouthEast Conference, ACMSE 2017, 2017.</p>
+        <p>[16] B. Bankshinategh, G. Spanakis, O. Zaiane, and S. ElAtia, “A course recommender system based on
+            graduating attributes,” in CSEDU 2017 - Proceedings of the 9th International Conference on Computer
+            Supported Education, 2017.</p>
+        <p>[17] C. Vialardi Sacín, J. Bravo Agapito, L. Shafti, and A. Ortigosa, “Recommendation in Higher Education
+            Using Data Mining Techniques,” Proceedings of the 2nd International Conference on Educational Data
+            Mining, pp. 191–199, 2009.</p>
+        <p>[18] I. Ognjanovic, D. Gasevic, and S. Dawson, “Using institutional data to predict student course selections
+            in higher education,” Internet and Higher Education, vol. 29, pp. 49–62, 2016.</p>
+        <p>[19] Z. Gulzar and A. A. Leema, “Towards recommending courses in a learner centered system using
+            query classification approach,” in 2017 4th International Conference on Advanced Computing and
+            Communication Systems, ICACCS 2017, 2017.</p>
+        <p>[20] R. S. Abdulwahhab, H. S. Al Makhmari, and S. N. Al Battashi, “An educational web application for
+            academic advising,” in 2015 IEEE 8th GCC Conference and Exhibition, GCCCE 2015, 2015.</p>
+        <p>[21] M. S. Laghari and G. A. Khuwaja, “Electrical engineering department advising for course planning,” in
+            IEEE Global Engineering Education Conference, EDUCON, 2012.</p>
+        <p>[22] R. Farzan and P. Brusilovsky, “Social navigation support in a course recommender system,” Proceedings
+            of the 4th International Conference on Adaptive Hypermedia and Apadtive Web-based Systems, pp. 91–
+            100, 2006.</p>
+        <p>[23] G. Engin et al., “Rule-based expert systems for supporting university students,” in Procedia Computer
+            Science, 2014.</p>
+        <p>[24] H. F. Unelsrød, “Design and Evaluation of a Recommender System for Course Selection,” Norges
+            teknisk-naturvitenskapelige universitet, 2011.</p>
+        <p>[25] J. Xu, T. Xing, and M. Van Der Schaar, “Personalized Course Sequence Recommendations,” IEEE
+            Transactions on Signal Processing, vol. 64, no. 20, pp. 5340–5352, 2016.</p>
+        <p>[26] A. H. M. Ragab, A. F. S. Mashat, and A. M. Khedra, “HRSPCA: Hybrid recommender system for
+            predicting college admission,” International Conference on Intelligent Systems Design and Applications,
+            ISDA, pp. 107–113, 2012.</p>
+        <p>[27] J. Cho and E. Y. Kang, “Personalized curriculum recommender system based on hybrid filtering,” Lecture
+            Notes in Computer Science (including subseries Lecture Notes in Artificial Intelligence and Lecture Notes in
+            Bioinformatics), vol. 6483 LNCS, pp. 62–71, 2010</p>
+        <p>[28] M. E. Ibrahim, Y. Yang, D. L. Ndzi, G. Yang, and M. Al-Maliki, “Ontology-Based Personalized Course
+            Recommendation Framework,” IEEE Access, 2019.</p>
+        <p>[29] H. Zhang, T. Huang, Z. Lv, S. Y. Liu, and Z. Zhou, “MCRS: A course recommendation system for
+            MOOCs,” Multimedia Tools and Applications, 2018.</p>
+        <p>[30] Z. Gulzar, A. A. Leema, and G. Deepak, “PCRS: Personalized Course Recommender System Based on
+            Hybrid Approach,” in Procedia Computer Science, 2018.</p>
+        <p>[31] D. Estrela, S. Batista, D. Martinho, and G. Marreiros, “A Recommendation System for Online Courses,”
+            2017.</p>
+        <p>[32] M. E. Ibrahim, Y. Yang, and D. Ndzi, “Using ontology for personalised course recommendation
+            applications,” in Lecture Notes in Computer Science (including subseries Lecture Notes in Artificial
+            Intelligence and Lecture Notes in Bioinformatics), 2017.</p>
+        <p>[33] T. Meller, F. Lin, E. Wang, and C. Yang, “New classification algorithms for developing online program
+            recommendation systems,” in Proceedings - International Conference on Mobile, Hybrid, and On-line
+            Learning, eLmL 2009, 2009.</p>
+        <p>[34] Y. Park, “A recommender system for personalized exploration of majors, minors, and concentrations,” in
+            CEUR Workshop Proceedings, 2017.</p>
+        <p>[35] A. Ochirbat and T. K. Shih, “Occupation Recommendation with Major Programs for Adolescents,” in
+            Proceedings of Science, 2017.</p>
+        <p>[36] F. M. Pinto, M. Estefania, N. Cerón, and R. Andrade, “iRecomendYou: A design proposal for the
+            development of a pervasive recommendation system based on student’s profile for Ecuador’s students’
+            candidature to a scholarship,” New Advances in Information Systems and Technologies, vol. 445, pp.
+            537–546, 2016.</p>
+        <p>[37] T. J. Ramabu and H. J. G. Oberholzer, “Designing and exploring study field recommender system for
+            prospective students,” in 2017 IST-Africa Week Conference, IST-Africa 2017, 2017.</p>
+        <p>[38] M. C. B. Natividad, B. D. Gerardo, and R. P. Medina, “A fuzzy-based career recommender system for
+            senior high school students in K to 12 education,” in IOP Conference Series: Materials Science and
+            Engineering, 2019.</p>
+        <p>[39] G. Meryem, K. Douzi, and S. Chantit, “Toward an E-orientation Platform,” 2016.</p>
+        <p>[40] M. Iyengar, A. Sarkar, and S. Singh, “A Collaborative Filtering based model for recommending graduate
+            schools,” 2017 7th International Conference on Modeling, Simulation, and Applied Optimization, ICMSAO
+            2017, pp. 0–4, 2017.</p>
+        <p>[41] K. Bhumichitr, S. Channarukul, N. Saejiem, R. Jiamthapthaksin, and K. Nongpong, “Recommender
+            Systems for university elective course recommendation,” in Proceedings of the 2017 14th International
+            Joint Conference on Computer Science and Software Engineering, JCSSE 2017, 2017.</p>
+        <p>[42] M. Hasan, S. Ahmed, D. M. Abdullah, and M. S. Rahman, “Graduate school recommender system:
+            Assisting admission seekers to apply for graduate studies in appropriate graduate schools,” in 2016 5th
+            International Conference on Informatics, Electronics and Vision, ICIEV 2016, 2016.</p>
+        <p>[43] A. Baskota and Y. K. Ng, “A graduate school recommendation system using the multi-class support
+            vector machine and KNN approaches,” in Proceedings - 2018 IEEE 19th International Conference on
+            Information Reuse and Integration for Data Science, IRI 2018, 2018.</p>
+        <p>[44] Q. Hu, F. Y. Kevin Kam, and P. Craig, “Towards a recommendation approach for university program
+            selection using Primitive Cognitive Network Process,” 14th International Conference on Services Systems
+            and Services Management, ICSSSM 2017 - Proceedings, pp. 3–6, 2017.</p>
+        <p>[45] K. Pupara, W. Nuankaew, and P. Nuankaew, “An institution recommender system based on student
+            context & educational institution in a mobile environment,” in 20th International Computer Science and
+            Engineering Conference: Smart Ubiquitos Computing and Knowledge, ICSEC 2016, 2017.</p>
+        <p>[46] D. K. Bokde, S. Girase, and D. Mukhopadhyay, “An Approach to a University Recommendation by
+            Multi-criteria Collaborative Filtering and Dimensionality Reduction Techniques,” Proceedings - 2015
+            IEEE International Symposium on Nanoelectronic and Information Systems, iNIS 2015, pp. 231–236,
+            2016.</p>
+        <p>[47] S. Raschka and V. Mirjalili, “Python Machine Learning”, 2nd ed. Birmingham, Packt Publishing, 2017.</p>
+        <p>[48] C. C. Aggarwal, “Recommender Systems”, Cham: Springer International Publishing, vol. 40, no. 3.
+            2016.</p>
+        <p>[49] Ministerio De Educación Nacional, “Proyecto de resolución de metodologías de cálculo en el examen
+            saber 11”., pp. 1–11, Colombia, 2014.</p>
+        <p>[50] F. Ricci, L. Rokach, and B. Shapira, “Recommender Systems Handbook 2a ed.”, vol. 247, no. 6403,
+            2015.</p>
+        <p>[51] A. D. Moreno Barbosa, “Privacy-enabled scalable recommender systems,” Université Nice Sophia
+            Antipolis, 2014.</p>
+        <p>[52] J. A. Orozco Cacique, “Sistema de recomendación de programas universitarios para la orientación
+            profesional de estudiantes de educación media,” 2019.</p>
+    </div>
+
+</body>
+
+</html>
