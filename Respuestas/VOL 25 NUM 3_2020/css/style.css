@@ -101,6 +101,35 @@ i{
   font-size: 18px
 }
 
+/* LI para las listas */
+
+li{
+  font-size: 18px;
+}
+
+
+
+/* Tablas */
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(0, 0, 0);
+  align-items: center;
+}
+
+thead th {
+  border-collapse: collapse;
+  background-color:rgb(179, 179, 179);
+  border: 2px solid rgb(0, 0, 0);
+}
+
+tbody td{
+  border-collapse: collapse;
+  text-align: center;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+
 .tipo {
   color: #ffffff;
   font-size: 22px;

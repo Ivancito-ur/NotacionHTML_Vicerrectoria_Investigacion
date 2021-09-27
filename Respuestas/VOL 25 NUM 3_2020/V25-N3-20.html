@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V25-N3-20</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="image">
+        <img src="img/V25-N3-20/cabeza.jpg" width="100%">
+    </div>
+
+    <div>
+        <div class="articulo-original">
+            <p>
+            <div id="articulo-derecha"><b> <u> Articulo Original</u> </b> </div>
+            <div style='text-align:right'><b> <u><img class="image" width="15px" src="img/globales/doi.png"><a
+                            class="link-color"
+                            href="https://doi.org/10.22463/0122820X.2462">https://doi.org/10.22463/0122820X.2462</a></u>
+                </b></div>
+            </p>
+        </div>
+
+
+
+        <!--Titulos-->
+        <h1>CFD modelling of biomass boilers - a review of the state of the art </h1>
+
+        <h2>Modelado CFD de la combustión en calderas de biomasa – Revisión del estado del arte </h2>
+
+        <!--Autores-->
+        <h4>
+            Gabriel F. García Sánchez<sup><a href="#sup1">1*</a> </sup> <br>
+            Jorge L. Chacón Velasco<sup><a href="#sup2">2*</a> </sup> <br>
+            David A. Fuentes Díaz<sup><a href="#sup3">3*</a> </sup> <br>
+            Julián E. Jaramillo Ibarra<sup><a href="#sup4">4*</a> </sup> <br>
+            Jairo R. Martínez Morales<sup><a href="#sup4">5*</a> </sup> <br>
+
+        </h4>
+
+        <hr>
+
+        <p id="sup1"><sup>1*</sup><img class="logos" src="img/globales/sobre.png"> Master in Mechanical Engineering,
+            <a href="g.garciasanchez@yahoo.es">g.garciasanchez@yahoo.es </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-8207-4713">ORCID:
+                0000-0001-8207-4713</a>.
+            Universidad Industrial de Santander, Bucaramanga, Colombia.
+        </p>
+
+        <p id="sup2"><sup>2*</sup><img class="logos" src="img/globales/sobre.png"> Doctor of the UPV,
+            <a href="jchacon@uis.edu.co">jchacon@uis.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-9658-698X">ORCID:
+                0000-0001-9658-698X</a>.
+            Universidad Industrial de Santander, Bucaramanga, Colombia.
+        </p>
+
+        <p id="sup3"><sup>3*</sup><img class="logos" src="img/globales/sobre.png"> Doctor of Energy Technology,
+            <a href="dfuentes@uis.edu.co">dfuentes@uis.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0002-6549-0712">ORCID:
+                0000-0002-6549-0712</a>.
+            Universidad Industrial de Santander, Bucaramanga, Colombia.
+        </p>
+
+        <p id="sup4"><sup>4*</sup><img class="logos" src="img/globales/sobre.png"> Postdoctorate in Computer Science and
+            Mathematics,
+            <a href="jejarami@uis.edu.co">jejarami@uis.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-7389-2677">ORCID:
+                0000-0001-7389-2677</a>.
+            Universidad Industrial de Santander, Bucaramanga, Colombia.
+        </p>
+
+        <p id="sup5"><sup>5*</sup><img class="logos" src="img/globales/sobre.png"> Doctor of Chemistry,
+            <a href="jmartine@uis.edu.co">jmartine@uis.edu.co </a>.
+            <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/0000-0001-5003-0396">ORCID:
+                0000-0001-5003-0396</a>.
+            Universidad Industrial de Santander, Bucaramanga, Colombia.
+        </p>
+
+
+        <hr>
+
+        <!-- Como realizar la cita -->
+
+        <p><b>Cómo citar: </b>G. F. García-Sánchez, J. L. Chacón-Velasco, D. A. Fuentes-Díaz, J. E. Jaramillo-Ibarra
+            and J. R. Martínez-Morales, “CFD modelling of biomass boilers - a review of the state of the art”.
+            Respuestas, vol. 25, no. 3, 262-273, 2020.</p>
+
+        <!--Licencia-->
+        <p>&copy; Peer review is the responsibility of the Universidad Francisco de Paula Santander. This is an article
+            under the license <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> CC BY-NC-ND 4.0 </a> </p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+                alt="Licencia de Creative Commons" style="border-width:0"
+                src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a>
+
+        <hr>
+
+        <!--Recibido y aprobado-->
+        <p><b>Received: </b> June 22, 2020 <br> <b>Approved: </b> October 23, 2020. </p>
+
+
+        <!--Resumen Inglés-->
+        <hr>
+
+        <div class="abstract-container">
+            <div class="keywords-container">
+                <p><b>Keywords</b> <br></p>
+                <p>Combustion, Solid biomass, Modelling, Computational fluid dynamics.</p>
+            </div>
+            <hr>
+            <div class="text-container">
+                <p class="titulo"> Abstract</p>
+                <p>
+                    Combustion is the main method of converting biomass to energy, either by direct heating systems or
+                    by boilers. By means of CFD models, it is possible to optimize the behavior of those systems and
+                    improve significantly its performance, without incurring the economic and environmental cost of
+                    experimental studies. However, modelling of biomass combustion is a complex process that requires a
+                    large number of sub-models and computational resources for a detailed description, therefore,
+                    different approaches have been developed which depend on the system and simulation objective. In
+                    this work, a review of the state of art of modelling of solid biomass combustion in the last years
+                    is presented, including classification, description and analysis of several of the main models about
+                    the subject.
+                </p>
+            </div>
+        </div>
+
+        <!-- Resumen Español -->
+        <hr>
+
+        <div class="abstract-container">
+            <div class="keywords-container">
+                <p><b>Palabras claves</b> <br></p>
+                <p>Combustión, Biomasa sólida, modelado, dinámica de fluidos computacional.</p>
+            </div>
+            <hr>
+            <div class="text-container">
+                <p class="titulo"> Resumen</p>
+
+                <p>
+                    La combustión es el principal método de transformación de biomasa en energía, ya sea en sistemas de
+                    calefacción directa o en calderas. Por medio de los modelos CFD se puede optimizar el funcionamiento
+                    de estos sistemas y lograr mejoras significativas en su desempeño, sin incurrir en los costos
+                    económicos y ambientales que los estudios experimentales acarrean. No obstante, el modelado de la
+                    combustión de biomasa sólida es un proceso complejo que requiere de gran cantidad de sub- modelos y
+                    recursos computacionales para una descripción detallada, por lo que se han desarrollado diversos
+                    enfoques que dependen del sistema a modelar y del objetivo de la simulación. En el presente trabajo
+                    se realiza una revisión del estado del arte sobre el modelado de la combustión de biomasa sólida en
+                    los últimos años, incluyendo la clasificación, descripción y análisis de varios de los principales
+                    modelos desarrollados sobre el tema.
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Cuerpo del documento -->
+    <div>
+        <hr>
+        <!--Introducción-->
+        <p class="titulo"> Introduction</p>
+        <p>According to ISO 16559:2014, biomass can be defined as any material of biological origin, except those that
+            have undergone mineralization processes such as those originating from oil, coal and natural gas [1]. It has
+            several advantages when used as an energy source, such as: neutral CO2 emissions, energy independence in
+            areas of difficult access and the possibility of using waste material [2].</p>
+
+        <p>Therefore, several methods have been developed for its conversion into energy, of which combustion is the
+            most widely used, either for direct heating or for use in boilers [3], [4]. This is a complex process
+            composed of two physical stages of matter transfer and a chemical reaction stage [2], the first two stages
+            correspond to: diffusion of the comburent through the gas phase and ashes to the unreacted zone, and
+            diffusion in the opposite direction of the reaction gases; while the chemical reaction stage of combustion
+            is divided into three phases: drying, pyrolysis and combustion of the carbonaceous residue. In drying, all
+            the water in the fuel evaporates, it is an endothermic process that occurs when the fuel reaches 100 °C; in
+            pyrolysis, the fuel decomposes into volatile gases, tar and carbonaceous components, in this stage the gases
+            combust producing flame while the O2 pressure remains very low near the carbonaceous surface so that the
+            latter does not combust; Finally, the combustion of the carbonaceous residue (char) occurs when the
+            volatiles are oxidized and approximately 20% of the initial mass remains with approximately 90% porosity,
+            the char contains high amounts of carbon so its calorific value is high, this is a much slower stage than
+            the previous ones so it is the limiting of the overall chemical reaction. It is worth mentioning that during
+            combustion not a single reaction occurs but a series of chain reactions, for example in the combustion of
+            methane (CH4), the simplest of hydrocarbons, up to 40 elementary reactions are involved [5] that take place
+            during the mentioned stages.</p>
+
+        <p>Current combustion furnaces usually present problems of low efficiency, heat load instability and slag [6],
+            [7], which represents a need for research to improve the performance of this equipment and in turn the
+            reduction of pollutants, since the increase in efficiency leads to a significant decrease in emissions and
+            fuel consumption; analyses have shown that a 1% increase in the efficiency of biomass-fired power plants
+            leads to a 3% reduction in their CO2 emissions [4]. A valuable tool to improve the performance of biomass
+            combustion systems is CFD (Computational Fluid Dynamics) simulation, which can be used to improve the design
+            and operating conditions of such systems without incurring the economic and environmental costs of
+            experimental studies [8], [9]. However, the advantages of numerical methods in the optimization of biomass
+            combustion are not fully exploited, because simulating it requires several sub-models for thermochemical
+            conversion and sufficient computational resources [10] - [14]. A detailed description of the sub-models used
+            in modeling solid biomass combustion is presented in the works of Dernbecher et al. [10], Karim and Naser
+            [12], Bhuiyan et al. [4] and Khodaei et al. [15]. The aforementioned requirements make the modeling of solid
+            biomass combustion a complicated process, to the point that the conversion, transport and reaction processes
+            that take place there are not currently contemplated in commercial simulation tools [11], [13]. That is why
+            several types of models and modeling approaches have been developed to satisfy different simulation
+            requirements in different combustion systems. In the present work, a complete review of the state of the art
+            on CFD modeling of solid biomass combustion is carried out, including the classification, description and
+            analysis of several of the main models developed on the subject.</p>
+
+        <p class="subtitulo">Classification of the models</p>
+
+        <p>The combustion system hearth is usually divided into two zones according to the phase present: the solid zone
+            or bed and the gaseous zone or freeboard. These can be modeled independently or together according to the
+            complexity and objectives of the simulation, leading to the development of different types of models for
+            different systems and conditions. The classification of solid biomass combustion models varies slightly
+            according to the author consulted. A widely accepted classification is presented by Karim and Naser [12],
+            who categorize the models according to the way the energy equation is calculated, as shown in Table I.</p>
+
+        <div class="image">
+            <img src="img/V25-N3-20/img1.jpg" height="400px" width="auto">
+        </div>
+
+        <p>According to Yang et al. [16] the models can be categorized into "thermally thick" or "thermally thin"
+            according to the value of the Biot number in the bed, in the first case (Bi>>1) large temperature gradients
+            are reached within the particles leading to superposition of the combustion stages (drying, pyrolysis and
+            char combustion) and in the second case (Bi &lt; 2) the intra-particle effects are neglected and the stages
+            are
+            assumed to occur consecutively throughout the particle.</p>
+        <p>Dernbecher et al [10] classify the models, according to the approach used for the treatment of
+            boundary conditions, into four categories: empirical, separated bed, porous zone and discrete
+            particle. These are described below.</p>
+
+        <p class="subtitulo">Empirical Approach</p>
+
+        <p>This approach consists of simulating the freeboard taking into account the input of gases from the
+            bed without the need for coupling with a solid phase combustion model, the bed is usually divided
+            into four sections corresponding to the three stages of combustion (drying, pyrolysis and combustion
+            of the carbonaceous phase) and the remaining ashes, and the profiles of temperature, mass flow and
+            concentration of gaseous species are determined entirely experimentally or are calculated from the
+            elemental composition of the biomass. In the first case, pyrolysis experiments are performed to
+            determine the volatiles released from the fuel at a certain temperature; the conditions of these
+            experiments differ from the conditions during combustion, since they are carried out at low
+            temperatures and the presence of oxygen is neglected [17]. In the second case, calculations based on
+            experimental data are used to give information about combustible gases, which some authors call the
+            semi-empirical approach. The empirical approach is easy to implement and represents low
+            computational effort so, when one wants to simulate an already measured system, it can be the best
+            approach [10]; however it is not flexible to changes making it have low capacity to predict
+            combustion in the design phase [15]. One type of application for this approach is the improvement of
+            combustor designs for certain operating conditions in an existing combustion system [10].
+            Flexibility improves when working with semi-empirical models, however they need specific data that
+            must be assumed if they are not known, which affects their predictive capability.</p>
+
+        <p class="subtitulo">Separate bed or "Stand Alone" approach</p>
+
+        <p>In this approach, independent models are used for the bed and the freeboard, which are coupled in one
+            or two directions. Generally, the simulation of the gas phase is performed by means of a commercial
+            CFD code, while for the solid phase an independent model is developed where drying, pyrolysis and
+            char consumption in the bed are simulated. This is the most widely used approach, by means of which
+            zero- dimensional, one-dimensional, two-dimensional and three-dimensional models have been
+            developed, although this last type is rare, generally the three-dimensional models are developed
+            under the porous zone approach. These are more flexible models than the empirical ones and represent
+            a low computational consumption, they are mainly used in systems with bulk fuel bed and continuous
+            operation such as pellet boilers or systems with moving grate [10].</p>
+
+        <p class="subtitulo">Porous zone approach</p>
+
+        <p>It is the evolution of the separated bed approach, the bed is modeled as a porous medium, which
+            allows air to flow through it, considering heat and mass exchange between the gas and solid phases.
+            The necessary parameters for the properties of the porous medium are taken from measurements. The
+            bed and freeboard are simulated in the same domain. This is the approach used by several commercial
+            software, in which case it is necessary to use user-defined functions (UDF) to jointly solve the bed
+            and freeboard due to the complexity of the thermal conversion in the solid phase. This approach is
+            more reliable than the previous ones in terms of bed independence and extensibility, however it is
+            more complicated and requires more computational time.</p>
+
+        <p class="subtitulo">Discrete Particle Method (DPM) Approach</p>
+
+        <p>In this approach the biomass particles are represented by Lagrangian particles whose trajectory is
+            calculated based on the forces applied to them. The thermo-chemical conversion of each fuel particle
+            is calculated individually. It is an approach that allows a detailed description of the fuel
+            particles in the bed model, however computationally expensive. It is used to simulate fuel beds with
+            bulk material such as wood chips or pellets.</p>
+
+        <p>Table 2 presents several of the most relevant works on solid biomass combustion modeling developed in
+            the last 20 years, where their classification according to the mentioned approaches, the type of
+            system and biomass for which they were developed, the parameters obtained from the simulation and
+            the software used to support it are shown. As can be seen, the four approaches have been
+            successfully used in recent years, which indicates that all four remain valid; the selection of the
+            approach to be used depends on the objective of the simulation and the system to be modeled. In most
+            of the works, commercial software is used, which is used to model the gas phase of the hearth
+            (freeboard) and sometimes the bed; in the latter case, the use of UDFs is necessary to expand the
+            CFD capacity. It can also be observed that, generally, simulation is used to obtain temperatures,
+            flow velocities and process emissions, this is due to the fact that the performance of the system is
+            studied at different conditions and these values allow determining indicators for this purpose. The
+            performance of a packed bed boiler can be determined by means of thermal conversion efficiency and
+            emissions, the former expressed through the burn rate, ignition velocity, peak temperature and
+            thickness of the reaction zone; while the latter is constituted by particulate (soot, organic
+            particles and ash particles) and gaseous (H2O, CO, CO2, CH4, NOx and other hydrocarbons) emissions
+            [15].</p>
+
+        <p>In Colombia, few works have been presented on the subject, which simulate the combustion of sugar
+            cane bagasse. For example, the works of Mendieta and Sanchez [18], Guevara [19], Diaz et al. [20]
+            and Correa [21], in the first two, combustion was simulated in Ward-Cimpa combustion chambers used
+            in the production of panela, in the first a one-dimensional mathematical model was used and in the
+            second a two- dimensional model, in the remaining works an industrial boiler was simulated, dividing
+            it into three parts: primary air circuit, secondary air circuit and the furnace. Further details of
+            these works are presented in Table II.</p>
+
+        <p class="subtitulo">Main applications of the full simulation models</p>
+
+        <p>The comprehensive simulation models are those that focus on simulating the complete combustion system
+            and not only in a sub-process of combustion, they usually use global reaction schemes with few
+            reactions to reduce the computational cost. They are models that have been mainly used to simulate
+            combustion in: mobile grate systems, pellet boilers, wood stoves and straw bales [10]. A brief
+            description of each is presented below.</p>
+
+        <p class="subtitulo">Mobile grid systems</p>
+
+        <p>Combustion system fireplaces can be classified into static and dynamic, within the latter are the
+            mobile grate fireplaces [2], which are the most used for combustion at industrial level [15];
+            covering a wide range of powers, ranging from 240 kW to 108 MW. For this reason most of the
+            publications on biomass combustion modeling are related to this application. The models are
+            generally developed under the empirical, two-dimensional separated bed and discrete particle
+            approaches, aiming to predict hearth temperatures and emissions of NOx, CO, ash and other
+            pollutants. The most commonly used fuels have been: municipal solid waste, wood chips and straw
+            [10].</p>
+
+        <p class="subtitulo">Pellet boilers</p>
+
+        <p>Static-fired pellet boilers (fixed grate) are widely used in small to medium scale applications,
+            ranging from 8 to 250 kW [10]. There are similarities between small scale and industrial scale
+            combustion because of the small horizontal gradients, which means that small scale boilers are often
+            used to understand the process carried out in moving bed boilers [15]. The most commonly applied
+            approaches for CFD simulation of these systems are the empirical and porous zone approaches.</p>
+
+
+        <table>
+            <caption><b>Table 2.</b> Description of models developed in recent years</caption>
+
+            <thead>
+                <th>Author</th>
+                <th>Year</th>
+                <th>Focus</th>
+                <th>Thermal regime</th>
+                <th>Combuster Type</th>
+                <th>Fuel</th>
+                <th>Parameters obtained from simulation</th>
+                <th>Software</th>
+            </thead>
+
+
+            <tbody>
+
+                <tr>
+                    <td>Knaus et al. [22]</td>
+                    <td>2000</td>
+                    <td>Empirical</td>
+                    <td>N/A</td>
+                    <td>Wood stove</td>
+                    <td>Wooden logs</td>
+                    <td>Speed, temperature and composition of gases at different points, in order to study tde effects
+                        of mixing conditions, air distribution and geometry on performance.</td>
+                    <td>AIOLOS</td>
+                </tr>
+
+                <tr>
+
+                    <td>Cooper and Hallett [23]</td>
+                    <td>2000</td>
+                    <td>Stand Alone (1D)</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Carbon particles</td>
+                    <td>Bed temperature and volumetric fraction of gases at different air ratios and fuel
+                        characteristics.</td>
+
+                    <td>NI</td>
+
+                </tr>
+
+                <tr>
+                    <td>Peters [24]</td>
+                    <td>2002</td>
+                    <td>DPM</td>
+                    <td>Thermally thick</td>
+                    <td>Mobile Grill</td>
+                    <td>Spruce wood spheres</td>
+                    <td>Variation of the mass of the particles against time for the three stages of combustion.</td>
+
+                    <td>N/A</td>
+
+                </tr>
+                <tr>
+                    <td>Thunman and Leckner
+                        [25]</td>
+
+                    <td>2002</td>
+
+                    <td>Stand Alone (1D)</td>
+                    <td>Thermally thick</td>
+                    <td>Fixed Grill</td>
+                    <td>Wood Chips</td>
+                    <td>Thickness of the reaction front.</td>
+                    <td>NI</td>
+                </tr>
+
+                <tr>
+
+                    <td>Yang et al. [26]</td>
+                    <td>2002</td>
+                    <td>Stand Alone (2D)</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Grill (Movable bed)</td>
+                    <td>Municipal solid waste</td>
+                    <td>Temperature distribution, waste composition and gas species.</td>
+                    <td>Software FLIC (Own
+                        creation)</td>
+
+                </tr>
+
+
+                <tr>
+
+                    <td>Bruch et al. [27]</td>
+                    <td>2003</td>
+                    <td>DPM</td>
+                    <td>Thermally thick</td>
+                    <td>Fixed Bed Reactor</td>
+                    <td>Beech wood spheres</td>
+                    <td>Variation in particle mass and bed height over time.</td>
+                    <td>N/A</td>
+
+                </tr>
+
+                <tr>
+                    <td>Eskilsson et al. [28]</td>
+                    <td>2004</td>
+                    <td>Empirical</td>
+                    <td>N/A</td>
+                    <td>Reactor tube</td>
+
+                    <td>Pellets (characterized in paper)</td>
+
+                    <td>Temperature, air stoichiometry, combustion status and the division between NH3 and HCN.</td>
+
+
+                    <td>Chemkin</td>
+
+                </tr>
+
+                <tr>
+
+
+                    <td>Kær and Søren[29]
+                    <td>2004</td>
+                    <td>Stand Alone (2D)</td>
+                    <td>Thermally thin</td>
+                    <td>Mobile Grill</td>
+                    <td>Straw</td>
+                    <td>Emissions, char distribution in the bed, temperature and speed profiles and heat flows in the
+                        home.</td>
+                    <td>CFX</td>
+
+                </tr>
+                <tr>
+
+
+                    <td>Miltner et al. [30]</td>
+
+
+                    <td>2006</td>
+
+
+                    <td>Porous Zone</td>
+
+
+                    <td>Thermally thin</td>
+
+                    <td>Whole bale combustion chamber</td>
+
+
+                    <td>Bale of whole hue</td>
+
+
+                    <td>Emissions and distribution of speeds and temperatures in the chamber.</td>
+
+                    <td>RANS-CFD-
+                        solver FLUENT</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Galgano et al. [31]</td>
+
+                    <td>2006</td>
+
+                    <td>Stand Alone (1D)</td>
+
+                    <td>Thermally thick</td>
+
+                    <td>Wooden log furnace</td>
+
+                    <td>Individual wood trunk</td>
+
+                    <td>Variation of the solid mass fraction, mass loss rate and temperature at various points over
+                        time.</td>
+
+                    <td>CFX 4.4</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Porteiro et al. [32]</td>
+
+                    <td>2009</td>
+
+                    <td>Stand Alone (1D)</td>
+
+                    <td>Thermally thick</td>
+
+                    <td>Fixed Grill</td>
+
+                    <td>Wood pellets</td>
+
+                    <td>Temperature distribution, CO and trajectory of char particles.</td>
+
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Djurovi'c et al. [33]</td>
+                    <td>2012</td>
+
+                    <td>Empirical</td>
+                    <td>N/A</td>
+                    <td>Fixed Grill (piston fed)</td>
+                    <td>Soya straw bales</td>
+                    <td>Temperature distribution, speed and CO concentration in the boiler.</td>
+                    <td>FLUENT 6.3.26</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Gómez et al. [34]</td>
+                    <td>2012</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Pellets (characterized in paper)</td>
+                    <td>Heat transfer, temperature and species (gas) concentration</td>
+
+                    <td>ANSYS
+                        Fluent</td>
+                </tr>
+                <tr>
+
+                    <td>Chaney et al. [14]</td>
+                    <td> 2012</td>
+
+                    <td>Porous Zone</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Wood pellets</td>
+                    <td>Temperature distribution, speed, O2, CO and volatile species.</td>
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Collazo et al. [35]</td>
+                    <td>2012</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Wood pellets</td>
+                    <td>Temperature distribution of gases and emissions.</td>
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Gómez et al. [13]</td>
+                    <td>2013</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally thin</td>
+                    <td>Combustion Tube</td>
+                    <td>Wood pellets</td>
+                    <td>Solid temperature, gas temperature, solid fraction, particle diameter and fuel density; for
+                        different air flows over time.</td>
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Haller et al. [36]</td>
+                    <td>2013</td>
+                    <td>Empirical</td>
+                    <td>N/A</td>
+                    <td>Fixed Grill</td>
+                    <td>Wood pellets</td>
+                    <td>Temperature and speed distribution.</td>
+                    <td>OpenFoam</td>
+
+                </tr>
+                <tr>
+
+                    <td>Mendieta y Sanchez [18]</td>
+                    <td>2014</td>
+                    <td>Stand Alone (1D)</td>
+                    <td>Thermally Thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Sugar cane bagasse</td>
+                    <td>Combustion rate, bed temperature and volumetric fraction of CO, O2 and CO2 as a function of the
+                        mass fraction of humidity.</td>
+                    <td>N/A</td>
+
+                </tr>
+
+                <tr>
+                    <td>Guevara [19]</td>
+                    <td>2014</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally Thin</td>
+                    <td>Fixed Grill</td>
+                    <td>Sugar cane bagasse</td>
+                    <td>Temperature profiles of particles and gases at different percentages of excess primary and
+                        secondary air. Mass fractions of O2 and CO in different positions in the chamber.</td>
+
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Bhuiyan y Naser [37]</td>
+                    <td>2015</td>
+                    <td>Stand Alone (3D)</td>
+                    <td>Thermally thin</td>
+                    <td>Co-firing</td>
+                    <td>Irregular biomass + Brown Coal</td>
+                    <td>Temperature, airflow and emissions for various fuel mixtures (biomass and coal).</td>
+
+
+                    <td>AVL Fire</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Gómez et al. [38]</td>
+                    <td>2015</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally thick</td>
+                    <td>Combustion Tube</td>
+                    <td>Wood pellets</td>
+                    <td>Temperature evolution in the center and borders of the tube, particle mass change, bed and
+                        freeboard
+                        temperature profiles, and particle diameter change, for different air flows.</td>
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Mahmoudi et al. [39]</td>
+
+                    <td>2016</td>
+
+                    <td>DPM</td>
+
+                    <td>Thermally thick</td>
+                    <td>Mobile Grill (validated with a fixed
+                        bed reactor)</td>
+
+                    <td>Wood Chips</td>
+
+                    <td>Temperature and species distribution in the home.</td>
+
+                    <td>N/A</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Cordiner et al. [40]</td>
+
+                    <td>2016</td>
+
+                    <td>Stand Alone (3D)</td>
+
+                    <td>Thermally thin</td>
+
+                    <td>Fixed Grill (Fixed bed)</td>
+
+                    <td>Grape bagasse and wood chips</td>
+
+                    <td>Temperature distribution, H2O content, particle diameter and velocity fields.</td>
+
+                    <td>Open-foam</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Buchmayr et al.
+                        [41]</td>
+
+
+                    <td>2016</td>
+
+                    <td>Semi- empirical</td>
+
+
+                    <td>N/A</td>
+                    <td>Reactor equipped with “enhanced air
+                        staging”</td>
+
+
+                    <td>Softwood chips</td>
+
+                    <td>Temperature distribution and concentrations of O2, OH and CO The values obtained with the SFM
+                        and EDC combustion models were compared.</td>
+
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Silva et al. [42]</td>
+
+                    <td>2017</td>
+
+                    <td>Empirical</td>
+
+                    <td>N/A</td>
+
+                    <td>Fixed Grill</td>
+
+                    <td>Forest residues</td>
+                    <td>Temperature, speed and species concentration fields in the burner, for different air mixtures
+                        with combustion gases.</td>
+
+
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Gómez et al. [43]</td>
+
+                    <td>2017</td>
+
+                    <td>Porous Zone</td>
+                    <td>Thermally thick</td>
+
+                    <td>Fixed Grill</td>
+
+                    <td>Wood pellets</td>
+                    <td>Heat transferred to water, temperature profiles and gas composition The Thermally Thick and
+                        Thermally Thin approaches were compared.</td>
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Mätzing et al. [44]</td>
+                    <td>2018</td>
+                    <td>Stand Alone (1D)</td>
+                    <td>Thermally thin</td>
+                    <td>Fixed Bed Reactor</td>
+                    <td>Wood chips, solid recovered fuels and blends.</td>
+                    <td>Ignition delay, ignition rate, ignition front velocity and mass conversion rate The influence of
+                        the initial conditions on these magnitudes is studied.</td>
+
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>García [2]
+                    <td>2018</td>
+                    <td> Porous Zone</td>
+                    <td>NI</td>
+                    <td>Fixed Grill (Fixed bed)</td>
+                    <td>Wood pellets</td>
+
+                    <td>NI</td>
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+
+                    <td>Buchmayr et al.
+                        [45]</td>
+                    <td> 2018</td>
+                    <td>Semi- empirical</td>
+                    <td>N/A</td>
+                    <td>Fixed Grill, equipped with “extreme-air- staging”</td>
+                    <td>Spruce wood stem (Picea abies) with bark</td>
+                    <td>CO and OH emissions, velocity and temperature distribution, The values obtained with the SFM and
+                        EDC combustion models were compared.</td>
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Díaz et al. [20]</td>
+
+                    <td>2018</td>
+                    <td> DPM</td>
+                    <td>N/A</td>
+                    <td>Fixed Grill</td>
+                    <td>Sugar cane bagasse</td>
+                    <td>Distribution of speed, temperature and emissions.</td>
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+
+                <tr>
+                    <td>Correa [21]</td>
+                    <td>2018</td>
+                    <td>DPM</td>
+                    <td>N/A</td>
+                    <td> Fixed Grill</td>
+
+                    <td>Sugar cane bagasse</td>
+                    <td>Temperature distribution, O2 and pollutant emissions</td>
+                    <td>ANSYS
+                        Fluent</td>
+
+                </tr>
+                <tr>
+
+                    <td>Karim y Naser [46]</td>
+                    <td>2018</td>
+                    <td>Porous Zone</td>
+                    <td>Thermally Thin</td>
+                    <td> Mobile Grill</td>
+                    <td>Mixture of wood chips, bark and saw dust produced in a sawmill with a high moisture content</td>
+
+                    <td>Temperature distribution, densities and concentration of species in the home The effect of
+                        primary air was studied.</td>
+                    <td>AVL Fire</td>
+
+                </tr>
+
+                <tr>
+
+                    <td> Karim y Naser [47]</td>
+                    <td> 2018</td>
+                    <td> Porous Zone</td>
+                    <td> Thermally thin</td>
+                    <td> Combustible tube</td>
+                    <td>Wood pellets, poplar pellets, olive stone and pine chips</td>
+                    <td>Bed height over time, gas and solid temperature profiles, solid and O2 fraction, particle
+                        diameter and density of char and wet and dry solid. Air and fuel type were varied.</td>
+                    <td>AVL Fire</td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        Gómez et al. [48]</td>
+
+                    <td>2019</td>
+                    <td> Porous Zone</td>
+                    <td> Thermally Thin</td>
+                    <td> Fixed Grill</td>
+
+                    <td>Pine wood pellets</td>
+                    <td>Heat obtained by the boiler and emission of pollutants at different values of recirculation
+                        gases (EGR).</td>
+
+                    <td>ANSYS Fluent</td>
+
+                </tr>
+            </tbody>
+
+
+        </table>
+        <p>N/A: Not Applicable and NI: No information presented.
+            Source: Own elaboration.</p>
+
+
+        <p>Mobile grate boilers are the most widely used industrially [15], however, low-power fixed-bed boilers have
+            gained popularity in recent years due to their simplicity, low operating cost and low requirements in terms
+            of fuel preparation and transportation [15], [41], [49]. This is an advantage for developing countries
+            because this type of boilers, fueled by local waste, can be used for power generation in remote areas [50],
+            [51], while in industrialized countries their benefit is observed in both district heating and electricity
+            supply [52]. The European market for small-scale power plants below 20 MWth is expected to grow by 100% in
+            the next decade and growth rates are expected to be high worldwide [44]. Although this technology is well
+            developed, improvements in low power biomass boilers are required to reduce their pollutant emissions and
+            increase their efficiency [41], [45], [53], [54].</p>
+
+        <p class="subtitulo"> Wood-burning stoves</p>
+
+        <p>With a power of about 32 kW, they are mainly used for domestic heating [10]. The following approaches are
+            generally used to model them: empirical, one-dimensional separated bed and porous zone.</p>
+
+        <p class="subtitulo">Straw bales</p>
+
+        <p>This application is the least common of all, mainly the empirical and porous zone approaches have been used.
+        </p>
+
+
+        <!-- Conclusiones -->
+        <hr>
+        <p class="titulo">Conclusions</p>
+
+        <p>A review of the state of the art of CFD modeling of solid biomass combustion in the last 20 years worldwide
+            was conducted, presenting the approach, objectives and application of several relevant models from the
+            mentioned period.</p>
+
+        <p>A review of the state of the art of CFD modeling of solid biomass combustion in the last 20 years worldwide
+            was performed, presenting the approach, objectives and application of several relevant models of the
+            mentioned period.</p>
+
+        <p>Solid biomass combustion modeling is a complex process due to the large number of sub-models and
+            computational resources it demands. In the vast majority of the works, commercial CFD software is used to
+            simulate the hearth freeboard, while the bed requires the implementation of user-defined functions because
+            commercial software does not have the capability to simulate it independently.</p>
+        <p>Combustion models can be classified, according to the way the energy equation is calculated, into homogeneous
+            and heterogeneous, of which the former have not presented good results because they assume the same
+            temperature for the two hearth phases, which is why the current models are developed from the second point
+            of view. Regarding the modeling approach, the models can be empirical, separate bed, porous zone or discrete
+            particle models, which are used according to the objectives and system to be modeled. The separated bed
+            approach has been the most widely used because of its flexibility and relatively low computational cost.</p>
+
+        <p>The main applications for combustion models are: mobile grate systems, pellet boilers, wood stoves and straw
+            bales; of which the first one is the most studied because it is the most related to industrial systems. The
+            empirical approach has been used in all applications because it is the easiest to implement and requires
+            less computational effort.</p>
+
+        <p>Few articles have been published in Colombia on the subject, which have focused on the combustion of sugar
+            cane bagasse.</p>
+
+        <!-- Acknowledgements -->
+        <hr>
+
+        <p class="titulo">Acknowledgements</p>
+
+        <p>Acknowledgements to Colciencias, Ministry of National Education, Ministry of Industry, Commerce and Tourism
+            and ICETEX, Convocatoria Ecosistema Científico - Colombia Científica. Francisco José de Caldas Fund,
+            Contract RC-FP44842-212-2018.</p>
+
+
+
+        <!-- Referencias -->
+
+        <hr>
+
+        <p class="titulo"> References </p>
+
+        <p>[1] International Organization for Standardization, “ISO 16559:2014. Solid biofuels -Terminology,
+            definitions and descriptions”. Disponible en:
+            http://www.iso.org/cms/render/live/en/sites/isoorg/contents/data/standard/05/71/57111.html.</p>
+        <p>[2] R. García-Fernández, “Modelización cinética y optimización de parámetros de combustión en calderas
+            de biomasa”, Doctorado, Universidad de Oviedo, España, 2014.</p>
+        <p>[3] A. Álvarez-Rodríguez, “Kinetic and fluiddynamic modeling of a biomass combustor”, Universidad de
+            Oviedo, España, 2018.</p>
+        <p>[4] A. A. Bhuiyan, Md. R. Karim and J. Naser, “Chapter 11 - Modeling of Solid and Bio-Fuel Combustion
+            Technologies”, Thermofluid Modeling for Energy Efficiency Applications, M. M. K. Khan y N. M. S.
+            Hassan, Eds. Academic Press, pp. 259-309, 2016.</p>
+        <p>[5] J. M. F. F. Oro, “Técnicas numéricas en ingeniería de fluidos: introducción a la dinámica de fluidos
+            computacional (CFD) por el método de volúmenes finitos”, Editorial Reverté, 2012.</p>
+        <p>[6] K. Szemmelveisz, I. Szűcs, Á. B. Palotás, L. Winkler and E. G. Eddings, “Examination of the
+            combustion conditions of herbaceous biomass”, Fuel Processing Technology, vol. 90, no. 6, pp. 839-
+            847, 2009. Doi: 10.1016/j.fuproc.2009.03.001.</p>
+        <p>[7] Y. B. Yang, V. N. Sharifi and J. Swithenbank, “Effect of air flow rate and fuel moisture on the burning
+            behaviours of biomass and simulated municipal solid wastes in packed beds”, Fuel, vol. 83, no. 11,
+            pp. 1553-1562, 2004. Doi: 10.1016/j.fuel.2004.01.016.</p>
+        <p>[8] G. F. García Sánchez, J. L. Chacón Velasco and A. Chaves Guerrero, “Modelado de la combustión en
+            motores Diésel: revisión del estado del arte”, Revista ION, vol. 26, no. 1, 2013.
+        <p>[En línea]. Disponible en:
+            http://revistas.uis.edu.co/index.php/revistaion/article/view/3506.</p>
+        <p>[9] H. Versteeg and W. Malalasekera, “An Introduction to Computational Fluid Dynamics: The Finite
+            Volume Method”, Edición: 2nd rev. ed. Harlow, England ; New York: Prentice Hall, 2007.</p>
+        <p>[10] A. Dernbecher, A. Dieguez-Alonso, A. Ortwein and F. Tabet, “Review on modelling approaches based
+            on computational fluid dynamics for biomass combustion systems”, Biomass Conversion and
+            Biorefinery, vol. 9, no. 1, pp. 129-182, 2019. Doi: 10.1007/s13399-019-00370-z</p>
+        <p>[11] M. Á. G. Rodríguez, “Contribuciones al desarrollo de un modelo de simulación de combustión de
+            sólidos”, Universidade de Vigo, España, 2014. http://purl.org/dc/dcmitype/Text</p>
+        <p>[12] Md. R. Karim and J. Naser, “Progress in Numerical Modelling of Packed Bed Biomass Combustion”,
+            19th Australasian Fluid Mechanics Conference. Melbourne, 2014.</p>
+        <p>[13] M. A. Gómez, J. Porteiro, D. Patiño and J. L. Míguez, “CFD modelling of thermal conversion and
+            packed bed compaction in biomass combustion”, Fuel, vol. 117, pp. 716-732, 2014. Doi:
+            10.1016/j.fuel.2013.08.078.</p>
+        <p>[14] J. Chaney, L. Hao and L. Jinxing, “An overview of CFD modelling of small-scale fixed-bed biomass
+            pellet boilers with preliminary results from a simplified approach – ScienceDirect”, Energy
+            Conversion and Management, vol. 63, pp. 149–156, 2012.</p>
+        <p>[15] H. Khodaei, Y. M. Al-Abdeli, F. Guzzomi and G. H. Yeoh, “An overview of processes and
+            considerations in the modelling of fixed-bed biomass combustion”, Energy, vol. 88, pp. 946-972,
+            2015. Doi: 10.1016/j.energy.2015.05.099.</p>
+        <p>[16] Y. B. Yang, V. N. Sharifi and J. Swithenbank, “Numerical Simulation of the Burning Characteristics of
+            Thermally-Thick Biomass Fuels in Packed-Beds”, Process Safety and Environmental Protection, vol.
+            83, no. 6, pp. 549-558, 2005, Doi: 10.1205/psep.04284.</p>
+        <p>[17] H. Thunman, F. Niklasson, F. Johnsson and B. Leckner, “Composition of Volatile Gases and
+            Thermochemical Properties of Wood for Modeling of Fixed or Fluidized Beds”, Energy Fuels, vol.
+            15, no. 6, pp. 1488-1497, 2001. Doi: 10.1021/ef010097q.</p>
+        <p>[18] O. Mendieta and Z. Sanchez, “Ajuste de un modelo matemático para la combustión de bagazo de caña
+            en una cámara Ward-Cimpa”, Ciencia y Tecnología Agropecuaria, vol. 15, no. 2, pp. 133-151, 2014.</p>
+        <p>[19] J. I. Guevara Enciso, “Modelo computacional de la combustión del bagazo de caña en una cámara de
+            combustión tipo ward-cimpa de una hornilla panelera”, Maestría, Universidad de los Andes, 2014.</p>
+        <p>[20] F. A. Diaz-Mateus, H. C. Alvarez-Castro, A. Chaves-Guerrero, F. A. Diaz-Mateus, H. C. AlvarezCastro and
+            A.
+            Chaves-Guerrero, “CFD simulation of sugarcane bagasse combustion in an industrial
+            grate boiler”, DYNA, vol. 85, no. 204, pp. 169-176, 2018. Doi: 10.15446/dyna.v85n204.65601.</p>
+        <p>[21] W. R. Correa Vargas, “Evaluación de la eficiencia de combustión del bagazo de caña en una caldera
+            industrial usando dinámica computacional de fluidos”, Pregrado, Universidad Industrial de
+            Santander, 2018.</p>
+        <p>[22] H. Knaus, S. Richter, S. Unterberger, U. Schnell, H. Maier and K. R. G. Hein, “On the application of
+            different turbulence models for the computation of fluid flow and combustion processes in small scale wood
+            heaters”, Experimental Thermal and Fluid Science, vol. 21, no. 1, pp. 99-108, 2000. Doi:
+            10.1016/S0894-1777(99)00059-X.</p>
+        <p>[23] J. Cooper and W. L. H. Hallett, “A numerical model for packed-bed combustion of char particles”,
+            Chemical Engineering Science, vol. 55, no. 20, pp. 4451-4460, 2000. Doi: 10.1016/S0009-
+            2509(00)00097-X.</p>
+        <p>[24] B. Peters, “Measurements and application of a discrete particle model (DPM) to simulate combustion
+            of a packed bed of individual fuel particles”, Combustion and Flame, vol. 131, no. 1, pp. 132-146,
+            2002. Doi: 10.1016/S0010-2180(02)00393-0.</p>
+        <p>[25] H. Thunman and B. Leckner, “Co-current and counter-current fixed bed combustion of biofuel—a
+            comparison☆”, Fuel, vol. 82, no. 3, pp. 275-283, 2003. Doi: 10.1016/S0016-2361(02)00289-2.</p>
+        <p>[26] Y. B. Yang, Y. R. Goh, R. Zakaria, V. Nasserzadeh and J. Swithenbank, “Mathematical modelling of
+            MSW incineration on a travelling bed”, Waste Management, vol. 22, no. 4, pp. 369-380, 2002. Doi:
+            10.1016/S0956-053X(02)00019-3.</p>
+        <p>[27] C. Bruch, B. Peters and T. Nussbaumer, “Modelling wood combustion under fixed bed conditions☆”,
+            Fuel, vol. 82, no. 6, pp. 729-738, 2003. Doi: 10.1016/S0016-2361(02)00296-X.</p>
+        <p>[28] D. Eskilsson, M. Rönnbäck, J. Samuelsson and C. Tullin, “Optimisation of efficiency and emissions in
+            pellet burners”, Biomass Bioenergy, vol. 27, no. 6, pp. 541-546, 2004. Doi:
+            10.1016/j.biombioe.2003.09.008.</p>
+        <p>[29] S. K. Kær, “Numerical modelling of a straw-fired grate boiler”, Fuel, vol. 83, no. 9, pp. 1183-1190,
+            2004, Doi: 10.1016/j.fuel.2003.12.003.</p>
+        <p>[30] M. Miltner, A. Miltner, M. Harasek and A. Friedl, “Process simulation and CFD calculations for the
+            development of an innovative baled biomass-fired combustion chamber”, Applied Thermal
+            Engineering, vol. 27, no. 7, pp. 1138-1143, 2007. Doi: 10.1016/j.applthermaleng.2006.02.048.</p>
+        <p>[31] A. Galgano, C. Di Blasi, A. Horvat and Y. Sinai, “Experimental Validation of a Coupled Solid- and
+            Gas-Phase Model for Combustion and Gasification of Wood Logs”, Energy Fuels, vol. 20, no. 5, pp.
+            2223-2232, 2006. Doi: 10.1021/ef060042u.</p>
+        <p>[32] J. Porteiro, J. Collazo, D. Patiño, E. Granada, J. C. Moran Gonzalez and J. L. Míguez, “Numerical
+            Modeling of a Biomass Pellet Domestic Boiler”, Energy Fuels, vol. 23, no. 2, pp. 1067-1075, 2009.
+            Doi: 10.1021/ef8008458.</p>
+        <p>[33] D. Djurović, S. Nemoda, D. Dakić, M. Adzić and B. Repić, “Furnace for biomass combustion –
+            Comparison of model with experimental data”, International Journal of Heat and Mass Transfer, vol.
+            55, no. 15, pp. 4312-4317, 2012. Doi: 10.1016/j.ijheatmasstransfer.2012.03.079.</p>
+        <p>[34] M. Gómez, R. Comesaña, M. A. Álvarez Feijoo and P. Eguía, “Simulation of the Effect of Water
+            Temperature on Domestic Biomass Boiler Performance”, Energies, vol. 5, pp. 1044-1061, 2012. Doi:
+            10.3390/en5041044.</p>
+        <p>[35] J. Collazo, J. Porteiro, J. L. Míguez, E. Granada and M. A. Gómez, “Numerical simulation of a smallscale
+            biomass boiler”, Energy Conversion and Management, vol. 64, pp. 87-96, 2012. Doi:
+            10.1016/j.enconman.2012.05.020.</p>
+        <p>[36] J. Haller, I. Hartmann, M. König and A. Ortwein, “Basic studies on the development of micro
+            combustion systems for biomass”, Proceedings of the European Combustion Meeting, Lund
+            University, Suecia, 2013. https://www.researchgate.net/publication/256715286.</p>
+        <p>[37] A A. Bhuiyan and J. Naser, “CFD modelling of co-firing of biomass with coal under oxy-fuel
+            combustion in a large scale power plant”, Fuel, vol. 159, pp. 150-168, 2015. Doi:
+            10.1016/j.fuel.2015.06.058.</p>
+        <p>[38] M. A. Gómez, J. Porteiro, D. Patiño and J. L. Míguez, “Fast-solving thermally thick model of biomass
+            particles embedded in a CFD code for the simulation of fixed-bed burners”, Energy Conversion and
+            Management, vol. 105, pp. 30-44, 2015. Doi: 10.1016/j.enconman.2015.07.059.</p>
+        <p>[39] A. H. Mahmoudi, X. Besseron, F. Hoffmann, M. Markovic and B. Peters, “Modeling of the biomass
+            combustion on a forward acting grate using XDEM”, Chemical Engineering Science, vol. 142, pp.
+            32-41, 2016. Doi: 10.1016/j.ces.2015.11.015.</p>
+        <p>[40] S. Cordiner, V. Mulone, A. Manni and V. Rocco, “Biomass furnace study via 3D numerical modeling”,
+            International Journal of Numerical Methods for Heat & Fluid Flow, vol. 26, no. 2, pp. 515-533,
+            2016. Doi: 10.1108/HFF-03-2015-0089.</p>
+        <p>[41] M. Buchmayr, J. Gruber, M. Hargassner and C. Hochenauer, “A computationally inexpensive CFD
+            approach for small-scale biomass burners equipped with enhanced air staging”, Energy Conversion
+            and Management, vol. 115, pp. 32-42, 2016. Doi: 10.1016/j.enconman.2016.02.038.</p>
+        <p>[42] J. Silva, J. Teixeira, S. Teixeira, S. Preziati and J. Cassiano, “CFD Modeling of Combustion in
+            Biomass Furnace”, Energy Procedia, vol. 120, pp. 665-672, 2017. Doi:
+            10.1016/j.egypro.2017.07.179.</p>
+        <p>[43] M. A. Gómez, J. Porteiro, D. De la Cuesta, D. Patiño and J. L. Míguez, “Dynamic simulation of a
+            biomass domestic boiler under thermally thick considerations”, Energy Conversion and Management,
+            vol. 140, pp. 260-272, 2017. Doi: 10.1016/j.enconman.2017.03.006.</p>
+        <p>[44] H. Mätzing, H.-J. Gehrmann, H. Seifert and D. Stapf, “Modelling grate combustion of biomass and low
+            rank fuels with CFD application”, Waste Management, vol. 78, pp. 686-697, 2018. Doi:
+            10.1016/j.wasman.2018.05.008.</p>
+        <p>[45] M. Buchmayr, J. Gruber, M. Hargassner and C. Hochenauer, “Performance analysis of a steady
+            flamelet model for the use in small-scale biomass combustion under extreme air-staged conditions”,
+            Journal of the Energy Institute, vol. 91, no. 4, pp. 534-548, 2018. Doi: 10.1016/j.joei.2017.04.003.</p>
+        <p>[46] Md. R. Karim and J. Naser, “CFD modelling of combustion and associated emission of wet woody
+            biomass in a 4 MW moving grate boiler”, Fuel, vol. 222, pp. 656-674, 2018. Doi:
+            10.1016/j.fuel.2018.02.195.</p>
+        <p>[47] Md. R. Karim and J. Naser, “Numerical study of the ignition front propagation of different pelletised
+            biomass in a packed bed furnace”, Applied Thermal Engineering, vol. 128, pp. 772-784, 2018. Doi:
+            10.1016/j.applthermaleng.2017.09.061.</p>
+        <p>[48] M. A. Gómez, R. Martín, S. Chapela and J. Porteiro, “Steady CFD combustion modeling for biomass
+            boilers: An application to the study of the exhaust gas recirculation performance”, Energy Conversion and
+            Management, vol. 179, pp. 91-103, 2019. Doi: 10.1016/j.enconman.2018.10.052.</p>
+        <p>[49] C. Yin, L. A. Rosendahl and S. K. Kær, “Grate-firing of biomass for heat and power production”,
+            Progress in Energy and Combustion Science, vol. 34, no. 6, pp. 725-754, 2008. Doi:
+            10.1016/j.pecs.2008.05.002.</p>
+        <p>[50] G. M. Faé Gomes, A. C. Faria Vilela, L. D. Zen and E. Osório, “Aspects for a cleaner production
+            approach for coal and biomass use as a decentralized energy source in southern Brazil”, Journal of
+            Cleaner Production, vol. 47, pp. 85-95, 2013. Doi: 10.1016/j.jclepro.2012.09.037.</p>
+        <p>[51] Y. S. Mohammed, A. S. Mokhtar, N. Bashir and R. Saidur, “An overview of agricultural biomass for
+            decentralized rural energy in Ghana”, Renewable and Sustainable Energy Reviews, vol. 20, pp. 15-25,
+            2013. Doi: 10.1016/j.rser.2012.11.047.</p>
+        <p>[52] C. Bang-Møller, M. Rokni, B. Elmegaard, J. Ahrenfeldt and U. B. Henriksen, “Decentralized
+            combined heat and power production by two-stage biomass gasification and solid oxide fuel cells”,
+            Energy, vol. 58, pp. 527-537, 2013. Doi: 10.1016/j.energy.2013.06.046.</p>
+        <p>[53] M. Buchmayr, J. Gruber, M. Hargassner and C. Hochenauer, “Spatially resolved chemical species
+            concentrations above the fuel bed of a small grate-fired wood-chip boiler”, Biomass Bioenergy, vol.
+            95, pp. 146-156, 2016. Doi: 10.1016/j.biombioe.2016.10.004.</p>
+        <p>[54] M. Buchmayr, J. Gruber, M. Hargassner and C. Hochenauer, “Experimental investigation of the
+            primary combustion zone during staged combustion of wood-chips in a commercial small-scale
+            boiler”, Biomass Bioenergy, vol. 81, pp. 356-363, 2015. Doi: 10.1016/j.biombioe.2015.07.016.</p>
+
+    </div>
+
+</body>
+
+</html>
