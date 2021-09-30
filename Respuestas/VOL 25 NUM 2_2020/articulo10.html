@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<img class="image" src="img/pub_rev10.png" align="center"width="1000px">
+
+	<!--Borde y DOI-->
+	<p> <div style='text-align:left'><b> <u> Articulo Original</u>  </b>  </div><div style='text-align:right'><b> <u><img class="image" width="15px" src="img/doi.png" ><a href="https://https://doi.org/10.22463/0122820X.2819">https://doi.org/10.22463/0122820X.2819</a></u>  </b></div></p>
+
+
+
+	<!--Titulos-->
+	<h3> <b>Mathematical model of the aquatic phase in the population growth dynamics of Aedes aegypti contaminated with Wolbachia</b> </h3>
+
+	<h4> <b>Modelo matemático de la fase acuática en la dinámica de crecimiento de la población de Aedes aegypti contaminada con Wolbachia</b> </h4>
+
+	<!--Autores-->
+	<h5>
+		Eduardo Ibargüen-Mondragón<sup><a href="#sup1">*</a> </sup> <br>
+		Jessica Marcela-Montoya<sup><a href="#sup2">*</a> </sup> <br>
+		Mawency Vergel-Ortega<sup><a href="#sup3">*</a> </sup> <br>
+		
+	</h5>
+
+	<hr>
+
+	<p id="sup1">*<img class="logos" src="img/sobre.png">Department of Mathematics and Statistics  <a href="edbargun@udenar.edu.co">edbargun@udenar.edu.co </a>.  Universidad de Nariño, Pasto, Nariño, Colombia.</p>
+
+	<p id="sup2">*<img class="logos" src="img/sobre.png">Department of Mathematics and Statistics  <a href="jmontoya18@cue.edu.co">jmontoya18@cue.edu.co </a>. Universidad Alexander Von Humboldt, Armenia, Quindío, Colombia.</p>
+
+	<p id="sup3">*<img class="logos" src="img/sobre.png">Department of Mathematics and Statistics  <a href="mawency@ufps.edu.co">mawency@ufps.edu.co. </a>. Universidad Francisco de Paula Santander, Cúcuta, Norte de Santander, Colombia.</p>
+
+
+	<hr>
+		
+		<p><b>How to cite: </b>E. Ibargüen-Mondragón, J.M. Montoya, M. Vergel-Ortega, “Mathematical model of the aquatic phase in the population growth dynamics of Aedes aegypti contaminated with Wolbachia”. Respuestas, vol. 25, no. 2, pp. 102-108, 2020.</p>
+
+		<!--Licencia-->
+		<p>&copy; Peer review is the responsibility of the Universidad Francisco de Paula Santander. This is an article under the license CC BY-ND<a href="https://creativecommons.org/licenses/by/4.0">CCBYNCND</a> </p>
+
+	<hr>
+
+	<!--Recibido y aprobado-->
+		<p><b>Received:</b> February 07, 2020  <br> <b>Approved:</b> April 5, 2020. </p>
+
+	<hr>
+
+	<!--Resumen 2-->
+		<p class="titulo"> <b>Abstract</b> <p>
+			
+		<p>Dengue is an infectious disease of global public health significance and is a leading cause of death. A study focusing on the aquatic phase (egg, larva and pupa) of the Aedes aegypti mosquito, with and without Wolbachia, is being conducted. A mathematical model is formulated, the results suggest that the intrinsic ovoposition rate is the parameter that most affects the non-trivial equilibrium solution. As a conclusion, it is suggested that, under certain conditions, the reproduction of Wolbachia-contaminated mosquitoes in the aquatic phase is small compared to the reproduction of wild mosquitoes, which could affect the success of the control strategy.</p>
+
+
+		<p><b>Keywords</b> <br></p>
+		<p>Aedes aegypti, water phase, mathematical modeling, Wolbachia, ordinary differential equations.</p>
+
+	<hr>
+
+
+	<!--Resumen 1-->
+		<p class="titulo"> <b>Resumen:</b> <p>
+
+
+		<p>El dengue es una enfermedad infecciosa de importancia para la salud pública mundial y es una de las principales causas de muerte. Se realiza un estudio centrado en la fase acuática (huevo, larva y pupa) del mosquito Aedes aegypti, con y sin Wolbachia. Se formula un modelo matemático, cuyos resultados sugieren que la tasa de ovoposición intrínseca es el parámetro que más afecta a la solución de equilibrio no trivial. Como conclusión, se sugiere que, bajo ciertas condiciones, la reproducción de los mosquitos contaminados con Wolbachia en la fase acuática es pequeña en comparación con la reproducción de los mosquitos salvajes, lo que podría afectar al éxito de la estrategia de control.</p>
+
+
+
+		<p><b>Palabras Claves</b> <br></p>
+		<p>Aedes aegypti, fase acuática, modelización matemática, Wolbachia, ecuaciones diferenciales ordinarias.</p>
+
+	<hr>
+
+
+	
+
+	
+	<!--Introducción-->
+		<p  class="titulo"> <b>Introduction</b> <p>
+
+		<p>The is an extensive literature on mathematical modeling of the population dynamics of the aedes aegypti mosquito that considers both the aquatic and aerial phases of the mosquito [1-9]. However, most references to aquatic phase modeling consider a population group that compacts eggs, larvae and pupae into a single dynamic variable. This form of modeling does not consider factors such as the percentage of eggs that develop into larvae or the percentage of larvae that develop into pupae. Several studies have shown that the aquatic phase is fundamental, not only in the growth process of the vector's population, but also in the epidemiology of mosquito-borne diseases. Moreover, around the world, the main strategies for controlling the mosquito population, such as mosquito breeding ground elimination campaigns, focus on reducing the population of the mosquito in its aquatic phase. However, there are other control strategies such as biological ones that contribute significantly to the reduction of the basic breeding number of the vector. All this motivates us to formulate a mathematical model that describes the dynamics of the aquatic phase explicitly considering three population groups in the aquatic phase.</p>
+
+	<!--Methodology-->
+		<p  class="titulo"> <b>Methodology</b> <p>
+
+		<p>Mathematical model –</p>
+
+		<p>The dynamics consider natural (wild) mosquito populations and mosquitos contaminated with Wolbachia. For each group, the life of mosquitoes is defined and divided into the following stages: eggs, larvae and pupae. The following variables are defined on the basis of the above:</p>
+
+		<p>Aquatic phase for wild or natural mosquitoes:</p>
+
+		<p>E(t) is the amount of eggs in time t.</p>
+
+		<p>L(t) is the amount of larvae in time t.</p>
+
+		<p>P(t) is the amount of pupae in time t.</p>
+
+		<p>Aquatic phase for mosquitoes contaminated with Wolbachia:</p>
+
+		<p>a) Ew (t) is the amount of eggs with Wolbachia in time t.</p>
+
+		<p>b) Lw (t) is the amount of larvae with Wolbachia in time t.</p>
+
+		<p>c) Pw (t) is the amount of pupae with Wolbachia over time t.</p>
+
+		<p>The growth dynamics for the wild mosquito egg population is modeled by the following differential equation (1):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf1">
+				<img width="300px" src="img/pub_rev10_graf1.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where (ϕ) is the intrinsic ovoposition rate, (ϕw=ϕa) is the ovoposition rate of mosquitoes with Wolbachia, with 0< a< 1 a rate of adjustment that arises because not all the eggs of adult females with Wolbachia hatch, (ξ) is the probability of the Wolbachia bacteria being transferred vertically, (γ1) is the per capita rate of transformation of the egg to the larval stage, (μE) is the natural death rate of eggs.</p>
+
+		<p>The dynamics for eggs with Wolbachia is described by the following differential equation (2):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf2">
+				<img width="300px" src="img/pub_rev10_graf2.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where (μEw) is the natural death rate of eggs with Wolbachia.</p>
+
+		<p>The dynamics for wild mosquito larvae is modeled by Equation (3):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf3">
+				<img width="300px" src="img/pub_rev10_graf3.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where (θ) is the per capita rate of transformation of the larva to the pupal stage.</p>
+
+		<p>The dynamics for Wolbachia-contaminated mosquito larvae is modeled by Equation (4):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf4">
+				<img width="300px" src="img/pub_rev10_graf4.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where (μLw) is the natural death rate of the larvae with Wolbachia.</p>
+
+		<p>The dynamics for wild mosquito pupae is modeled by Equation (5):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf5">
+				<img width="300px" src="img/pub_rev10_graf5.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where (μPw) is the natural death rate of Wolbachia pupae.</p>
+
+		<p>Be x(t) = (E(t), Ew (t), L(t) ,Lw (t), P(t), Pw (t)T a solution of the system of equations (1) to (6), then x Є Ω, where:</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf6">
+				<img width="300px" src="img/pub_rev10_graf6.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where N=E+Ew+L+Lw+P+Pw and μ = min {μE, μEw, μL, μLw, μP, μPw}, the whole Ω defined in (7) is the set of biological interest since any solution of the system (1)-(6) which starts in Ω stays there for everything t ≥ 0. The system (1)-(6) has a single globally asymptotically stable equilibrium solution given by Equation (8):</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf7">
+				<img width="300px" src="img/pub_rev10_graf7.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Where,</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf8">
+				<img width="600px" src="img/pub_rev10_graf8.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>The above implies that any solution of the system (1)-(6) in Ω tends to approach x^* equilibrium as time t grows.</p>
+
+	<!--Result and Discussion-->
+		<p  class="titulo"> <b>Result and Discussion</b> <p>
+
+		<p>Numerical simulations</p>
+
+		<p>A parameter sensitivity analysis similar to that performed by other authors [8-10] verifies the intrinsic ovoposition rate, (ϕ), is the parameter that most influences the magnitude of the equilibrium solution (x^*). According to Equation (8) it can be seen that all the populations are directly proportional (ϕ), which implies that (x^*=ϕX) where (X) is a vector that depends on the other parameters. On the other hand, after (ϕ), the parameters that most affect the sensitivity of (x^*) are the rate of adjustment (a), and the probability of vertical transmission of bacteria (ξ). Following the order is the per capita rate of transformation of the egg to the larval stage (γ_1) and the per capita rate of transformation of the larva to the pupal stage (θ). Finally, at the last level are the mortality rates. There are many climatic variables (temperature, rainfall and humidity, among others) focuses on temperature or precipitation. So, Table 1, presents a range of estimated parameters based on temperature changes [6].</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf9">
+				<img width="600px" src="img/pub_rev10_graf9.png" class="image"><br>
+				<span class="captionS"><b>Table I: </b>Description of parameters.</span><br>
+			</div>
+		</p>
+
+		<p>The parameter ranges (ϕ,ξ,θ,γ_1,μ_E,μ_L,μ_P) were estimated using functions adjusted to data from Chiang Mia province in Thailand [6]. Since no references were found to the values of (a,ϕw,μEw,μLw and μPw) were considered the broadest ranges. So, Figure 1, shows the plots of eggs, larvae and pupae, uncontaminated and contaminated with Wolbachia according to the ovoposition rate (ϕ), as it is observed for each egg contaminated with Wolbachia there are 300 eggs without Wolbachia, the same relation is presented with the larvae and pupae. Figure 2, shows the plots of eggs, larvae and pupae, uncontaminated and contaminated with Wolbachia as a function of the rate of adjustment (a), it is observed that under the set of reference values (Table 1) the variation of the population of eggs, larvae and pupae with Wolbachia is very small in relation to the population of eggs, larvae and pupae without Wolbachia. Figure 3, shows the graphs of eggs, larvae and pupae, uncontaminated and contaminated with Wolbachia as a function of the ovoposition rate (ϕ) and the adjustment rate (a), it is observed that the yield in all populations increased in relation to the yields with respect to each parameter.</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf10">
+				<img width="600px" src="img/pub_rev10_graf10.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Figure 1. a) Population growth of eggs, larvae and pupae, without Wolbachia, with respect to the ovoposition rate (ϕ), taking the range of (ϕ) and the fixed reference values for the remaining parameters. b) Population growth of eggs, larvae and pupae, with Wolbachia, with respect to the ovoposition rate (ϕ), taking the range of (ϕ) and the fixed reference values for the remaining parameters.</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf11">
+				<img width="600px" src="img/pub_rev10_graf11.png" class="image"><br>
+			</div>
+		</p>
+
+		<p>Figure 2. a) Growth of the population of eggs, larvae and pupae, without Wolbachia, respect to the adjustment rate (a), taking the range of the adjustment rate (a) and the reference values, fixed for the rest of parameters. b) Growth of the population of eggs, larvae and pupae, with Wolbachia, respect to the adjustment rate (a), taking the range of the adjustment rate (a) and the reference values, fixed for the rest of parameters.</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf12">
+				<img width="600px" src="img/pub_rev10_graf12.png" class="image"><br>
+				<span class="captionS"><b>Figure 3: </b>a) Growth of the population of pupae without Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+				<span class="captionS"><b>Figure 3: </b>b) Growth of the population of pupae with Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+			</div>
+		</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf13">
+				<img width="600px" src="img/pub_rev10_graf13.png" class="image"><br>
+				<span class="captionS"><b>Figure 3: </b>c) Growth of the population of eggs without Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+				<span class="captionS"><b>Figure 3: </b>d) Growth of the population of eggs with Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+			</div>
+		</p>
+
+		<p>
+			<div class="imagen cuadro" id="pub_rev10_graf14">
+				<img width="600px" src="img/pub_rev10_graf14.png" class="image"><br>
+				<span class="captionS"><b>Figure 3: </b>e) Growth of the population of larvae without Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+				<span class="captionS"><b>Figure 3: </b>f) Growth of the population of larvae with Wolbachia, respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+			</div>
+		</p>
+
+		<span class="captionS"><b>Figure 3: </b>Growth of the population of eggs, larvae and pupae, with and without Wolbachia, with respect to the adjustment rate (a) and the ovoposition rate (ϕ).</span><br>
+
+	<!--Conclusion-->
+		<p  class="titulo"> <b>Conclusion</b> <p>
+
+		<p>Within the dynamic spread of the Aedes aegypti mosquito and transmission of Dengue, the water phase is of great importance. In fact, the most widely used strategies to control the spread of the mosquito are aimed at reducing the population of eggs, larvae and pupae (larvicides, insecticides, elimination of breeding sites). In recent years, strategies based on biological control have been implemented, in particular the replacement of wild mosquitoes by Wolbachia-infected mosquitoes is a strategy that is gaining ground among all biological control strategies. Although the method concentrates on the aerial phase of the mosquito, the aquatic phase involves the breeding of Wolbachia-contaminated eggs, larvae and pupae, which will later develop into contaminated adult mosquitoes. In this sense, the amount of contaminated mosquitoes that pass from the aquatic phase to the aerial phase contributes directly to the success of the strategy. The results of this work suggest that under certain conditions the breeding of Wolbachiacontaminated mosquitoes in the aquatic phase is very small compared to the breeding of wild mosquitoes. This may affect the success of the control strategy.</p>
+
+	<!--Acknowledgements-->
+		<p  class="titulo"> <b>Acknowledgements</b> <p>
+
+		<p>E. Ibargüen-Mondragón thanks the support of Project N° 114-19/10/2017 (VIIS-UDENAR).</p>
+
+	<!--References-->
+		<p  class="titulo"> <b>References</b> </p>
+
+		<p id="ref1">[1] L. Esteva y C. Vargas 1998 “Analysis of a dengue disease transmission model”. Mathematical biosciences Vol 150, No 2, pp 131-151.</p>
+
+		<p id="ref2">[2] L. Esteva y H. M Yang 2005 “Mathematical model to assess the control of Aedes aegypti mosquitoes by the sterile insect technique”, Mathematical biosciences Vol 198, No 2, pp 132- 147.</p>
+
+		<p id="ref3">[3] R. C. Thomé, H. M. Yang y L. Esteva 2010 “Optimal control of Aedes aegypti mosquitoes by the sterile insect technique and insecticide”. Mathematical Biosciences, Vol 223, No 1, pp 12- 23.</p>
+
+		<p id="ref4">[4] S. T. Pinho et al. 2010 “Modelling the dynamics of dengue real epidemics”, Philosophical Transactions of the Royal Society A, Vol 368, No 1933, pp 5679-5693.</p>
+
+		<p id="ref5">[5] C. P. Ferreira 2020 “Aedes aegypti and Wolbachia interaction: population persistence in an environment changing”, Theoretical Ecology, Vol 13, pp 1-12.</p>
+
+		<p id="ref6">[6] R. Taghikhani y A. B. Gumel 2018“Mathematics of dengue transmission dynamics: Roles of vector vertical transmission and temperature fluctuations”, Infectious Disease Modelling Vol 3, pp 266-292.</p>
+
+		<p id="ref7">[7] H. M. Yang y C. P. Ferreira 2008 “Assessing the effects of vector control on dengue transmission”. Applied Mathematics and Computation, Vol 19, No 1, pp 401-413.</p>
+
+		<p id="ref8">[8] D. Cardona-Salgado et al. 2020 “Wolbachiabased biocontrol for dengue reduction using dynamic optimization approach”. Applied Mathematical Modelling, Vol 82, pp 125-149.</p>
+
+		<p id="ref9">[9] H. S. Rodrigues, M. T. Monteiro y D. F. Torres 2013 “Sensitivity analysis in a dengue epidemiological model”, Conference Papers in Science, Vol 2013, Art. ID 721406, 7 pages</p>
+
+		<p id="ref10">[10] J. P. Romero-Leiton y E. Ibargüen-Mondragón 2019 “Stability analysis and optimal control intervention strategies of a malaria mathematical model”. Applied Sciences, Vol 21, pp 184-218.</p>
+
+
+</body>
+</html>
