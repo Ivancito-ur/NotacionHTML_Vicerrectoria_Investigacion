@@ -157,10 +157,10 @@
         <p>To remedy this problem it was necessary to develop control systems in the boilers, starting with a simple
             manual control which included a barometer observed by a person who knew that if it passed a certain
             pressure, had to decrease the flame. Up to the new automatic and digital control systems that control
-            pressure, temperature, water flow and fuel mixture in continuous boilers [1].</p>
+            pressure, temperature, water flow and fuel mixture in continuous boilers <a href="#r1">[1]</a>.</p>
         <p>In industry it is common to find processes that consist of two or more input and output variables.
             Manipulating one variable can affect one or more controlled variables or vice versa, requiring a more
-            complex control system [2],[3],[4],[5],[6].</p>
+            complex control system <a href="#r2">[2]</a>,<a href="#r3">[3]</a>,<a href="#r4">[4]</a>,<a href="#r5">[5]</a>,<a href="#r6">[6]</a>.</p>
         <p>A typical example is the case of a water-tube boiler that, by varying the fuel mixture or the water feed flow
             to the boiler, generates disturbances in the dome (height), increasing or decreasing steam production
             depending on the disturbance and being reflected in the internal pressure of the dome, which increases the
@@ -168,16 +168,16 @@
             (combustion mixture and water supply to the boiler) allows the boiler to be operated efficiently and safely,
             minimizing the risk of accidents. Therefore, simulation and process control through the use of software is
             one of the areas of greatest development due to its implications in the education and training of personnel
-            [4],[7],[8],[9].</p>
+            <a href="#r4">[4]</a>,<a href="#r7">[7]</a>,<a href="#r8">[8]</a>,<a href="#r9">[9]</a>.</p>
         <p>The control of equipment associated with the operation of boilers is of vital importance as it is one of the
-            fundamental industrial services for the performance of the chemical industry [2], [7], [9]. Due to its
+            fundamental industrial services for the performance of the chemical industry <a href="#r2">[2]</a>, <a href="#r7">[7]</a>, <a href="#r9">[9]</a>. Due to its
             importance and complexity there are several ways to control the various variables of a boiler: Thus, Koppel
             et al use a method of decoupling controllers using the method of relative gains for interacting systems
-            [10], He and Tan use an adaptive algorithm to calculate the parameters of a PID controller and make a
-            comparison of the performance of the controllers [7], Pan et al use a genetic algorithm to optimize the
-            performance of the controllers to variable loads in the control system [9]. On the other hand, Chen et al
+            <a href="#r10">[10]</a>, He and Tan use an adaptive algorithm to calculate the parameters of a PID controller and make a
+            comparison of the performance of the controllers <a href="#r7">[7]</a>, Pan et al use a genetic algorithm to optimize the
+            performance of the controllers to variable loads in the control system <a href="#r9">[9]</a>. On the other hand, Chen et al
             show a control strategy based on a third-order identification model for the optimization of a PID using the
-            particle optimization methodology [2].</p>
+            particle optimization methodology <a href="#r2">[2]</a>.</p>
         <p>The use of Nyquist and Bode diagrams is fundamental for the understanding.</p>
         <p>The present work deals with the solution of a 2x2 system for the modeling and simulation of a control system
             in the dome of a boiler using the Control Station software (LOOP PRO), where the technique of decoupling
@@ -191,7 +191,7 @@
 
         <p class="subtitulo"> Data collection from the boiler software. </p>
 
-        <p>To find the dynamics of each of the variables in the boiler dome, the boiler software [11] was used to
+        <p>To find the dynamics of each of the variables in the boiler dome, the boiler software <a href="#r11">[11]</a> was used to
             perform perturbations of different types (step, ramp, double pulse, etc.) in manual mode and collect the
             data for each one (Figure 1). The Desing Tool of the Control Station software was used to fit the data to a
             dynamic model of first order plus dead time or higher order plus dead time depending on its approximation.
@@ -204,7 +204,7 @@
         <p>With the functions fitted to a dynamic model, a 2x2 MIMO multivariable control strategy was proposed. Using
             the relative gain criterion, it was validated if the pairing of the variables is adequate and depending on
             the classification of the result (λ&gt;1, λ&lt;1, λ=1) we proceeded to follow with the decoupling
-            methodology [10]. The variables proposed for the study are (Figures 1 and 2): manipulated, Inlet water mass
+            methodology <a href="#r10">[10]</a>. The variables proposed for the study are (Figures 1 and 2): manipulated, Inlet water mass
             flow (QF) and Fuel flow rate (QC); controlled, Dome water level (NW) and Steam outlet pressure (P). To
             complement the boiler dynamics, a disturbance variable was chosen: Steam outflow (QS).</p>
 
@@ -215,7 +215,7 @@
         <p class="subtitulo">Tuning of the controllers.</p>
 
         <p>The controllers were tuned by the BLT method for multivariable systems, obtaining the initial parameters of
-            each controller by the IMC method [3] for the main loops and thus, varying each parameter of the PI or PID
+            each controller by the IMC method <a href="#r3">[3]</a> for the main loops and thus, varying each parameter of the PI or PID
             controller until obtaining a Nichols plot, for each loop, that tangentially passes through the +2 dB curve.
             The parameters obtained by the BLT method were validated with the Nyquist stability criterion.</p>
         <p>After obtaining and validating the parameters of each controller by the BLT method, the 2x2 system was
@@ -234,7 +234,7 @@
         <p>With the parameters obtained in the tuning, double rectangular pulse type tests were performed for the servo
             and controller system. Ensuring that the dynamics in the boiler dome will not be affected by any change in
             any of its variables and that the controllers will respond quickly and efficiently keeping each variable at
-            its desired value [12] [13][6].</p>
+            its desired value <a href="#r12">[12]</a> <a href="#r13">[13]</a><a href="#r6">[6]</a>.</p>
         <p class="subtitulo">Control strategies and model characterization</p>
         <p>The Control Station software interface (Figure 2) shows the strategy to simulate the automatic control of the
             process variables (NW - m3, P - Kpa) of a 2x2 multivariable system, from step, ramp, oscillatory or double
@@ -249,12 +249,12 @@
             error by the approximation of the software method, a suitable type of perturbation was chosen for any order.
             Obtaining greater pressure with higher orders.</p>
         <p>One of the most practical and interesting applications of frequency response is the use of the pulse test to
-            determine the transfer function of the process, instruments and other control devices [14][3][15]. The
+            determine the transfer function of the process, instruments and other control devices <a href="#r14">[14]</a><a href="#r3">[3]</a><a href="#r15">[15]</a>. The
             double rectangular pulse test is one of the most used in the industry for its flexibility in the execution
             time, flexibility that does not have the sinusoidal test, their execution times can be long or short
             depending on the influence of the manipulated variable on the controlled. It is accurate in higher order
             models and generates a complete Bode diagram. The only requirement of this test is to reach the initial
-            steady state point [3].</p>
+            steady state point <a href="#r3">[3]</a>.</p>
 
 
         <!-- Resultado y discusion -->
@@ -320,7 +320,7 @@
         <p>When the relative gain is between 0.5 and 1, the interaction of the loops causes every action of the
             controllers to be reflected and amplified in both process variables. This is not surprising since the
             relative gain is positive and close to one. One method of control choice would be to use decouplers for each
-            control loop, or to tune each controller separately by doing a simple decoupling [16][3].</p>
+            control loop, or to tune each controller separately by doing a simple decoupling <a href="#r16">[16]</a><a href="#r3">[3]</a>.</p>
         <p class="subtitulo">Tuning using the BTL (biggest log-modulus) method.</p>
         <p>One of the biggest questions in multivariable control is how to tune the controllers together with the
             interaction loop. If you have a PI controller, you have 2N (K<sub>c</sub>, τ<sub>I</sub>) parameters to
@@ -332,7 +332,7 @@
         <p>The method is based on the classical Ziegler-Nichols SISO method. Using the Nichols plot the controller is
             tuned by passing the Nichols curve tangentially through its respective dB curve, for a SISO system it
             corresponds to the +2 dB curve, for a 2x2 MIMO system the +4 dB curve and for a 3x3 MIMO system by the
-            +6 dB curve [17]. As the control strategy is a simple decoupling, the corresponding curve for its tuning is
+            +6 dB curve <a href="#r17">[17]</a>. As the control strategy is a simple decoupling, the corresponding curve for its tuning is
             the
             +2 dB curve.</p>
         <p>To obtain the initial parameters, the IMC tuning method was used for each loop, taking into account only the
@@ -633,46 +633,46 @@
 
         <p class="titulo"> References </p>
 
-        <p>[1] F. Bonilla Macuil, J. C., Zavala González, “Construcción de un generador de vapor con capacidad para
+        <p id=r1>[1] F. Bonilla Macuil, J. C., Zavala González, “Construcción de un generador de vapor con capacidad para
             7.5 kg/hr de gasto a 10 Bar. de presión y 220oc y manual de uso, reglas de seguridad y mantenimiento
             del mismo; así como prácticas de laboratorio,” Universidad de las Américas, Puebla, 2003.</p>
-        <p>[2] I. M. Chew, F. Wong, A. Bono, J. Nandong, and K. I. Wong, “Performance Analysis of the Level Control
+        <p id=r2>[2] I. M. Chew, F. Wong, A. Bono, J. Nandong, and K. I. Wong, “Performance Analysis of the Level Control
             with Inverse Response by using Particle Swarm Optimization,” in Lecture Notes in Electrical
             Engineering, vol. 603, pp. 55–64, 2020. doi: 10.1007/978-981-15-0058-9_6.</p>
-        <p>[3] D. Cooper, J. Arbogast, and R. Jyringi, “Modeling, analysis and tuning tools for teaching process
+        <p id=r3>[3] D. Cooper, J. Arbogast, and R. Jyringi, “Modeling, analysis and tuning tools for teaching process
             dynamics and control,” in AIChE Annual Meeting, Conference Proceedings, pp. 3566, 2005.</p>
-        <p>[4] C. D. Rocco and R. Morabito, “Um modelo de otimização para as operações de produção de vapor em
+        <p id=r4>[4] C. D. Rocco and R. Morabito, “Um modelo de otimização para as operações de produção de vapor em
             caldeiras industrials,” Gestao e Producao, 2012, doi: 10.1590/S0104-530X2012000200004.</p>
-        <p>[5] A. Serbezov and D. Cummings, “University-Industry Co-Operation to Promote Industrial Relevance in
+        <p id=r5>[5] A. Serbezov and D. Cummings, “University-Industry Co-Operation to Promote Industrial Relevance in
             the Field Instrumentation Component of Control Education,” IFAC-PapersOnLine, vol. 49, no. 6, pp.
             309–313, 2016, doi: 10.1016/j.ifacol.2016.07.195.</p>
-        <p>[6] A. Serbezov and R. Rice, “Imparting Industrially Relevant Process Control Skills in Chemical Engineering
+        <p id=r6>[6] A. Serbezov and R. Rice, “Imparting Industrially Relevant Process Control Skills in Chemical Engineering
             Students with LOOP-PRO TRAINER,” in IFAC-PapersOnLine, vol. 52, no. 9, pp. 33–35, 2019. doi:
             10.1016/j.ifacol.2019.08.118.</p>
-        <p>[7] H. He and Y. Tan, “An optimizing parameter-tuning of multi-loop controllers for boiler combustion
+        <p id=r7>[7] H. He and Y. Tan, “An optimizing parameter-tuning of multi-loop controllers for boiler combustion
             process,” in Proceedings of the 2nd IASTED Asian Conference on Modelling, Identification, and
             Control, AsiaMIC 2012, pp. 78–83, 2012. doi: 10.2316/P.2012.769-029.</p>
-        <p>[8] J. Gaines and D. Nash, “Batch control gets easier,” Chemical Processing, vol. 72, no. 2, pp. 39–41, Feb.
+        <p id=r8>[8] J. Gaines and D. Nash, “Batch control gets easier,” Chemical Processing, vol. 72, no. 2, pp. 39–41, Feb.
             2009.</p>
-        <p>[9] H. Pan, W. Zhong, Z. Wang, and G. Wang, “Optimization of industrial boiler combustion control system
+        <p id=r9>[9] H. Pan, W. Zhong, Z. Wang, and G. Wang, “Optimization of industrial boiler combustion control system
             based on genetic algorithm,” Computers and Electrical Engineering, vol. 70, pp. 987–997, Aug. 2018,.
             doi: 10.1016/j.compeleceng.2018.03.003.</p>
-        <p>[10] V. Köppel, M. Segal, and M. Remer, “Análisis de Estrategias de Desacoplamiento en Sistemas
+        <p id=r10>[10] V. Köppel, M. Segal, and M. Remer, “Análisis de Estrategias de Desacoplamiento en Sistemas
             Interactuantes de Control de Procesos,” Informacion Tecnologica, 2004,. doi: 10.4067/s0718-
             07642004000600013.</p>
-        <p>[11] J. Moreno Lemos and R. A. Trujillo Perez, “Simulación dinámica y estrategias de control en el domo de
+        <p id=r11>[11] J. Moreno Lemos and R. A. Trujillo Perez, “Simulación dinámica y estrategias de control en el domo de
             una caldera acuatubular,” Universidad del Valle, 2006.</p>
-        <p>[12] I. M. Chew, F. Wong, A. Bono, J. Nandong, and K. I. Wong, “Feedforward plus feedback control scheme
+        <p id=r12>[12] I. M. Chew, F. Wong, A. Bono, J. Nandong, and K. I. Wong, “Feedforward plus feedback control scheme
             and computational optimization analysis for integrating process,” in Lecture Notes in Electrical
             Engineering, vol. 481, pp. 359–368, 2019. doi: 10.1007/978-981-13-2622-6_35.</p>
-        <p>[13] F. G. Shinskey, “Process Control: As Taught vs as Practiced,” Industrial & Engineering Chemistry
+        <p id=r13>[13] F. G. Shinskey, “Process Control: As Taught vs as Practiced,” Industrial & Engineering Chemistry
             Research, vol. 41, no. 16, pp. 3745–3750, Aug. 2002,. doi: 10.1021/ie010645n.</p>
-        <p>[14] S. C. A. & C. B.Armando, “Principles and practice of automatic process control,” Automatica, 1997.</p>
+        <p id=r14>[14] S. C. A. & C. B.Armando, “Principles and practice of automatic process control,” Automatica, 1997.</p>
         <p>[15 T. E. Marlin, “The software laboratory for undergraduate process control education,” Computers &
             Chemical Engineering, vol. 20, no. SUPPL.2, pp. S1371–S1376, Jan. 1996,. doi: 10.1016/0098-
             1354(96)00235-9.</p>
-        <p>[16] D. J. Cooper, “Practical Process Control using Loop-Pro Software,” Control Station Inc., 2005.</p>
-        <p>[17] W. L. LUYBEN, “Process modeling, simulation and control for chemical engineers, 2 ed”,. Mc Graw
+        <p id=r16>[16] D. J. Cooper, “Practical Process Control using Loop-Pro Software,” Control Station Inc., 2005.</p>
+        <p id=r17>[17] W. L. LUYBEN, “Process modeling, simulation and control for chemical engineers, 2 ed”,. Mc Graw
             Hill, 1990.</p>
 
     </div>

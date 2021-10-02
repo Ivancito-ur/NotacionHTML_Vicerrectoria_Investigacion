@@ -16,13 +16,6 @@ body {
   float: left;
 }
 
-/* Color del link del articulo */
-.link-color:link{
-  color: aliceblue;
-}
-.link-color{
-  color: aliceblue;
-}
 
 /* Posiciones de los resumenes */
 .abstract-container{
@@ -64,9 +57,46 @@ ul.navbar li {
   padding: 0.3em;
 }
 
-a:link {
-  color: blue 
+
+/* Enlaces */
+
+a.link-color:visited {
+  color:white;
 }
+
+a.link-color:link {
+  color:white;
+}
+a.link-color:hover {
+ color: white;
+}
+
+a.link-color:hover {
+  border-bottom: 1px solid;
+  background: black;
+}
+
+
+/* Link de referencia */
+
+a:link {
+  color: #4e00ff;
+}
+
+a:visited {
+  color: #003bff;
+}
+
+a:focus {
+  border-bottom: 1px solid;
+  background: #98aae4;
+}
+
+a:hover {
+  border-bottom: 1px solid;
+  background: #aacefe;
+}
+
 
 
 /* Etiqueta P */
@@ -160,4 +190,11 @@ img.logos {
   width: 300px;
   height: 50px;
 
+}
+
+
+/* Anclajes de la pagina */
+
+html{
+  scroll-behavior: smooth;
 }

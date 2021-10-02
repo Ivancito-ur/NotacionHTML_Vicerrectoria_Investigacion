@@ -159,18 +159,18 @@
         <p class="titulo"> Introduction</p>
 
         <p>Permanent magnet synchronous machines have been widely used over time in various industrial applications and
-            electrical processes, such as in research studies on electric vehicles and wind generation [1], [2]. Its
+            electrical processes, such as in research studies on electric vehicles and wind generation <a href="#r1">[1]</a>, <a href="#r2">[2]</a>. Its
             operation is similar to that of a conventional synchronous machine, in which the rotor rotates at the same
             speed as the rotating magnetic field of the stator, maintaining a phase shift between them equivalent to an
             angle θ also known as the rotor angle.</p>
         <p>There are different ways to study its behavior and in this way evaluate different speed or torque control
             strategies, such as vector controls, scalar controls, or controls based on non-linear techniques. The
-            Energetic Macroscopic Representation (EMR) [3], [4], is a formalism developed for investigations of complex
+            Energetic Macroscopic Representation (EMR) <a href="#r3">[3]</a>, <a href="#r4">[4]</a>, is a formalism developed for investigations of complex
             electromechanical conversion systems.</p>
         <p>This functional description is a graphical and multi-physical formalism that allows highlighting the
             properties of each subsystem and allows the understanding of each one of them separately, replacing any
             functional block (See appendix) and coupling it to the general system without having to modify the whole of
-            the set [5], based on the principle of action and reaction, and the principle of causality. The EMR control
+            the set <a href="#r5">[5]</a>, based on the principle of action and reaction, and the principle of causality. The EMR control
             methodology is based on specific investment rules.</p>
 
 
@@ -181,7 +181,7 @@
         <p class="titulo">Materials and methods
         </p>
 
-        <p>The dynamic model of the MSIP used is the one proposed in [1], [2]. For this, it is assumed that the effects
+        <p>The dynamic model of the MSIP used is the one proposed in <a href="#r1">[1]</a>, <a href="#r2">[2]</a>. For this, it is assumed that the effects
             produced by the stator grooves can be neglected, as well as the losses in the iron and the saturation of the
             magnetic material. For simplicity, the model will be obtained for a permanent magnet machine, assuming that
             the air gap has uniform reluctance. If it is considered that the windings of the three phases are
@@ -260,7 +260,7 @@
 
         <p class="subtitulo-segundo">Principle of causality:</p>
 
-        <p>As in [9], only integral causality is considered in EMR. This property leads to defining accumulation
+        <p>As in <a href="#r9">[9]</a>, only integral causality is considered in EMR. This property leads to defining accumulation
             elements through a time-dependent relationship between its variables, which leads to its output is an
             integral function of its inputs. Other items are described using non-time dependent relationships. To
             respect integral causality, specific association rules are defined.</p>
@@ -325,7 +325,7 @@
             Figure 3, a reference signal of the speed of the machine to be followed is entered.</p>
         <p>The accumulation elements induce state variables when they use integral causality, due to this, they cannot
             be physically inverted, and therefore, controllers are required to carry out indirect investments.
-            Conversion elements by having time-independent relationships can be reversed directly [5].</p>
+            Conversion elements by having time-independent relationships can be reversed directly <a href="#r5">[5]</a>.</p>
 
 
         <!-- Resultados y discusion -->
@@ -333,7 +333,7 @@
         <p class="titulo">Results and Discussion</p>
 
         <p>The model implemented in Matlab Simulink (Figure 3) is validated by comparing two case studies with results
-            obtained for two permanent magnet synchronous machines proposed in the literature [7] - [8]. After
+            obtained for two permanent magnet synchronous machines proposed in the literature <a href="#r7">[7]</a> - <a href="#r8">[8]</a>. After
             validating the models, the control is evaluated by imposing variable operating conditions on the load
             torque, and it is sought to maintain a reference speed profile.</p>
 
@@ -343,7 +343,7 @@
 
         <p class="subtitulo">Case study 1.</p>
 
-        <p>The first case study uses machine 1 presented in [7], whose parameters are presented in Table I.</p>
+        <p>The first case study uses machine 1 presented in <a href="#r7">[7]</a>, whose parameters are presented in Table I.</p>
         <div class="image">
             <img src="img/V25-N3-12/img14.jpg" height="400px" width="auto">
         </div>
@@ -390,7 +390,7 @@
 
         <p class="subtitulo">Case study 2.</p>
 
-        <p>Below is another example of the use of the EMR formalism to control the speed of the machine proposed in [8].
+        <p>Below is another example of the use of the EMR formalism to control the speed of the machine proposed in <a href="#r8">[8]</a>.
             Its parameters are shown in Table III.</p>
 
         <div class="image">
@@ -443,35 +443,35 @@
         <p class="titulo"> References </p>
 
 
-        <p>[1] A. Bouscayrol, P. Delarue and X. Guillaud, “Power strategies for maximum control structure of a wind
+        <p id=r1>[1] A. Bouscayrol, P. Delarue and X. Guillaud, “Power strategies for maximum control structure of a wind
             energy
             conversion system with a synchronous machine”, Renew. Energy, vol. 30, no. 15, pp. 2273- 2288, 2005.</p>
 
-        <p>[2] A. Bouscayrol, P. Delarue, X. Guillaud and W. Lhomme, “Simulation of a Wind Energy Conversion System
+        <p id=r2>[2] A. Bouscayrol, P. Delarue, X. Guillaud and W. Lhomme, “Simulation of a Wind Energy Conversion System
             using
             Energetic Macroscopic Representation”, 2012 15th Int. Power Electron. Motion Control Conf., pp.
             DS3e.8-1-DS3e.8-6, 2012.</p>
-        <p>[3] A. Bouscayrol et al., “Teaching drive control using Energetic Macroscopic Representation”, initiation
+        <p id=r3>[3] A. Bouscayrol et al., “Teaching drive control using Energetic Macroscopic Representation”, initiation
             level
             Keywords.</p>
-        <p>[4] A. Bouscayrol et al., “Teaching drive control using Energetic Macroscopic Representation-expert level”,
+        <p id=r4>[4] A. Bouscayrol et al., “Teaching drive control using Energetic Macroscopic Representation-expert level”,
             Power Electron. Appl. 2009. EPE ’09. 13th Eur. Conf., pp. 1-9, 2009.</p>
-        <p>[5] C. Mayet, M. Mejri, A. Bouscayrol, J. Pouget and Y. Riffonneau, “Energetic Macroscopic Representation and
+        <p id=r5>[5] C. Mayet, M. Mejri, A. Bouscayrol, J. Pouget and Y. Riffonneau, “Energetic Macroscopic Representation and
             inversion-based control of the traction system of a hybrid locomotive”, 2012 IEEE Veh. Power Propuls. Conf.
             VPPC
             2012, no. 1, pp. 491-496, 2012.</p>
-        <p>[6] Y. D. Wankam, P. Sicard and A. Bouscayrol, “Maximum control structure of a five-drive paper system using
+        <p id=r6>[6] Y. D. Wankam, P. Sicard and A. Bouscayrol, “Maximum control structure of a five-drive paper system using
             energetic macroscopic representation”, IECON Proc. Industrial Electron. Conf., no. Section V, pp. 5332-5337,
             2006.</p>
-        <p>[7] J. Solano, “Energy management of a hybrid electric vehicle : an approach based on type-2 fuzzy logic To
+        <p id=r7>[7] J. Solano, “Energy management of a hybrid electric vehicle : an approach based on type-2 fuzzy logic To
             cite
             this version : HAL Id : tel-00699896 véhicule hybride lourd : approche par logique floue de type-2 Energy
             management of a hybrid electric vehicle : an approac”, 2012.</p>
-        <p>[8] F. D. E. Ingeniería and C. H. De Angelo, “CONTROL PARA MÁQUINAS DE CA DE IMANES PERMANENTES CON FEM
+        <p id=r8>[8] F. D. E. Ingeniería and C. H. De Angelo, “CONTROL PARA MÁQUINAS DE CA DE IMANES PERMANENTES CON FEM
             ARBITRARIA, SIN SENSORES MECÁNICOS Cristian Hernán De Angelo”, 2004.</p>
-        <p>[9] J. Hautier, “The Causal Ordering Graph A tool for system modelling and control law synthesis”,
+        <p id=r9>[9] J. Hautier, “The Causal Ordering Graph A tool for system modelling and control law synthesis”,
             Laboratoire d’Electrotechnique et d’Electronique de Puissance de Lille, ENSAM, 2014.</p>
-        <p>[10] P. Barre et al., “Inversion-based control of electromechanical systems using causal graphical
+        <p id=r10>[10] P. Barre et al., “Inversion-based control of electromechanical systems using causal graphical
             descriptions To cite this version : HAL Id : hal-01109564 Science Arts & Métiers ( SAM )”, 2015.</p>
 
     </div>
