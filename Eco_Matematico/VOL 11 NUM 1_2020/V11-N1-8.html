@@ -1,0 +1,776 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V11-N1-8</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <p id="cabeza">Eco matemático ISSN: 1794-8231 (Impreso), E-ISSN: 2462-8794 (En línea) Volumen 11 (1) Enero-Junio
+            de 2020, páginas 78-88</p>
+    </div>
+
+    <hr>
+
+    <!--Titulos-->
+    <div>
+        <h1>Structural Health Monitoring of Liquid Filled Above Ground Storage
+            Tank Floors: A Time-Reversed Approach to Acoustic Emission Source
+            Location
+            <div><br></div>
+        </h1>
+    </div>
+
+    <h2>Monitoreo de salud estructural del fondo de tanques de almacenamiento sobre tierra llenos de
+        líquido: Un enfoque de simetría temporal para la localización de fuentes de emisiones acústicas </h2>
+
+    <!--Autores-->
+    <h4>
+        Boris Adolfo Zárate-Hernandez<sup><a href="#sup1">a*</a> </sup>
+    </h4>
+
+
+    <p class="autores" id="sup1"><sup>a*</sup><img class="logos" src="img/globales/sobre.png"> PhD, Researcher, Grupo de
+        Investigación en Ingeniería Sísmica, Eólica, Geotécnica y Estructural (G-7),
+        <a href="Boris.Zarate@yahoo.com">Boris.Zarate@yahoo.com </a>,
+        <img class="logos" src="img/globales/orcid.png"> <a href="https://orcid.org/70000-0001-8141-0527">ORCID:
+            70000-0001-8141-0527</a>.
+        Escuela de Ingeniería Civil y
+        Geomática, Universidad del Valle. Cali, Colombia.
+    </p>
+
+
+    <hr>
+
+    <!-- Como realizar la cita -->
+
+    <div class="cita">
+        <p class="forma-citar"><b>Forma de citar:</b> Zárate-Hernandez, B. A., Structural Health Monitoring of Liquid
+            Filled Above
+            Ground Storage Tank Floors: A Time-Reversed Approach to Acoustic Emission Source Location. Eco
+            Matemático. <i>Eco Matemático</i>, 11 (1), 78-88 </p>
+    </div>
+
+    <!--Recibido y aprobado-->
+    <p class="autores"><b>Recibido: </b> 25 de octubre de 2019 <br> <b>Aceptado: </b> 10 de diciembre de 2019 </p>
+
+    <hr>
+
+    <!--Licencia-->
+    <p>&copy; Peer review is the responsibility of the Universidad Francisco de Paula Santander.This is an article
+        under the license <a href="http://creativecommons.org/licenses/by-nc-nd/4.0/"> CC BY-NC-ND 4.0 </a> </p>
+
+
+    <!--Resumen Inglés-->
+    <hr>
+
+    <div class="abstract-container">
+        <div class="keywords-container">
+            <p><b>Keywords</b> <br></p>
+            <p>structural health
+                monitoring, acoustic
+                emission, time-reversed
+                acoustics, source
+                location, tank floor
+                acoustic monitoring</p>
+        </div>
+
+        <div class="text-container">
+            <p class="titulo"> Abstract</p>
+            <p>
+                Acoustic Emission (AE) is a proven successful Non-Destructive
+                Testing (NDT) method to assess the state of storage tank floors. Traditional
+                AE source location in tanks floors is performed using only the wavefronts that
+                have traveled directly from the source to the sensor (direct hit). The wavefronts
+                captured after reflected from the tank walls are identified and discarded. This
+                paper proposes a new AE source location algorithm in tanks that considers a
+                combination of reflections and direct hits. The proposed algorithm is based on
+                time symmetry acoustics and ray theory. The methodology uses the concept
+                of time symmetry acoustics in which a wave detected at any location can be
+                directed back to the source when re-created at the detection place. Therefore,
+                the developed approach takes the time at which each wave arrives to the sensor
+                and sends it back as if time had reversed. Ray theory is used in the methodology
+                to account for the way in which the wavefront is reflected when encounters
+                an obstacle such as the walls of the tank. Then, the point of intersection of
+                all wavefronts is identified using an optimization algorithm. This point where
+                all wavefronts intersect is considered the location of the source. The location
+                algorithm considers the first path or direct hits from the source to the sensors
+                combined with reflections obtained by wavefronts bouncing from the tank
+                walls. The proposed location algorithm was validated using numerical data
+                from 176ft diameter tank and experimentally using AE data from a tank 55ft
+                diameter.
+            </p>
+        </div>
+    </div>
+
+    <!-- Resumen Español -->
+    <hr>
+
+    <div class="abstract-container">
+        <div class="keywords-container">
+            <p><b>Palabras claves</b> <br></p>
+            <p>control de la salud
+                estructural, emisión
+                acústica, acústica
+                invertida en el tiempo,
+                localización de la
+                fuente, control acústico
+                del suelo del tanque</p>
+        </div>
+
+        <div class="text-container">
+            <p class="titulo"> Resumen</p>
+
+            <p>
+                Emision Acústica (AE) es una metodología exitosa y que ha sido
+                probada de Ensayos No-Destructivos (NDT) comúnmente utilizada para
+                determinar daño en el piso de tanques de almacenamiento. Tradicionalmente
+                la localización de fuentes de AE en el piso del tanque se realiza utilizando
+                únicamente las formas de onda que han viajado directamente de la fuente al
+                sensor (golpe directo). Las formas de onda capturadas después correspondientes
+                a las reflecciones son identificadas y eliminadas. Este artículo propone un
+                nuevo algoritmo de localización de fuentes de AE en tanques que considera
+                una combinación de ondas reflejadas y golpes directos. El algoritmo propuesto
+                se basa en acústica de simetria temporal y la teoría de rayos. La metodologia
+                usa el concepto de acústica de simetria temporal en el cual una onda detectada
+                en cualquier lugar se puede dirigir de nuevo a la fuente cuando se recrea en el
+                lugar de detección. Entonces, la metodología desarrollada aquí toma el tiempo
+                al cual la onda llega al sensor y la envía de vuelta como si el tiempo se hubiera
+                devuelto. La teoría de Rayos se utiliza en la metodología para considerar la
+                forma en la que el frente de onda se refleja cuando encuentra un obstáculo
+                tal como la pared del tanque. El punto de intersección de todos los frentes de
+                onda es identificado utilizando un algoritmo de optimización. Este punto donde
+                todos los frentes se intercepta es considerado el punto de localización de la
+                fuente. El algoritmo de localización considera el primer camino o el camino
+                directo de la fuente a los sensores combinado con la reflecciones obtenidas por
+                los frentes de onda que rebotaron de las paredes del tanque. El algoritmo de
+                localización propuesto fue validado usando datos numéricos de un tanque de
+                176 pies de diámetro y datos experimentales usando datos de AE provenientes
+                de un tanque de 55 pies de diámetro.
+            </p>
+        </div>
+    </div>
+
+
+    </div>
+    <p>*Autor para correspondencia <a href="jzamo@una.ac.cr">jzamo@una.ac.cr</a></p>
+
+    <!-- Cuerpo del documento -->
+    <div>
+        <hr>
+        <!--Introducción-->
+        <p class="titulo"> Introduction</p>
+
+        <p>
+            Above ground liquid-filled tanks are
+            indispensable in many industries such as oil
+            refineries, chemical plants and power plants. The
+            bottom of above ground tanks are made of steel and
+            are exposed to different chemicals and vibrations.
+            The floor of these tanks are subjected to different
+            stresses and susceptible to the development of
+            cracks and corrosion. The bottom of the tank results
+            very difficult to inspect while the tank is still in
+            service using most Non-Destructive Methods (Cole
+            and Gautrey 2002). In order to access the floor,
+            the tank has to be emptied and cleaned, which can
+            make the inspection very expensive. Traditionally
+            the floor of the tank is inspected in a “Leak-based”
+            or a “Time-based” maintenance practice. In the
+            “Leak-based” practice, tanks are taken out of
+            service and inspected when a major problem such
+            a leak appears. This practice is banned in most countries. In the “Time-based” approach tanks are
+            inspected periodically. The result is that many tanks
+            are emptied and cleaned without a real need. For
+            instance, Saudi Aramco reports possible savings
+            of more than US$50M if the unnecessary emptied
+            and cleaned of tanks is avoided (Cole and Gautrey
+            2002). There has been a lot of research on trying to
+            develop a reliable method of inspection of the tank
+            bottom that does not require emptying the tank,
+            including robots with ultrasound probes that scan
+            the bottom (Schempf, Chemel et al (1995), da Cruz,
+            and Ribeiro (2005)) or using guided waves that
+            travel along the shell of the tank floor (Rizzo, Han
+            et al (2010), Chen, Su et al (2010), Mazeika, Kazys
+            et al (2011)). One very successful method to assess
+            the state of the floor of the tank while in service is
+            by using Acoustic Emission (AE).
+        </p>
+
+        <p> AE is a passive Non-Destructive Testing (NDT)
+            method that has successfully been used for Structural
+            Health Monitoring applications (Zárate and Caicedo et al 2012, Zárate and Pollock et al 2015, Momeni
+            and Koduru et al 2013, Aggelis and Barkoula et
+            al 2012). AE uses acoustic waves typically in the
+            range of 100 kHz to 1 MHz, propagating through
+            a material. These waves are created by events in
+            the material such as the formation or growth of a
+            crack (Scruby 1987) or a chemical process such as
+            active corrosion. The transient waves are converted
+            into a voltage by AE sensors, and digitalized by the
+            data acquisition system. The waveforms obtained
+            are processed and hit features such as waveform
+            maximum amplitude, duration, absolute energy,
+            and rise time are calculated (Nair and Cai 2010).
+            An amplitude threshold is used to trigger the “hit”
+            (the processing of an individual AE waveform)
+            and determine the time of arrival. AE has gained
+            popularity within the NDT community because
+            of several advantages (Shigeishi, Colombo et al.
+            2001) compared to other NDT methods including:
+            i) allows in-service online monitoring; ii) geometric
+            independence; iii) simple and economic installation;
+            and iv) wireless nodes available in the market
+            (Godinez-Azcuaga, Inman et al. 2011). </p>
+
+        <p> AE is used as a method for global qualification
+            and inspection of above ground storage tanks floors.
+            The sensors are located at the outer surface of the
+            tank along the inferior circumference at a distance
+            of 3 to 6 feet above the bottom knuckle as shown
+            in Figure 1. Notice that in this specific application
+            the acoustic event is started at the floor of the tank
+            by the active leak or corrosion, then the wave goes
+            to the liquid in the tank and from there to the outer
+            shell or wall of the tank. Therefore, the medium
+            for the wave to travel from the source of the event
+            to the shell or wall of the tank is the liquid filling
+            the tank. AE tests are designed so that AE detects
+            a discontinuity and determines the region where
+            is suspected. The AE method then grades the tank
+            and evaluates the need to empty the tank for further
+            inspection. The method relies on the location of
+            the events in the plane of the floor of the tank for
+            its grading. The events are localized based on the
+            difference of arrival time of the hits that compose the event. The assumption in here is that each hit
+            correspond to a direct arrival of the wave coming
+            directly from the source. However, waves traveling
+            in liquid filled structures can travel a long distance
+            because of the low attenuation. The wave bounce
+            of the walls of the tank creating reflections that
+            can be mixed with the direct hits. The result is a
+            combination of direct hits and reflections in the
+            times of arrival, which causes errors in traditional
+            location algorithms. </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img1.jpg" height="150px" width="auto">
+        </div>
+
+        <p> Reflections caused by the wave bouncing from
+            the tank wall can be considered into the location
+            algorithm by using time reverse acoustics. The
+            concept of time-reversed acoustics is based on
+            the reciprocity property of the wave equation and
+            expresses that a wave detected at any location can
+            be directed back to the source when re-created at
+            the detection place. Taking the time at which each
+            wave arrives to the sensor and sending it back as if
+            time had reversed. The point where all wavefronts
+            intersect is considered the location of the source.
+            Applications of time reversal for damage location in
+            active sensing have been proposed in the literature.
+            For instance, Anastasi (2011), Xu and Giurgitiu
+            (2007), Wang and Rose et al (2004), and Sohn and
+            Park et al (2007) developed methods for damage
+            location using time reversal with guided waves.
+            These algorithms allow locating damage in plates
+            using an array of sensors some of them acting as
+            receivers and others as sources. Algorithms for the location of sources considering the fact that the
+            arrival wave may not be directly coming from the
+            source have been developed in the literature as well.
+            For instance, Parot (2006) developed a methodology
+            for locating sources in an open space assuming
+            obstructing rigid bodies between the source and the
+            receiver. The concept of time reversal was used to
+            locate the source based on the waves arriving to the
+            receivers. The methodology was tested numerically
+            using different propagation models including a
+            ray tracing model and a full diffraction model. In
+            all cases the source was located showing that the
+            time reversal technique can be used to located
+            sources with very few transducers. Albert and Liu
+            et al (2005) developed an algorithm for source
+            location in an urban environment that considers
+            the wave being reflected from rigid objects before
+            reaching the receiver. The urban environment was
+            modeled using a Finite Element Model. By setting
+            the receivers as sources, the sound refocuses in the
+            vicinity of the original source. This indicates that
+            with few non-line-of-sight sensors the source of
+            the emission can be located. Nevertheless, the use
+            of time reversal in passive methods such as AE for
+            damage location is scarce in the literature. Horn
+            (1996) developed an algorithm for the location of
+            AE sources in structures that use time reversal. The
+            methodology is designed to work in plates assuming
+            the wave does not take a direct path from the source
+            to the sensor. The methodology uses azimuth AE
+            sensors which detect the orientation of the wave.
+            Then, the measured wave orientation is used to
+            direct a ray tracing model along the structure, which
+            is used to find the location of the source. Even
+            though methodologies for source location that do not
+            assume a direct path between sensor and source are
+            available in the literature, there is no methodology
+            available for locating AE sources on the floor of
+            liquid filled tanks that considers reflections. </p>
+
+        <p> Traditional location algorithms locate sources
+            on tank floors using only direct arrival wave data.
+            Reflections of the wave bouncing at the tank wall
+            are discarded by choosing a proper Event Definition Value (EDV). However, very often the EDV is
+            large enough to allow the inclusion of reflections
+            within the wave arrival data confusing the location
+            algorithm. This paper proposes an algorithm for
+            locating AE events at the floor of tanks considering
+            a mixture of reflections and direct paths wave
+            arrivals. The proposed algorithm is formulated using
+            concepts of time-reversed acoustics and ray theory.
+            Ray theory is used in here to model the wavefront
+            reflected when encounters an obstacle such as the
+            walls of the tank. The concept of time-reversed
+            acoustics is used to allow sending back the waves
+            detected by the sensors to the source. Then, the
+            point of intersection of all wavefronts is identified
+            using an optimization algorithm. This point where
+            all wavefronts intersect is considered the location of
+            the source. The proposed time location methodology
+            is validated using numerically generated data from
+            a tank 176ft in diameter filled with gasoline and
+            experimental data with a tank 55ft diameter tanks
+            filled with AVGas.
+        </p>
+
+        <p class="subtitulo"> Wave propagation in liquid filled tanks and
+            time reversal </p>
+
+        <p> AE Sources located at the bottom of liquid filled
+            tanks generate waves that propagate through the shell
+            and passes to the liquid. The liquid creates a medium
+            for the wave to leak away from the solid. A portion
+            of the energy makes it in to the water generating
+            waves that can travel a long distances in the low
+            attenuation of liquid. The waves propagating in the
+            liquid are governed by the equation: Please notice
+            that in this particular application the assumption is
+            that the wave travels thru the liquid to the outer shell
+            or wall of the tank, not from the metallic bottom
+            directly to the wall of the tank. </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img2.jpg" height="150px" width="auto">
+        </div>
+
+
+        <p> where V, is the velocity of the sound in the liquid,
+            F, is the acoustic pressure field and t, is time. Notice that time appears only once in a second derivative
+            term. This implies that if F(r,t) is a solution of the
+            equation, then F(r,-t) is a solution as well (Fink
+            1992). In other words, if S(r,t)is a wave generated
+            at the source, which is detected at the receiver as
+            R(r,t). Then R(r,-t) generated at the receiver will
+            be detected as S(r,-t) at the source (Parot 2008).
+            Therefore, in order to obtain the location of the AE
+            source the waves detected by the receivers have
+            to be replayed back and the place where all waves
+            intercept correspond to the location of the source.
+        </p>
+
+        <p class="subtitulo"> Ray tracing model </p>
+
+        <p> Ray tracing is a methodology to model
+            wavefronts as they are reflected when encounter
+            an obstacle like the wall of the tank. Ray theory
+            is based on the simple assumption that wavefronts
+            can be modeled as a series of discrete beams or
+            rays that follow the reflection law. In other words,
+            the continuous wave front is modeled by using a
+            finite number of rays (Essl (2006)). Ray tracing has
+            been successfully applied in different fields such
+            as seismology (Bai, Hu et al (2014)), architectural
+            acoustics (Serrano, Guillem et al (2014)) and
+            graphics (Wald, Slusallek (2001)). </p>
+
+        <p> Let a ray front emanate from a point located
+            at the circumference at the equator of a circle of
+            unitary radius. Then, the position of the ray can be
+            written to account for reflections as the ray bounces
+            according to the reflection law as: </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img3.jpg" height="550px" width="auto">
+        </div>
+
+        <p> where X<sub>j</sub>
+            , is the X position of the ray, Y<sub>j</sub>
+            , is the
+            Y position of the ray, l<sub>j</sub>
+            , is the distance covered by
+            the ray before being reflected at the tank wall, θ, is
+            the angle measured from the radius of the circle
+            to the path of the ray as shown in Figure 2. Once
+            the ray hits the wall, the position of the ray can be
+            calculated by rotating and translating Eqns. (2) and (3) accordingly. Therefore the position of the ray
+            can be calculated at any instant of time.</p>
+
+         <p> This simple concept allows for the calculation
+            of the position of the wavefronts at any instant of
+            time, given the position of the source at the ring
+            of the tank and the speed of the wave in the liquid.
+            Notice that the ray tracing model used in here is
+            limited to the position of the waveform at a given
+            instant of time and does not consider attenuation,
+            neither interference caused by the interaction of the
+            different wavefronts. In consequence it is possible
+            to obtain the time of arrival from this model, but not
+            its amplitude. </p>
+
+        <p class="subtitulo"> Source location algorithm </p>
+
+        <p> Structural Health Monitoring of above ground
+            storage tanks using AE relies in the proper location
+            of the events. Leaks and corrosion at the bottom of
+            the tank generate AE events that are captured by
+            the sensors. Location algorithms find the position
+            of the source based on the time of arrival of the
+            wave to the different sensors. Then, the difference
+            in time between the first arrival and all subsequent
+            hit arrivals ∆T, is calculated. Traditional location
+            algorithms use the ∆t
+            i correspondent to the i-th hit to determine the location of the event, based on the
+            theoretical time that would take the wavefront to
+            arrive from the event location to the i-th sensor as
+            expressed in the following </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img4.jpg" height="100px" width="auto">
+        </div>
+
+        <p> where x<sub>1</sub>
+            and y<sub>1</sub>
+            are the coordinates of the
+            first sensor detecting the wave; x<sub>i</sub>
+            and y<sub>i</sub>
+            are the
+            coordinates of the i-th hit detecting the wave; x and
+            y are the coordinates of the source location; and V
+            is the velocity of the wave in the liquid. Therefore,
+            using the least square method the location that best
+            matches the time of arrivals can be calculated. </p>
+
+        <p> On the other hand the proposed time reverse
+            acoustic algorithm considers that the time t
+            si taken
+            for each wavefront detected to travel from the
+            source to the sensor can be calculated using the
+            corresponding ∆t<sub>i</sub> as </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img5.jpg" height="200px" width="auto">
+        </div>
+
+        <p> where t <sub>s1</sub> is the time that takes the wave to travel
+            from the source to the first sensor that detects it; and
+            and l<sub>i</sub> is the distance traveled by the wavefronts from
+            the sensors that detect it. </p>
+
+        <p> The arrival times are used to obtain Eqn. (5) and
+            the wave is propagated from the sensor that detected
+            it. The correspondent wavefront is calculated using
+            the ray theory model of Eqns. (2) and (3) for an
+            angle θ<sub>j</sub> that varies between -π/2 to π/2. Then, the
+            distance between wavefronts is minimized using
+            an optimization algorithm. The source of the AE is
+            located at the intersection of all wavefronts. Notice
+            that in the proposed time reverse AE methodology
+            the minimization process aims to find only one
+            variable, the value of t
+            s1 that represents the time
+            at which all waves intercept, while traditional algorithms aim to find two variables x and y.
+            Furthermore, in this methodology a minimum of 3
+            hits is required to locate a source. However, the 3
+            hits could be obtained from only 2 different sensors.
+            Therefore, the methodology requires a minimum of
+            2 sensors to locate an AE source at the floor of a
+            tank. </p>
+
+        <p class="subtitulo"> Numerical validation </p>
+
+        <p> The proposed methodology to locate AE events
+            at the floor of tanks was validated numerically using
+            simulated events from source located at x= 40ft
+            and y= 20ft on the floor of a tank. The tank was
+            monitored with 15 sensors equally spaced along
+            the ring of the tank and assumed 176ft diameter
+            and filled with gasoline, which has a wave speed of
+            4101ft/sec. The wave traveling through the liquid
+            and being reflected from the walls was modeled by
+            discretizing the differential equation (1). </p>
+
+        <p> Let us rewrite equation (1) as </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img6.jpg" height="150px" width="auto">
+        </div>
+
+        <p> where its components can be discretized as </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img7.jpg" height="350px" width="auto">
+        </div>
+
+        <p> Replacing Equations (7), (8) and (9) into (6), it is obtained </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img8.jpg" height="150px" width="auto">
+        </div>
+
+        <p> where b = V∆t, assuming ∆x and ∆y are unitary. This solution of the wave equation allows to obtain
+            both the location and amplitude of the wave at any instant of time as shown in Figure 3. </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img9.jpg" height="1000px" width="auto">
+        </div>
+
+        <p> The times of arrival of the wavefront to the sensors was recorded and include direct paths as well as
+            reflections. Table 1 shows a selected number of hits with the correspondent time the wave took to arrive to
+            the sensors. Then the arrival times in Table 1 are used to feed the proposed time reverse AE and the
+            traditional location algorithm for locating the source.</p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img10.jpg" height="400px" width="auto">
+        </div>
+
+        <!-- Results -->
+        <hr>
+        <p class="titulo"> Results </p>
+
+        <p> Table 1 shows a selection of numerically generated hits that correspond to direct paths and reflections.
+            The source was located using three scenarios: i) only direct hits, ii) combination of direct hits and
+            reflections,
+            and iii) using only 2 sensors. Table 2 shows the results of the location for the traditional and the
+            proposed
+            algorithms. The results show that the time reverse AE location algorithm, is able to deal with a mixture of
+            reflected waves and direct paths and present an error of about 0ft. While the traditional location algorithm
+            pointed to complete different areas of the tank for the case that reflections were included and only two
+            sensors were used. This shows that the proposed algorithm can be used with only 2 sensors as long as there
+            are at least three hits. </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img11.jpg" height="400px" width="auto">
+        </div>
+
+        <p class="subtitulo"> Experimental validation </p>
+
+        <p> The time reverse AE location methodology proposed in here was validated experimentally using two
+            events from a tank bottom test. The events were obtained from a 55ft diameter, filled with AVGas with wave
+            velocity of 3608ft/sec. The test was performed using 6 AE sensors with a PCI8 system manufactured by
+            Mistras Group. The sensors were installed equally spaced at a distance of three feet from the ground and
+            AE data was captured for a period of 30 minutes. Table 3 shows the hit sequence that compose the events
+            that include a direct hits and a reflection. Notice, that the sequence of channels and the similar
+            difference in
+            times indicates that both events point to the same location. </p>
+
+        <div class="image">
+            <img src="img/v11-N1-8/img12.jpg" height="400px" width="auto">
+        </div>
+
+        <p class="titulo"> Results (Repeat tittle, wait for revission)</p>
+
+        <p> The events presented in Table 3 are composed of three direct hits and one reflection. The times of
+            arrival of the hits presented in Table 3 were used to locate the event using the time reverse AE methodology
+            proposed in here and the traditional location algorithm. Two scenarios were considered: i) only direct hits
+            (hits 1 to 3) and ii) direct hits and the reflection (hits 1 to 4). Table 4 shows the calculated location
+            for
+            the event considering both scenarios and both proposed and traditional algorithm. Results show that both
+            algorithms locate to the same region of the tank with a difference of less of 1ft when dealing only with
+            direct
+            hits. However, only the proposed time reverse AE algorithm can point to the same region of the tank within
+            3ft of difference when the reflection is included. </p>
+
+
+        <div class="image">
+            <img src="img/v11-N1-8/img13.jpg" height="400px" width="auto">
+        </div>
+
+
+        <!-- Conclusions -->
+        <hr>
+        <p class="titulo"> Conclusions </p>
+
+        <p> This paper presents the formulation and validation of a time reverse acoustics methodology to locate the
+            source of AE events at the bottom of liquid filled above ground tanks. The methodology uses the waveforms
+            captured by AE sensors spread along a ring of the outer surface of the tank to locate the AE event. The
+            proposed methodology considers the direct hits from the source to the sensor as well as the reflections
+            from the tank wall. The outcome is the location of the event at the bottom of the tank without the need of
+            identifying and eliminating reflections. </p>
+
+        <p> The proposed methodology uses a ray tracing
+            model of the wavefront traveling through the liquid
+            and accounts for the direct paths as well as the
+            reflections caused by the walls of the tank. Then the
+            time reverse acoustics is used to send the wave back
+            to the source as if time had reverse and the point of
+            intersection of the wavefronts is identified using an
+            optimization algorithm. </p>
+
+        <p> The proposed methodology was validated
+            using numerically generated data from a 176ft
+            diameter tank and experimental data obtained
+            from a 55ft diameter tank. Results show that the
+            proposed framework calculates the location of the
+            AE event including the reflections from the tank
+            wall. Furthermore, the proposed methodology has
+            the ability to locate the source of the AE event with
+            fewer sensors than traditional AE location. </p>
+
+        <p> The development in accuracy obtained through
+            the use of ray theory and time reverse acoustics,
+            can eventually lead to significant improvements in
+            source location technology for above ground storage
+            tank floors. It is not proposed that this methodology
+            replace the traditional location algorithms currently
+            used in well-established test procedures. But in
+            specific events where the traditional location
+            algorithm fails to locate because of the inclusion of
+            reflections, the proposed reversed acoustic source
+            location can improve the location of the event. </p>
+
+
+        <!-- Referencias -->
+
+        <hr>
+
+        <p class="titulo"> References </p>
+
+        <p>Aggelis, D. G., Barkoula, N. M., Matikas, T. E.,
+            and Paipetis, A. S. (2012). Acoustic structural
+            health monitoring of composite materials:
+            Damage identification and evaluation in cross
+            ply laminates using acoustic emission and
+            ultrasonics. Composites Science and Technology,
+            72(10), 1127-1133.</p>
+        <p>Anastasi, R. F. (2011). Time Reversal Methods
+            for Structural Health Monitoring of Metallic
+            Structures Using Guided Waves, (No. ARLTR-5716). ARMY RESEARCH LAB
+            HAMPTON VA VEHICLE TECHNOLOGY DIRECTORATE.</p>
+
+        <p>Albert, D. G., Liu, L., and Moran, M. L. (2005).
+            Time reversal processing for source location
+            in an urban environmenta), The Journal of the
+            Acoustical Society of America, 118(2), 616-619.</p>
+        <p>Bai, C. Y., Hu, G. Y., Zhang, Y. T., and Li, Z. S.
+            (2014). Seismic wavefield propagation in 2D
+            anisotropic media: Ray theory versus waveequation simulation. Journal of Applied
+            Geophysics, 104, 163-171.</p>
+        <p>Chen, J., Su, Z., and Cheng, L. (2010). Identification
+            of corrosion damage in submerged structures
+            using fundamental anti-symmetric Lamb waves.
+            Smart Materials and Structures, 19(1), 015004.</p>
+        <p>Cole, P. T., and Gautrey, S. N. (2002). Development
+            history of the Tankpac AE tank floor corrosion
+            test. NDT. net, 7(09).</p>
+        <p>da Cruz, A. C., and Ribeiro, M. S. (2005). RobTank
+            Inspec–in service robotized inspection tool for
+            hazardous products storage tanks. Industrial
+            Robot: An International Journal, 32(2), 157-162.</p>
+        <p>Essl, G. (2006). Computation of wave fronts on a
+            disk I: numerical experiments. Electronic Notes
+            in Theoretical Computer Science, 161, 25-41.
+        <p>Fink, M. (1992). Time reversal of ultrasonic fields.</p>
+        I. Basic principles. Ultrasonics, Ferroelectrics
+        and Frequency Control, IEEE Transactions on,
+        39(5), 555-566.</p>
+        <p>Godinez-Azcuaga, V., Inman, D., Ziehl, P.,
+            Giurgiutiu, V., Nanni, A. (2011) Recent advances
+            in the development of a self-powered wireless
+            sensor network for structural health prognosis.
+            In: Wu HF, editor. 1 ed. San Diego, California,
+            USA: SPIE; p. 798325-7.</p>
+        <p>Horn, M. (1996). Acoustic emission source location
+            by reverse ray tracing. U.S. Patent No. 5,528,557.
+            Washington, DC: U.S. Patent and Trademark
+            Office.</p>
+        <p>Nair, A. and C. S. Cai (2010). Acoustic emission
+            monitoring of bridges: Review and case studies
+            Engineering Structures 32(6): 1704-1714.</p>
+        <p>Mazeika, L., Kazys, R., Raisutis, R., and Sliteris,
+            R. (2011). Ultrasonic guided wave tomography
+            for the inspection of the fuel tanks floor. International Journal of Materials and Product
+            Technology, 41(1), 128-139.</p>
+
+        <p>Momeni, S., Koduru, J. P., Gonzalez, M., Zárate, B.,
+            and Godinez, V. (2013, March). Online acoustic
+            emission monitoring of combustion turbines for
+            compressor stator vane crack detection. In SPIE
+            Smart Structures and Materials+ Nondestructive
+            Evaluation and Health Monitoring (pp.
+            86900B-86900B). International Society for
+            Optics and Photonics.</p>
+        <p>Parot, J. M. (2008). Localizing impulse sources in
+            an open space by time reversal with very few
+            transducers. Applied Acoustics, 69(4), 311-324.</p>
+        <p>Rizzo, P., Han, J. G., and Ni, X. L. (2010). Structural
+            health monitoring of immersed structures by
+            means of guided ultrasonic waves. Journal of
+            Intelligent Material Systems and Structures,
+            21(14), 1397-1407.</p>
+        <p>Schempf, H., Chemel, B., and Everett, N. (1995).
+            Neptune: above-ground storage tank inspection
+            robot system. Robotics and Automation
+            Magazine, IEEE, 2(2), 9-15.</p>
+        <p>Shigeishi, M., S. Colombo, K. J. Broughton, H.
+            Rutledge, A. J. Batchelor and M. C. Forde
+            (2001). Acoustic emission to assess and monitor
+            the integrity of bridges, Construction and
+            Building Materials 15(1): 35-49.</p>
+        <p>Scruby, C. (1987) An introduction to acoustic
+            emission, Journal of Physics E: Scientific
+            Instruments 20: 946-953.</p>
+        <p>Serrano, P., Guillem, I., and Gómez, V. (2014). Ray
+            Tracing Study of the Effectiveness of Acoustic
+            Intervention in the Church of Santa Maria De
+            La Valldigna Monastery. In Construction and
+            Building Research (pp. 383-389). Springer
+            Netherlands.</p>
+        <p>Sohn, H., Park, H. W., Law, K. H., and Farrar, C. R.
+            (2007). Damage detection in composite plates by
+            using an enhanced time reversal method. Journal
+            of Aerospace Engineering, 20(3), 141-151.</p>
+        <p>Wald, I., Slusallek, P., Benthin, C., and Wagner,
+            M. (2001, September). Interactive rendering
+            with coherent ray tracing. In Computer graphics
+            forum (Vol. 20, No. 3, pp. 153-165). Blackwell Publishers Ltd</p>
+
+        <p>Wang, C. H., Rose, J. T., and Chang, F. K. (2004).
+            A synthetic time-reversal imaging method for
+            structural health monitoring. Smart materials
+            and structures, 13(2), 415.</p>
+        <p>Xu, B., and Giurgiutiu, V. (2007). Single mode
+            tuning effects on Lamb wave time reversal with
+            piezoelectric wafer active sensors for structural
+            health monitoring. Journal of Nondestructive
+            Evaluation, 26(2-4), 123-134.</p>
+        <p>Zárate, B. A., Caicedo, J. M., Yu, J., and Ziehl, P.
+            (2012). Probabilistic prognosis of fatigue crack
+            growth using acoustic emission data. Journal of
+            Engineering Mechanics, 138(9), 1101-1111.</p>
+        <p>Zárate, B. A., Pollock, A., Momeni, S., and Ley, O.
+            (2015). Structural health monitoring of liquidfilled tanks: a Bayesian approach for location of
+            acoustic emission sources. Smart Materials and
+            Structures, 24(1), 015017.</p>
+
+
+
+    </div>
+
+</body>
+
+</html>
