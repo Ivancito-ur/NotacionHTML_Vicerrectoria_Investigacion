@@ -1,0 +1,538 @@
+<!-- <!DOCTYPE html> -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V12-N1-5</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <p id="cabeza">Eco matemático ISSN: 1794-8231 (Impreso), E-ISSN: 2462-8794 (En línea) Volumen 12 (1) Enero-Junio de 2021, páginas 54-66</p>
+    </div>
+
+    <hr>
+
+    <!--Titulos-->
+    <div>
+        <h1>Métodos de compresión sin pérdidas de imágenes de resonancia
+            magnética utilizando transformada wavelet: revisión sistemática
+            <div><br></div>
+        </h1>
+    </div>
+
+    <h2>Lossless compression methods for magnetic resonance imaging using wavelet
+        transform a systematic review </h2>
+
+    <!--Autores-->
+    <h4>
+        Paula-Andrea Ferreira-Mejía<sup><a href="#sup1">a*</a> </sup>
+        Wilson Nicolás Andrés Pérez-Cubillos<sup><a href="#sup2">b*</a> </sup>
+        Lilia Edith Aparicio-Pico<sup><a href="#sup3">c*</a> </sup>
+    </h4>
+
+
+    <p class="autores" id="sup1"><sup>a*</sup><img class="logos" src="img/globales/sobre.png"> Estudiante de Ingeniería
+        Electrónica,
+        <a href="paferreiram@correo.udistrital.edu.co">paferreiram@correo.udistrital.edu.co </a>,
+        <img class="logos" src="img/globales/orcid.png"> <a target="_blank" href="https://orcid.org/0000-0002-6398-5738">https://orcid.org/0000-0002-6398-5738</a>
+        universidad Distrital Francisco José de Caldas, Bogotá D.C., Colombia
+    </p>
+
+    <p class="autores" id="sup2"><sup>b*</sup><img class="logos" src="img/globales/sobre.png"> Estudiante de Ingeniería
+        Electrónica,
+        <a href="wnperezc@correo.udistrital.edu.co">wnperezc@correo.udistrital.edu.co </a>,
+        <img class="logos" src="img/globales/orcid.png"> <a target="_blank" href="https://orcid.org/0000-0002-7018-5448">https://orcid.org/0000-0002-7018-5448</a>
+        universidad Distrital Francisco José de Caldas, Bogotá D.C., Colombia
+    </p>
+
+    <p class="autores" id="sup3"><sup>c*</sup><img class="logos" src="img/globales/sobre.png"> Doctora en Ciencias
+        Técnicas,
+        <a href="medicina@udistrital.edu.co">medicina@udistrital.edu.co </a>,
+        <img class="logos" src="img/globales/orcid.png"> <a target="_blank" href="https://orcid.org/0000-0003-1841-4423">https://orcid.org/0000-0003-1841-4423</a>
+        universidad Distrital Francisco José de Caldas, Bogotá D.C., Colombia
+    </p>
+
+    <hr>
+
+    <!-- Como realizar la cita -->
+
+    <div class="cita">
+        <p class="forma-citar"><b>Forma de citar:</b> : Ferreira-Mejía, P. A., Pérez-Cubillos, W.N.A., Aparicio-Pico,
+            L.E. (2021), Métodos de
+            compresión sin pérdidas de imágenes de resonancia magnética utilizando transformada wavelet: revisión
+            sistemática. <i>Eco Matemático</i>, 12 (1), 54-66 </p>
+    </div>
+
+    <!--Recibido y aprobado-->
+    <p class="autores"><b>Recibido: </b> 5 de septiembre de 2020 <br> <b>Aceptado: </b> 12 de noviembre de 2020 </p>
+
+    <hr>
+
+    <!--Licencia-->
+    <p>&copy; P2590-9215© 2017 Universidad Francisco de Paula Santander. Este es un artículo bajo la licencia CC BY 4.0
+        <a href="http://creativecommons.org/licenses/by/4.0/"> CC BY 4.0 </a>
+    </p>
+
+
+
+    <!-- Resumen Español -->
+    <hr>
+
+    <div class="abstract-container">
+        <div class="keywords-container">
+            <p><b>Palabras claves</b> <br></p>
+            <p> compresión sin pérdidas;
+                imagen de resonancia
+                magnética;
+                región de interés;
+                segmentación;
+                transformada Wavelet. </p>
+        </div>
+
+        <div class="text-container">
+            <p class="titulo"> Resumen</p>
+
+            <p>
+                En medicina la información de las imágenes diagnósticas es vital e
+                imprescindible, por este motivo es necesario procesarlas sin que existan márgenes de
+                error que interfieran con su lectura y análisis. En términos generales: las imágenes
+                presentan redundancia entre píxeles lo cual hace que ocupen un tamaño considerable
+                que va desde los Megabytes (MB) hasta los Gigabytes (GB); el proceso de transmitirlas
+                a través de la red se dificulta en términos de almacenamiento y coste computacional,
+                por ende se deben aplicar procesos de compresión sin pérdidas útiles para reducir el
+                ancho de banda, mejorar la capacidad de almacenamiento e incrementar la velocidad de
+                transmisión sin afectar la calidad de la imagen diagnóstica.
+            </p>
+
+            <p>
+                En medicina la información de las imágenes diagnósticas es vital e
+                imprescindible, por este motivo es necesario procesarlas sin que existan márgenes de
+                error que interfieran con su lectura y análisis. En términos generales: las imágenes
+                presentan redundancia entre píxeles lo cual hace que ocupen un tamaño considerable
+                que va desde los Megabytes (MB) hasta los Gigabytes (GB); el proceso de transmitirlas
+                a través de la red se dificulta en términos de almacenamiento y coste computacional,
+                por ende se deben aplicar procesos de compresión sin pérdidas útiles para reducir el
+                ancho de banda, mejorar la capacidad de almacenamiento e incrementar la velocidad de
+                transmisión sin afectar la calidad de la imagen diagnóstica.
+            </p>
+        </div>
+    </div>
+
+    <!--Resumen Inglés-->
+    <hr>
+
+    <div class="abstract-container">
+        <div class="keywords-container">
+            <p><b>Keywords</b> <br></p>
+            <p>Lossless compression;
+                region of interest;
+                magnetic resonance
+                imaging;
+                segmentation;
+                Wavelet transform.</p>
+        </div>
+
+        <div class="text-container">
+            <p class="titulo"> Abstract</p>
+            <p>
+                In medicine, the information from diagnostic images is vital and essential,
+                for this reason, it’s necessary to process them without error margins that could interfere
+                with their reading and analysis. In general terms: images present redundancy between
+                pixels causing them occupy a considerable size ranging from Megabytes (MB) to
+                Gigabytes (GB); the process of transmit them through the network is difficult in terms
+                of storage and computational cost, therefore lossless compression processes must be
+                applied to reduce bandwidth, improve storage capacity and increase transmission speed
+                without affecting the quality of the diagnostic image.
+            </p>
+
+            <p>
+                The proposal of this article is based on a systematic review that synthesizes and
+                exposes the characteristics, advantages and disadvantages of extraction techniques
+                of the regions of interest (ROI), the hybrid algorithms of lossless compression of
+                MRI (Magnetic Resonance Imaging) images and, finally, Wavelet transform and the
+                applications proposed, in the future, by the researchers of the reviewed articles are
+                taken as a reference; among the techniques employed, the following are distinguished:
+                EWT (Empirical Wavelet Transform), EZW (Embedded Zerotree of Wavelet), SPIHT
+                (Set partitioning in Hierarchical Trees), and the hybrid-derivative algorithm such as:
+                EWISTARS (Exponential Wavelet Iterative Shrinkage-Thresholding Algorithm with
+                Random Shift). Finally, the selection and automatic extraction of a ROI is carried out
+                by level segmentation and morphological operations, such as the opening operation.
+                To evaluate the quality of these techniques, the performance metrics MSE (Mean
+                Square Error), PSNR (Peak Signal to Noise Ratio) and CR (Compression Ratio) are
+                described. The results of this research will be useful for researchers, who are starting
+                their incursion into the area, to extend their vision of medical image processing.
+            </p>
+        </div>
+    </div>
+
+    </div>
+    <p>*Autor para correspondencia <a
+            href="paferreiram@correo.udistrital.edu.co">paferreiram@correo.udistrital.edu.co</a></p>
+
+    <!-- Cuerpo del documento -->
+    <div>
+        <hr>
+        <!--Introducción-->
+        <p class="titulo"> Introducción</p>
+
+        <p>En medicina las imágenes diagnósticas desarrollan un papel fundamental para la detección y prevención de
+            enfermedades. De hecho, este sistema se utiliza, principalmente, como apoyo diagnóstico. El análisis a
+            partir de imágenes de MRI (Magnetic Resonance Imaging), permite que órganos como el cerebro, la médula
+            espinal, los nervios, músculos, ligamentos, tendones, tumores o quistes en el hígado; se vean más claros en
+            contraste con los rayos X y la CT (Computed Tomography) (Tromberg, B, 2000; Liu, F., Hernandez-Cabronero,
+            M., Sánchez, V., Marcellin, M. W., & Bilgin, A., 2017). Sin embargo, almacenar y transmitir este tipo de
+            imágenes a través de la red implica aumentar el ancho de banda y disminuir la velocidad de transmisión,
+            debido a que las imágenes digitales pueden presentar tres tipos de redundancia: psicovisual, espacial y de
+            codificación (Avramovic., A, 2011). A partir de esto surge la necesidad de aplicar métodos de compresión,
+            sin pérdida, que reduzcan la tasa de bit para transmisión o almacenamiento y conserven la información
+            relevante sin afectar la calidad de la imagen comprimida; factores que son fundamentales en el ámbito
+            hospitalario y de Telemedicina (Kaur, H., Kaur, R., & Kumar, N, 2015).</p>
+
+        <p>Una de las técnicas aplicadas para comprimir, sin pérdidas, es la transformada Wavelet (WT, por sus siglas en
+            inglés) propuesta a finales de la década de los años 80; esta suministra información simultánea de amplitud
+            y frecuencia de las señales a partir de la traslación y cambio de escala de una función llamada: Wavelet
+            madre, la cual da origen a distintas familias Wavelet entre las que se encuentran: <i>Haar, Daubechies,
+                Biortogonal, Symlet, Meyer, Coiflets, Mexican Hat, Shannon y Morlet</i> (González, R.A, 2010). Además,
+            posee
+            características como: ortogonalidad, invertibilidad, representación multiescala, compactación e invarianza
+            de la energía (Ravichandran, D., Nimmatoori, R., & Dhivakar, M. A., 2016). Estas características constituyen
+            la principal diferencia con respecto a métodos de compresión como la
+
+            transformada de Fourier y la DCT (Discrete Cosine Transform), en donde sólo se obtiene información
+            frecuencial de la señal, es decir, que se alcanza la máxima resolución espectral sacrificando resolución
+            temporal (González, R.A, 2010). Por esta razón, en la actualidad, la WT es una de las herramientas más
+            potentes en el procesamiento de señales y en la compresión de imágenes de MRI.</p>
+
+        <p>Por lo general, en las técnicas de compresión sin pérdida, se utiliza la DWT (Discrete Wavelet Transform)
+            debido a que descompone las imágenes mediante: filtro paso bajo-paso bajo (LL), paso bajo- paso alto (LH),
+            paso alto-paso bajo (HL) y paso alto- paso alto (HH). El filtro LL genera un coeficiente aproximado y los
+            tres restantes son coeficientes detallados (Sreenivasulu, P. & Varadarajan, S., 2018). La sub-banda LL
+            contiene información de las frecuencias bajas de la imagen original. De manera similar, las bandas, HL, LH y
+            HH, contienen información de las frecuencias altas (Sreenivasulu, P & Varadarajan, S., 2018), esto permite
+            aplicar el proceso de reconstrucción después de diezmar dichos coeficientes.</p>
+
+        <p>Por otro lado, se utilizan técnicas como el uso de regiones de interés (ROI) y no-interés (Non- ROI), donde
+            sobre la parte ROI de la imagen se aplica compresión sin pérdidas para preservar los bits esenciales de
+            información con la ventaja de que proporciona un CR alto, sin que la calidad de la imagen se vea afectada,
+            en la parte no-ROI, se aplica compresión con pérdidas (Hamzah, F. A. B., Yoshida, T., & Iwahashi, M., 2017;
+            Kaur, R & Rani, R, 2018). Complementando con lo anterior, se utilizan técnicas como EZW (Embedded Zerotree
+            Wavelet) donde se comprime progresivamente teniendo en cuenta el orden jerárquico de los bits transmitidos
+            para descomponer en sub-banda y posteriormente aplicar la codificación Zerotree donde se agrupan los
+            coeficientes obtenidos al aplicar DWT (Discrete Wavelet Transform) según un umbral predefinido (Abu-Hajar,
+            A., & Sankar, R., 2002). EZW presenta el inconveniente de disminuir
+            la compresión durante la transmisión de los bits menos significativos (Agarwal, R., Salimath, C. S., & Alam,
+            K., 2019). Otra técnica es SPIHT (Set Partitioning in Hierarchical Trees), esta se basa en la clasificación
+            de árboles jerárquicos de coeficiente obtenidos a partir de la WT y presenta una mejor implementación con
+            respecto a EZW debido a que tiene en cuenta el significado de la descendencia de los coeficientes
+            codificados (Kim, B. J., & Pearlman,
+            W. A., 1997); SPIHT 3D es viable cuando la fuente tiene un tamaño significativo en tercera dimensión, como
+            en el caso de las secuencias de vídeo o imágenes médicas en 3-D (Bilgin, A., Zweig, G., & Marcellin,
+            M. W., 1998). Los anteriores son métodos híbridos, basados en la combinación de estas técnicas como EWT
+            (Exponential Wavelet Transform). En efecto el objetivo de esta revisión sistemática consiste en ampliar la
+            visión para el futuro acerca de la calidad de los métodos de compresión sin pérdidas de imágenes de MRI
+            basados en la WT y en brindar respuesta a las siguientes preguntas de investigación:</p>
+
+        <p><b>RQ1.</b> ¿Qué técnicas se utilizan para extraer la ROI de una imagen de MRI?</p>
+
+        <p><b>RQ2.</b> ¿Qué ventajas y desventajas presentan los algoritmos híbridos que se basan en la WT para
+            comprimir sin
+            pérdidas imágenes de MRI?</p>
+
+        <p><b>RQ3.</b> ¿Cuáles son las principales métricas de rendimiento utilizadas para evaluar la calidad de una
+            imagen de
+            MRI comprimida sin pérdidas?</p>
+
+        <p><b>RQ4.</b> ¿Cuáles son las principales aplicaciones en el futuro para las investigaciones relacionadas con
+            compresión sin pérdidas de imágenes de MRI basadas en WT?</p>
+
+        <!-- Método -->
+        <hr>
+        <p class="titulo"> Método</p>
+
+
+
+        <p>La revisión sistemática de literatura (RSL) permite identificar, evaluar e interpretar toda la información
+            disponible acerca de una pregunta de investigación particular, un área temática o un
+
+            fenómeno de interés (Kitchenham, B., & Charters, S., 2007). Del mismo modo, es útil para examinar el grado
+            de las pruebas empíricas que apoyan o contradicen las hipótesis teóricas, o incluso para ayudar a generar
+            nuevas hipótesis (Kitchenham, B., & Charters, S., 2007). A continuación, en la Figura 1, se muestra el
+            diagrama del proceso seguido para llevar a cabo esta RSL.</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img1.jpg" height="600px" width="auto">
+        </div>
+
+        <p class="subtitulo">A. Identificación</p>
+
+        <p>En la etapa de identificación se realiza la búsqueda sistemática donde se consideran diversas fuentes de
+            información obtenidas a través de buscadores académicos como ScienceDirect, PubMed e IEEE Digital Library.
+            Los criterios de búsqueda para la selección de documentos fueron: fecha de publicación (Desde 2016 hasta
+            2020) e idioma (inglés). Las cadenas de búsqueda utilizadas se describen en la Tabla I.</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img2.jpg" height="200px" width="auto">
+        </div>
+
+        <p>Se escoge esta combinación de cadenas de búsqueda o palabras clave, debido a que son útiles para dar
+            respuesta a las preguntas de investigación planteadas. El número total de documentos obtenidos con estas
+            cadenas de búsqueda fue de 429.</p>
+
+        <p class="subtitulo"> B. Exclusión</p>
+
+        <p>En esta etapa, se eliminan manualmente los documentos que se encuentran duplicados, es decir, que aparecen
+            repetidos en los 3 buscadores. Del mismo modo, se excluyen aquellos que no son útiles para poder dar
+            respuesta a las preguntas de investigación y los que no tienen al menos 2 métricas para evaluar la calidad
+            de compresión.</p>
+
+        <p class="subtitulo">C. Inclusión</p>
+
+        <p>En esta etapa, se conservan aquellos documentos que cumplen con los filtros de búsqueda y exclusión. En este
+            caso, se conservan 24 documentos para llevar a cabo la fase de presentación de resultados y análisis que se
+            describe en la siguiente sección.</p>
+
+        <!-- Resultados y Discusión -->
+        <hr>
+        <p class="titulo">Resultados y Discusión</p>
+
+        <p>En esta sección se da respuesta a las 4 preguntas de investigación planteadas en la introducción acerca de
+            las técnicas y algoritmos de compresión sin pérdidas basados en WT, métricas de rendimiento y aplicaciones a
+            futuro propuestas por los investigadores de los artículos revisados.</p>
+
+        <p class="subtitulo">A. Técnicas de extracción de la ROI (Region of Interest) de una imagen de MRI</p>
+
+        <p>En la actualidad, una de las estrategias con mayor potencial para comprimir imágenes médicas es la definición
+            y extracción de la ROI, mediante segmentación manual o automática, de forma que la zona perteneciente a la
+            región de interés pueda comprimirse por medio de un algoritmo sin pérdidas (Mehta, S., 2017). A
+            continuación, en la Tabla II, se exponen algunas técnicas de extracción automática de la ROI que permiten
+            proporcionar un CR
+            (Compression Ratio) alto y exacto, sin que afecte la calidad de compresión de la imagen, lo cual es vital
+            para propósitos de diagnóstico (Thampi, L. L., & Paul, V., 2017).</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img3.jpg" height="670px" width="auto">
+        </div>
+
+        <p>En este sentido, cabe destacar que el proceso de detección y extracción de una ROI en sí misma es una tarea
+            ardua y compleja debido a que si queda mal localizada, puede conducir a la pérdida de detalles de
+            diagnóstico en imágenes médicas (Sophia, P. E., & Anitha, J, 2014). Se debe resaltar que, una de las
+            ventajas de las técnicas de segmentación basadas en conjunto de nivel o variación del conjunto de nivel, es
+            que hacen a la imagen robusta frente al ruido y permiten una mejor extracción de objetos curvos con
+            topología compleja gracias al uso de ecuaciones diferenciales parciales, sin necesidad de parametrizar las
+            curvas (Mehta, S., 2017). La segmentación mediante operaciones morfológicas como la apertura, permite
+            eliminar objetos pequeños de la imagen conservando la forma y el tamaño de los objetos más grandes, alisar
+            los bordes, romper uniones estrechas y adelgazar protuberancias presentes (Thampi, L. L., & Paul, V., 2017).
+            A
+            continuación, en la Tabla III, se exponen algunas de las ventajas y desventajas de estas técnicas de
+            extracción.</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img4.jpg" height="420px" width="auto">
+        </div>
+
+
+
+        <p class="subtitulo">B. Métodos Híbridos de compresión sin pérdidas basados en EZW, EWT y SPIHT</p>
+
+        <p>El objetivo de aplicar compresión sin pérdidas a través de métodos híbridos en imágenes médicas, es el de
+            conservar detalles diagnósticos, sin embargo, esto genera un CR bajo e incremento del ancho de banda. Esto
+            se debe a que la imagen es comprimida en su totalidad mediante técnicas de compresión sin pérdidas, sin
+            considerar su importancia diagnóstica (Kaur, R., & Rani, R., 2018). En la tabla IV, se describen algunos de
+            los algoritmos híbridos revisados:</p>
+
+        <p>Por lo tanto, es importante tener en cuenta que en los métodos mencionados en la tabla IV, se aplica una
+            etapa previa de preprocesamiento, la cual consiste en filtrar la imagen mediante la WT con el objetivo de
+            obtener los coeficientes Wavelet y atenuar el ruido para reducir los errores que se pueden generar durante
+            el procesamiento. Una vez realizada esta etapa, se convierten estos coeficientes a una secuencia de bits.
+            Finalmente, se implementa el algoritmo híbrido sin pérdidas.</p>
+
+        <p>En la Tabla V, se exponen las ventajas y desventajas del uso de la WT en estos algoritmos.</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img5.jpg" height="700px" width="auto">
+        </div>
+
+
+        <p>En efecto, de la Tabla V, se debe destacar la dimensionalidad multiescala, una ventaja única de la WT, que
+            implica el uso de diferentes escalas de la función original, analizando con mayor resolución las frecuencias
+            altas y creciendo diádicamente para analizar diferentes bandas de frecuencia (Do, M. N,2002). Por ende, esta
+            propiedad es deseable para comprimir sin pérdidas imágenes de MRI, donde los pixeles se encuentran altamente
+            correlacionados a altas y bajas frecuencias. Del mismo modo, se debe resaltar la propiedad de invarianza, la
+            cual supone que la cantidad total de energía presente en la imagen no cambia cuando se aplica la WT en el
+            proceso de compresión, reduciendo la tasa de bit para transmisión o almacenamiento, sin afectar la calidad
+            de la imagen diagnóstica (Melo, S. B., & García, R. J. H, 2005).</p>
+
+        <p>Así, el motivo principal para utilizar la WT y no otros métodos de compresión sin pérdidas (transformada de
+            Fourier), recae en que la WT puede brindar información simultanea de amplitud
+            y frecuencia debido a la traslación y cambio de escala de una función llamada Wavelet madre. Además, la WT
+            posee una sencilla implementación en hardware debido a que actúa como un filtro que divide la información de
+            la imagen (píxeles) en altas y bajas frecuencias.</p>
+
+        <p class="subtitulo">C. Métricas de rendimiento </p>
+
+        <p>Actualmente, existen diversos parámetros (subjetivos y objetivos) útiles para evaluar la calidad de la
+            técnica de compresión, por lo general, los parámetros objetivos son los más utilizados debido a que se basan
+            en funciones matemáticas (Kaur, R., & Rani, R., 2018). En la tabla VI, se describen dichos parámetros:</p>
+
+        <div class="image">
+            <img src="img/V12-N1-5/img6.jpg" height="600px" width="auto">
+        </div>
+
+        <p>En la tabla VII, se exponen los resultados de las métricas reportadas para imágenes de resonancia magnética
+            del cerebro, por los diferentes autores consultados en la parte A y B:</p>
+
+
+        <div class="image">
+            <img src="img/V12-N1-5/img7.jpg" height="600px" width="auto">
+        </div>
+
+
+
+
+
+
+        <p>Para estos artículos, el tipo de imagen es una MRI cerebral con tamaño de 256 X 256. En casos como (Zhang et
+            al., 2016; Narayana, P. S., & Khan,
+            A. M., 2020), el MSE tiende a ser alto (16.31 a 41.89), lo cual genera menor ajuste entre los datos, es
+            decir que no se tendrá una reconstrucción adecuada de la imagen. Esto puede ser resultado del método de
+            compresión aplicado. Por otro lado, en casos como (Sreenivasulu, P. & Varadarajan, S, 2018) y (Mehta, S.,
+            2017), el PSNR es alto (39.73dB a 89.81dB), lo cual implica mayor calidad para la imagen reconstruida.</p>
+
+        <p class="subtitulo">D. Retos y aplicaciones a futuro para la compresión de imágenes sin pérdidas basadas en WT
+        </p>
+
+        <p>Los autores de los estudios descritos en la RSL proponen las siguientes aplicaciones para el futuro:</p>
+
+        <p><b>1.</b>Utilizar métricas de calidad objetivas y subjetivas para evaluar la calidad de las técnicas de
+            compresión sin pérdidas (Kaur, R., & Rani, R., 2018).</p>
+
+        <p><b>2.</b>Desarrollar técnicas de selección y extracción automática de la ROI con menor complejidad
+            computacional, adecuadas para diferentes tipos de imágenes (Kaur, R., & Rani, R., 2018).</p>
+
+        <p><b>3.</b>Poner en funcionamiento sobre hardware (FPGA) algoritmos basados en WT (Vidhya et al., 2018).</p>
+
+        <p><b>4.</b>Aplicar el método EZW sobre algoritmos de computación evolutiva (MR, A. D., Ahamad, M. G., &
+            Ravichandran, D., 2016)</p>
+
+        <p><b>5.</b>Evaluar e incluir variantes ISTA para aumentar la calidad de reconstrucción de las imágenes MRI
+            comprimidas (Zhang et al., 2016). </p>
+
+        <p><b>6.</b> Investigar el efecto de la compresión sin pérdidas aplicando la técnica de descomposición Multi
+            Wavelet, además incluir un diseño físico de filtros (Ammah, P. N. T., & Owusu, E, 2019).</p>
+
+        <!-- Conclusión -->
+        <hr>
+        <p class="titulo"> Conclusión</p>
+
+        <p>La revisión sistemática de literatura realizada, permitió seleccionar 24 documentos a través de los cuales se
+            analizó información relevante acerca de las ventajas y desventajas de los algoritmos de compresión sin
+            pérdidas basados en WT, las técnicas de extracción automática de la ROI, los métodos híbridos para comprimir
+            sin pérdidas y las métricas objetivas empleadas para evaluar la calidad de las técnicas descritas.
+            Adicionalmente, se identificó las aplicaciones propuestas para el futuro por distintos investigadores.</p>
+
+        <p>En este sentido, se debe resaltar la importancia de utilizar la WT para comprimir sin pérdidas imágenes de
+            MRI, pues comparada con respecto a otras técnicas de compresión (transformada de Fourier, DCT) presenta
+            diversas ventajas como: brindar información simultánea en escala temporal y espectral; compactación o
+            invarianza de la energía; aplicación a imágenes con diferente resolución o formato; conservación de la
+            información de los bordes y detalles; menor tiempo de computación y dimensionalidad multiescala; reducción
+            de la tasa de bit sin perder la calidad, ni el detalle de la imagen de MRI . Luego, la WT es aplicada como
+            método de compresión sin pérdidas sobre la porción ROI de la imagen MRI, extraída automáticamente. La ROI,
+            contiene la información diagnóstica y por ende su selección debe ser lo más exacta posible.</p>
+
+        <p>Así, técnicas como la segmentación de nivel o el uso de operaciones morfológicas permiten una mejor
+            extracción de objetos curvos y conservar la forma y el tamaño de objetos grandes sin afectar los bordes en
+            la reconstrucción de la imagen. Sin embargo, para estas técnicas se expone en cuanto a ratio de compresión,
+            esto debido a que el CR de una imagen es inversamente proporcional a su ROI, pues entre menor sea el ROI,
+            mayor será el CR, y cuanto mayor sea el ROI, menor será el CR (Sophia,
+            P. E., & Anitha, J., 2014).</p>
+
+        <p>Del mismo modo, se encuentran los métodos híbridos los cuales permiten comprimir sin pérdidas la totalidad de
+            la imagen, usando menos recursos de software (costo computacional) a comparación de la extracción ROI.
+            Finalmente, las aplicaciones más relevantes para futuro propuestas por los investigadores consisten en: 1)
+            Poner en funcionamiento sobre hardware (FPGA) algoritmos basados en WT, con el objetivo de lograr una
+            sincronización en tiempo real de transmisión de la información con menor tiempo de ejecución y por ende
+            menor coste computacional; 2) Aplicar el método EZW sobre algoritmos de computación evolutiva como los
+            algoritmos genéticos y los de lógica difusa (Zhang et al., 2016).</p>
+
+
+
+        <!-- Referencias -->
+        <hr>
+        <p class="titulo"> Referencias </p>
+
+        <p>Abu-Hajar, A., & Sankar, R. (2002, May). Wavelet based lossless image compression using partial SPIHT and bit
+            plane based arithmetic coding. In 2002 IEEE International Conference on Acoustics, Speech, and Signal
+            Processing (Vol. 4, pp. IV-3497). IEEE. <a target="_blank" href="https://doi.org/10.1109/ICASSP.2002.5745408">https://doi.org/10.1109/ICASSP.2002.5745408</a></p>
+        <p>Agarwal, R., Salimath, C. S., & Alam, K. (2019). Multiple image compression in medical imaging techniques
+            using wavelets for speedy transmission and optimal storage. Biomedical and Pharmacology Journal, 12(1),
+            183-198. <a target="_blank" href="https://doi.org/10.13005/bpj/1627">https://doi.org/10.13005/bpj/1627</a></p>
+        <p>Ammah, P. N. T., & Owusu, E. (2019). Robust medical image compression based on wavelet transform and vector
+            quantization. Informatics in Medicine Unlocked, 15, 100183. <a target="_blank" href="https://doi.org/10.1016/j.imu.2019.100183">https://doi.org/10.1016/j.imu.2019.100183</a></p>
+        <p>Avramovic, A. (2011, November). Lossless compression of medical images based on gradient edge detection. In
+            2011 19thTelecommunications Forum (TELFOR) Proceedings of Papers (pp. 1199-1202). IEEE.
+            <a target="_blank" href="https://doi.org/10.1109/TELFOR.2011.6143765">https://doi.org/10.1109/TELFOR.2011.6143765</a>
+        <p>Bilgin, A., Zweig, G., & Marcellin, M. W. (1998, March). Efficient lossless coding of medical image volumes
+            using reversible integer wavelet transforms. In Proceedings DCC'98 Data Compression Conference (Cat. No.
+            98TB100225) (pp. 428-437). IEEE. <a target="_blank" href="https://doi.org/10.1109/DCC.1998.672188">https://doi.org/10.1109/DCC.1998.672188</a></p>
+        <p>Do, M. N. (2002). Directional multiresolution image representations (No. THESIS). EPFL</p>
+        <p>González, R.A. (2010) “Algoritmo basado en Wavelets para la detección de incendios forestales,” (tesis de
+            maestría). Universidad de las Américas Puebla, México</p>
+        <p>Hamzah, F. A. B., Yoshida, T., & Iwahashi, M. (2017, December). Four-dimensional image compression with
+            region of interest based on non-separable double lifting integer wavelet transform. In 2017 Asia-Pacific
+            Signal and Information Processing Association Annual Summit and Conference (APSIPA ASC) (pp. 1819-1823).
+            IEEE. <a target="_blank" href="https://doi.org/10.1109/APSIPA.2017.8282329">https://doi.org/10.1109/APSIPA.2017.8282329</a></p>
+        <p>Kaur, H., Kaur, R., & Kumar, N. (2015). Review of various techniques for medical image compression.
+            International Journal of Computer Applications, 123(4), 25-29. <a target="_blank" href="https://doi.org/10.5120/ijca2015905282">https://doi.org/10.5120/ijca2015905282</a></p>
+        <p>Kaur, R., & Rani, R. (2018, December). ROI and Non-ROI based Medical Image Compression Techniques: A Survey
+            and Comparative Review. In 2018 First International Conference on Secure Cyber Computing and Communication
+            (ICSCCC) (pp. 550-555). IEEE. <a target="_blank" href="https://doi.org/10.1109/ICSCCC.2018.8703337">https://doi.org/10.1109/ICSCCC.2018.8703337</a></p>
+        <p>Kim, B. J., & Pearlman, W. A. (1997, March). An embedded wavelet video coder using three- dimensional set
+            partitioning in hierarchical trees (SPIHT). In Proceedings DCC'97. Data Compression Conference (pp.
+            251-260). IEEE. <a target="_blank" href="https://doi.org/10.1109/DCC.1997.582048">https://doi.org/10.1109/DCC.1997.582048</a></p>
+        <p>Kitchenham, B., & Charters, S. (2007). Guidelines for performing systematic literature reviews in software
+            engineering</p>
+
+        <p>Liu, F., Hernández-Cabronero, M., Sánchez, V., Marcellin, M. W., & Bilgin, A. (2017). The current role of
+            image compression standards in medical imaging. Information, 8(4), 131.
+            <a target="_blank" href="https://doi.org/10.3390/info8040131">https://doi.org/10.3390/info8040131</a>
+        </p>
+        <p>Melo, S. B., & García, R. J. H. (2005). Compresión de Imágenes con Wavelets y Multiwavelets. Ingeniería,
+            10(1), 48-54</p>
+        <p>Mehta, S. (2017). Medical image compression based on ROI using integer wavelet transform. International
+            Journal on Future Revolution in Computer Science & Communication Engineering, 3(10), 174-180</p>
+        <p>MR, A. D., Ahamad, M. G., & Ravichandran, D. (2016, November). Medical image compression using embedded
+            zerotree wavelet (EZW) coder. In 2016 International Conference System Modeling & Advancement in Research
+            Trends (SMART) (pp. 17-23). IEEE. <a target="_blank" href="https://doi.org/10.1109/SYSMART.2016.7894482">https://doi.org/10.1109/SYSMART.2016.7894482</a></p>
+        <p>Narayana, P. S., & Khan, A. M. (2020). MRI image compression using multiple wavelets at different levels of
+            discrete wavelets transform. In Journal of Physics: Conference Series (Vol. 1427, No. 1, p. 012002)</p>
+        <p>Ravichandran, D., Nimmatoori, R., & Dhivakar,
+            M. A. (2016, March). Performance of wavelet based image compression on medical images for cloud computing.
+            In 2016 3rd International Conference on Computing for Sustainable Global Development (INDIACom) (pp. 297-
+            302). IEEE</p>
+        <p>Sophia, P. E., & Anitha, J. (2014, December). Implementation of region based medical image compression for
+            telemedicine application. In 2014 IEEE International Conference on Computational Intelligence and Computing
+            Research (pp. 1-4). IEEE. <a target="_blank" href="https://doi.org/10.1109/ICCIC.2014.7238321">https://doi.org/10.1109/ICCIC.2014.7238321</a></p>
+        <p>Sreenivasulu, P. & Varadarajan, S. (2018). An Efficient Lossless ROI Image Compression Using Wavelet Based
+            Modified Region Growing Algorithm. Journal of Intelligent Systems, 29(1), 1063-1078.
+            <a target="_blank" href="https://doi.org/10.1515/jisys-2018-0180">https://doi.org/10.1515/jisys-2018-0180</a></p>
+        <p>Thampi, L. L., & Paul, V. (2017, April). Application of compression after the detection of endometrial
+            carcinoma imaging: Future scopes. In 2017 International conference of Electronics, Communication and
+            Aerospace Technology (ICECA) (Vol. 1, pp. 28-32). IEEE. <a target="_blank" href="https://doi.org/10.1109/ICECA.2017.8203696">https://doi.org/10.1109/ICECA.2017.8203696</a></p>
+        <p>Tromberg, B. (2000). National Institute of Biomedical Imaging and Bioengineering. Accessed: Nov 15,2020.
+            Available: <a target="_blank" href="https://www.nibib.nih.gov/espanol/temas-cientificos/imagen-por-resonancia-magn%C3%A9tica-irm">https://www.nibib.nih.gov/espanol/temas-cientificos/imagen-por-resonancia-magn%C3%A9tica-irm</a> 
+        </p>
+        <p>Vidhya, K., Babu, T. R. G., & Devi, S. S. (2018). Extraction of abnormalities in MRI, CT, X-ray and
+            Ultrasound images towards development of efficient compression algorithm</p>
+        <p>Zhang, Y., Yang, J., Yang, J., Liu, A., & Sun, P. (2016). A novel compressed sensing method for magnetic
+            resonance imaging: exponential wavelet iterative Shrinkage-Thresholding algorithm with random shift.
+            International Journal of biomedical Imaging, 2016. <a target="_blank" href="https://doi.org/10.1155/2016/9416435">https://doi.org/10.1155/2016/9416435</a></p>
+
+    </div>
+
+</body>
+
+</html>
