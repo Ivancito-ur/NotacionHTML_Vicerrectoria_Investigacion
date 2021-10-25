@@ -1,6 +1,6 @@
 body {
   padding: 10em;
-  padding-top: 20px;
+  padding-top: 0em;
   font-family: Times New Roman;
   color: black;
 }
@@ -15,7 +15,41 @@ ul.navbar {
   width: 250px; 
 }
 
-h1, h3, h4, h5 {
+/* Posiciones de los resumenes */
+.abstract-container{
+  display: flex; 
+  width: 100%;
+}
+
+.keywords-container{
+  float: left;
+  width: 20%;
+  padding-right: 20px;
+}
+
+.text-container{
+  float: right;width: 100%;
+  padding-left: 20px;
+}
+
+
+p.titulo{
+  font-size: 22px;
+  font-weight: bold;
+}
+
+
+hr{
+  background-color: black;
+  height: 1px;
+}
+
+
+.citar{
+  background-color: rgb(238, 237, 237)
+}
+
+h1, h2 , h3, h4, h5 {
   font-family: Times New Roman;
   text-align: center;
 }
@@ -33,11 +67,15 @@ a:link {
 p { 
   line-height: normal; 
   text-align: justify;
-  font-size: 16px
+  font-size: 18px
 }
 
 p.titulo{
   font-size: 20px;
+}
+
+.cuadro{
+  text-align: center;
 }
 
 .tipo {
