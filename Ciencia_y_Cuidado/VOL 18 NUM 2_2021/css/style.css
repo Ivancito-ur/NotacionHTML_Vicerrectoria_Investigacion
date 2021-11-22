@@ -153,7 +153,13 @@
     p.subtitulo {
         color: #29abe3;
         font-size: 20px;
-        /* font-style: italic; */
+        font-weight: bold;
+    }
+
+    p.correspondencia {
+        color:black;
+        font-size: 18px;
+        font-style: italic;
         font-weight: bold;
     }
     
@@ -183,7 +189,13 @@
     .cita {
         text-align: -webkit-center;
     }
-    /* Informacion de cabeza */
+    /* Bold especial para palabras que tienen color seguido de dos puntos
+*/
+    
+    b.subtitulo-segundo {
+        color: #29abe3;
+        font-size: 18px;
+    }
     
     .contenedor_info {
         text-align: center;
@@ -219,6 +231,11 @@
     i {
         font-size: 18px
     }
+
+    i.centrado {
+        font-size: 18px
+    }
+    
     /* LI para las listas */
     
     li {
