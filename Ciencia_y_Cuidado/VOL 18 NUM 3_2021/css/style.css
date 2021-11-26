@@ -1,0 +1,301 @@
+    body {
+        padding: 10em;
+        padding-top: 20px;
+        font-family: Times New Roman;
+        color: black;
+    }
+    
+    #articulo-derecha {
+        float: left;
+    }
+    /* Posiciones de los resumenes */
+    
+    .contenedor-general {
+        display: inline-flex;
+        width: 100%;
+    }
+    
+    .contenedor-resumen {
+        width: 240%;
+    }
+    
+    .contenedor-autor {
+        width: 100%;
+        padding-left: 20px;
+    }
+    
+    .hr-resumen {
+        background-color: gray;
+        margin: 0;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .resumen-fondo {
+        background-color: #bdd5f1;
+        border-radius: 5px;
+    }
+    
+    .titulo-resumen {
+        color: black;
+        font-size: 22px;
+        font-weight: bold;
+        padding: 20px;
+        margin: 0;
+    }
+    
+    .texto-resumen {
+        padding: 20px;
+        margin: 0;
+    }
+    
+    ul.navbar {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 25em;
+        left: 2em;
+        width: 250px;
+    }
+    /* Titulos principales */
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: Times New Roman;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    h1 {
+        color: #29abe3;
+    }
+    
+    .categoria_titulo {
+        font-style: italic;
+        color: #ffffff;
+    }
+    
+    h3 {
+        font-style: italic;
+        font-weight: bold;
+        color: #707073;
+    }
+    
+    .categoria {
+        text-align: center;
+        background-color: #707073;
+        width: 20%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        margin: auto;
+    }
+    
+    ul.navbar li {
+        background: white;
+        margin: 0.5em 0;
+        padding: 0.3em;
+    }
+    /* Enlaces */
+    
+    a.link-color:visited {
+        color: white;
+    }
+    
+    a.link-color:link {
+        color: white;
+    }
+    
+    a.link-color:hover {
+        color: white;
+    }
+    
+    a.link-color:hover {
+        border-bottom: 1px solid;
+        background: black;
+    }
+    /* Link de referencia */
+    
+    a:link {
+        color: #4e00ff;
+    }
+    
+    a:visited {
+        color: #003bff;
+    }
+    
+    a:focus {
+        border-bottom: 1px solid;
+        background: #98aae4;
+    }
+    
+    a:hover {
+        border-bottom: 1px solid;
+        background: #aacefe;
+    }
+    /* Etiqueta P */
+    
+    p {
+        line-height: normal;
+        text-align: justify;
+        font-size: 18px;
+    }
+    
+    p.titulo {
+        color: #29abe3;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    p.subtitulo {
+        color: #29abe3;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    p.correspondencia {
+        color:black;
+        font-size: 18px;
+        font-style: italic;
+        font-weight: bold;
+    }
+    
+    p.subtitulo-segundo {
+        color: #29abe3;
+        font-style: italic;
+        font-size: 18px;
+    }
+    
+    p#cabeza {
+        color: #1d71ae;
+        text-align: center;
+    }
+    
+    p.autores {
+        font-size: 16px;
+        margin: 0;
+        text-indent: 0em;
+    }
+    
+    p.forma-citar {
+        text-indent: 0em;
+        text-align: justify;
+        justify-content: center;
+    }
+    
+    .cita {
+        text-align: -webkit-center;
+    }
+    /* Bold especial para palabras que tienen color seguido de dos puntos
+*/
+    
+    b.subtitulo-segundo {
+        color: #29abe3;
+        font-size: 18px;
+    }
+    
+    .contenedor_info {
+        text-align: center;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .info {
+        width: auto;
+    }
+    /* Este es para los documentos del dos en adelante *codigo abajo de este comentario* */
+    
+    .info-text {
+        text-align: end;
+        margin: 0;
+    }
+    /* Uso Exlusico para el primero documento  que es de revision  *codigo abajo de este comentario* */
+    
+    .info_text {
+        font-size: 12px;
+        line-height: 100%;
+        text-align: center;
+        margin: 0;
+    }
+    
+    .info_hr {
+        margin: 5;
+    }
+    /* Fin P */
+    /* Etiqueta Italic */
+    
+    i {
+        font-size: 18px
+    }
+
+    i.centrado {
+        font-size: 18px
+    }
+    
+    /* LI para las listas */
+    
+    li {
+        font-size: 18px;
+        padding-top: 10px;
+        text-align: justify;
+    }
+    
+    hr {
+        background-color: #29abe3;
+        height: 1px;
+    }
+    /* Tablas */
+    
+    table {
+        border-collapse: collapse;
+        border: 2px solid rgb(0, 0, 0);
+        align-items: center;
+    }
+    
+    thead th {
+        border-collapse: collapse;
+        background-color: rgb(179, 179, 179);
+        border: 2px solid rgb(0, 0, 0);
+    }
+    
+    tbody td {
+        border-collapse: collapse;
+        text-align: center;
+        border: 2px solid rgb(0, 0, 0);
+    }
+    
+    .tipo {
+        color: #ffffff;
+        font-size: 22px;
+        border-radius: 10px 5px 10px 5px;
+        background-color: #696969;
+    }
+    
+    img.logos {
+        width: 15px;
+        height: 15px;
+    }
+    
+    .image {
+        text-align: center;
+        image-rendering: optimizeQuality;
+    }
+    
+    .logo {
+        width: 300px;
+        height: 80px;
+    }
+    
+    .logo2 {
+        width: 300px;
+        height: 50px;
+    }
+    /* Anclajes de la pagina */
+    
+    html {
+        scroll-behavior: smooth;
+    }
